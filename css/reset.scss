@@ -22,6 +22,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -42,10 +44,34 @@ q:before, q:after {
   content: '';
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+hr {
+  display:none;
 }
-body {
-  background-color: #ff00ff;
+img {
+  vertical-align:middle;
+}
+button {
+  background-color:transparent; cursor:pointer;
+}
+b, strong {
+  font-weight:normal;
+}
+fieldset, iframe {
+  width:100%;
+}
+img, a, frame, iframe, fieldset {
+  border:0;
+}
+a {
+  text-decoration:none;
+}
+table {
+  width:100%;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+caption {
+  height:0;
+  font-size:0;
+  overflow:hidden;
 }
