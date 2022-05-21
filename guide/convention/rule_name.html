@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <script src="/assets/js/include.js"></script>
+    <script>include.meta()</script>
+    <script>include.head()</script>
+</head>
+
+<body>
+    <div class="wrap rule">
+
+        <script>include.header()</script>
+
+        <div class="container">
+            <script>include.aside.init()</script>
+
+            <div class="contents">
+                <h2>네임 규칙</h2>
+
+
+                <div class="mg_b_30">
+                    <h3>표기법</h3>
+
+                    <div class="layout_table col_tabel">
+                        <table>
+                            <caption>공통 네이밍 규칙 예</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>구분</th>
+                                    <th>번호</th>
+                                    <th>예시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-l">ID Selector</td>
+                                    <td class="align-l">카멜표기법 (camelCase)</td>
+                                    <td class="align-l">한 자리수 (생략가능, 2, 3)</td>
+                                    <td class="align-l">errorMesage, controlCenter, controlCenter2</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">Class Selector</td>
+                                    <td class="align-l">스네이크 표기법 (underbar_nate)</td>
+                                    <td class="align-l">한 자리수 (생략가능, 2, 3)</td>
+                                    <td class="align-l">tab_page, tbl_type1, tbl_type2</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">Image</td>
+                                    <td class="align-l">스네이크 표기법 (underbar_nate)</td>
+                                    <td class="align-l">두 자리수 (01, 02, 03)</td>
+                                    <td class="align-l">btn_cancle01_off.gif</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">파일 및 폴더</td>
+                                    <td class="align-l">스네이크 표기법 (underbar_nate)</td>
+                                    <td class="align-l">두 자리수 (01, 02, 03)</td>
+                                    <td class="align-l">cyber_center</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="mg_b_30">
+                    <h3>파일 및 폴더</h3>
+                    <p>스네이크 표기법(underbar_nate)을 사용한다.</p>
+                </div>
+
+                <div class="mg_b_30">
+                    <h3>ID 선택자</h3>
+                    <p class="mg_b_10">최상위 레이아웃, 폼 요소, 책갈피를 제외하고 id를 사용하지 않는다.</p>
+                    <div class="layout_table col_tabel">
+                        <table>
+                            <caption>예약어</caption>
+                            <colgroup>
+                                <col span="2" style="width:25%;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>예약어</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="8">사이트 레이아웃</td>
+                                    <td>.wrap</td>
+                                    <td>사이트 전체영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.skipNav</td>
+                                    <td>바로가기 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.header</td>
+                                    <td>머리글 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.container</td>
+                                    <td>페이지 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.aside</td>
+                                    <td>사이드 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.content</td>
+                                    <td>본문 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.footer</td>
+                                    <td>바닥글 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>#popXXX</td>
+                                    <td>레이어팝업 페이지별 ID</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mg_b_30">
+                    <h3>CLASS 선택자</h3>
+                    <p>체인 선택자의 개수는 3개까지 권장한다.</p>
+                    <p>클래스 예약어는 상황에 맞게 선택적으로 참고한다.</p>
+                    <p class="mg_b_10">레이아웃에 한하여 정의된 예시이며, 자세한 내용은 설계가이드를 참고한다.</p>
+                    <div class="layout_table col_tabel">
+                        <table>
+                            <caption>예약어</caption>
+                            <colgroup>
+                                <col span="2" style="width:25%;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>예약어</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="7">네비게이션</td>
+                                    <td>.anb</td>
+                                    <td>전체메뉴 (All Navigation Bar)</td>
+                                </tr>
+                                <tr>
+                                    <td>.gnb</td>
+                                    <td>대표메뉴 (Global Navigation Bar)</td>
+                                </tr>
+                                <tr>
+                                    <td>.mnb</td>
+                                    <td>모바일메뉴 (Mobile Navigation Bar) : 반응형에서 구분할때 사용</td>
+                                </tr>
+                                <tr>
+                                    <td>.snb</td>
+                                    <td>서브메뉴 (Sub Navigation Bar)</td>
+                                </tr>
+                                <tr>
+                                    <td>.unb</td>
+                                    <td>기타메뉴 (Utility Navigation Bar)</td>
+                                </tr>
+                                <tr>
+                                    <td>.qnb</td>
+                                    <td>빠른메뉴 (Quick Navigation Bar)</td>
+                                </tr>
+                                <tr>
+                                    <td>.fnb</td>
+                                    <td>바닥글메뉴 (Footer Navigation Bar)</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="7">컨텐츠 레이아웃</td>
+                                    <td>.content</td>
+                                    <td>본문 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.content-header</td>
+                                    <td>본문 헤더 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.content-body</td>
+                                    <td>본문 내용 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.section-wrap</td>
+                                    <td>컨텐츠 바깥그룹</td>
+                                </tr>
+                                <tr>
+                                    <td>.section</td>
+                                    <td>컨텐츠 기본그룹</td>
+                                </tr>
+                                <tr>
+                                    <td>.section-header</td>
+                                    <td>컨텐츠 헤더그룹</td>
+                                </tr>
+                                <tr>
+                                    <td>.section-body</td>
+                                    <td>컨텐츠 내용그룹</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mg_b_30">
+                    <h3>이미지 네이밍 규칙</h3>
+                    <p>종류별로 스프라이트 방식을 적용한다.</p>
+                    <p class="mg_b_10">이미지 네이밍의 조합은 '형태_의미_순서_상태'의 순서로 조합한다.</p>
+                    <div class="layout_table col_tabel">
+                        <table>
+                            <caption>이미지 예약어</caption>
+                            <colgroup>
+                                <col span="2" style="width:25%;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th>파일명</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>아이콘</td>
+                                    <td>ico_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>화살표</td>
+                                    <td>arw_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>블릿</td>
+                                    <td>bul_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>배경</td>
+                                    <td>bg_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>비주얼</td>
+                                    <td>visual_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>일반</td>
+                                    <td>img_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>임시</td>
+                                    <td>@</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>include.footer()</script>
+
+    </div>
+
+</body>
+
+</html>
