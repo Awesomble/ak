@@ -1,7 +1,45 @@
 @charset "utf-8";
 /* UI Style(Button, Form, Dialogs */
 
-.content{}
-.content .topArea{
-
+.content, .topArea{
+  max-width:2560px;
+  margin:0 auto;
 }
+.topArea{
+  position:relative;
+  .titArea{
+    padding:66px 0 33px;
+    text-align: center;
+    .tit{
+      font-weight:700;
+      font-size:60px;
+      .tk-arboria{
+        font-size:72px;
+        font-weight:500;
+      }
+    }
+    .desc{
+      margin-top:12px;
+      font-weight:400;
+      font-size:18px;
+    }
+  }
+  .visual{
+    height:480px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media all and (max-width: 1320px) {
+  .content{
+    font-size: 16px;
+  }
+  .topArea{
+    .visual{
+      height:240px;
+      background-size:cover;
+    }
+  }
+}
+
