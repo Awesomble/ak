@@ -1,6 +1,21 @@
 @charset "utf-8";
+@use 'sass:math';
+
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+@function get-vw($px){
+  @return unquote(calc(strip-unit($px) * 100 / 375) + 'vw');
+}
+
+
 @import './reset.scss';
 @import './font.scss';
 @import './variables.scss';
 @import './layout.scss';
 @import './ui.scss';
+@import './main.scss';
