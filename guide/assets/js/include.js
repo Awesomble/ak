@@ -1,5 +1,5 @@
 var gRootURL = {
-	root: '/guide',
+	root: '/ak/guide',
 }
 
 var gBaseURL = {
@@ -23,16 +23,16 @@ var include = {
 		document.write('<title>웹퍼블리싱 가이드</title>');
 	},
 	head: function () {
-		document.write('<link rel="shortcut icon" type="image/x-icon" href="/guide/assets/images/favicon.ico" />');
-		document.write('<link rel="stylesheet" type="text/css" href="/guide/assets/css/import.css">');
-		document.write('<link rel="stylesheet" type="text/css" href="/guide/assets/css/shCoreDefault.css">');
+		document.write('<link rel="shortcut icon" type="image/x-icon" href="/ak/guide/assets/images/favicon.ico" />');
+		document.write('<link rel="stylesheet" type="text/css" href="/ak/guide/assets/css/import.css">');
+		document.write('<link rel="stylesheet" type="text/css" href="/ak/guide/assets/css/shCoreDefault.css">');
 		document.write('<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>');
-		document.write('<script src="/guide/assets/js/ui.js"></script>');
-		document.write('<script src="/guide/assets/js/XRegExp.js"></script>');
-		document.write('<script src="/guide/assets/js/shCore.js"></script>');
-		document.write('<script src="/guide/assets/js/shBrushJScript.js"></script>');
-		document.write('<script src="/guide/assets/js/shBrushXml.js"></script>');
-		document.write('<script src="/guide/assets/js/shBrushCss.js"></script>');
+		document.write('<script src="/ak/guide/assets/js/ui.js"></script>');
+		document.write('<script src="/ak/guide/assets/js/XRegExp.js"></script>');
+		document.write('<script src="/ak/guide/assets/js/shCore.js"></script>');
+		document.write('<script src="/ak/guide/assets/js/shBrushJScript.js"></script>');
+		document.write('<script src="/ak/guide/assets/js/shBrushXml.js"></script>');
+		document.write('<script src="/ak/guide/assets/js/shBrushCss.js"></script>');
 		document.write('<script>SyntaxHighlighter.all();</script>');
 	},
 	header: function () {
@@ -87,10 +87,10 @@ var include = {
 		menu2: function () {
 			var baseURL = gBaseURL.menu1;
 			document.write('<ul class="lnb lnb_02">');
-			document.write('	<li><a href="/guide/plan/plan_codeset.html">Codeset</a></li>');
-			document.write('	<li><a href="/guide/plan/plan_layout.html">Layout</a></li>');
-			document.write('	<li><a href="/guide/plan/plan_general.html">General</a></li>');
-			document.write('	<li><a href="/guide/plan/plan_wai.html">WAI-ARIA</a></li>');
+			document.write('	<li><a href="/ak/guide/plan/plan_codeset.html">Codeset</a></li>');
+			document.write('	<li><a href="/ak/guide/plan/plan_layout.html">Layout</a></li>');
+			document.write('	<li><a href="/ak/guide/plan/plan_general.html">General</a></li>');
+			document.write('	<li><a href="/ak/guide/plan/plan_wai.html">WAI-ARIA</a></li>');
 			document.write('</ul>');
 		},
 
@@ -98,7 +98,7 @@ var include = {
 		menu3: function () {
 			var baseURL = gBaseURL.menu3;
 			document.write('<ul class="lnb lnb_03">');
-			document.write('	<li><a href="/guide/_libs/elements_form.html">forms</a></li>');
+			document.write('	<li><a href="/ak/guide/_libs/gnb.html">gnb</a></li>');
 			document.write('	<li><a href="#1">Button</a></li>');
 			document.write('	<li><a href="#2">Icon</a></li>');
 			document.write('	<li><a href="#3">Label</a></li>');
@@ -113,7 +113,7 @@ var include = {
 			document.write('	<li><a href="#12">Progress</a></li>');
 			document.write('</ul>');
 			document.write('<ul class="lnb lnb_04">');
-			document.write('	<li><a href="/guide/_libs/modules_tab.html">Tab</a></li>');
+			document.write('	<li><a href="/ak/guide/_libs/modules_tab.html">Tab</a></li>');
 			document.write('	<li><a href="#13">Accordion</a></li>');
 			document.write('	<li><a href="#14">Folder</a></li>');
 			document.write('	<li><a href="#15">Tooltip</a></li>');
@@ -131,9 +131,9 @@ var include = {
 		menu4: function () {
 			var baseURL = gBaseURL.menu4;
 			document.write('<ul class="lnb lnb_05">');
-			document.write('<li><a href="/guide/accessibility/wa_intro.html">웹접근성 개요</a></li>');
-			document.write('<li><a href="/guide/accessibility/wa_part.html">역활별 체크리스트</a></li>');
-			document.write('<li><a href="/guide/accessibility/wa_process.html">개선작업 프로세스</a></li>');
+			document.write('<li><a href="/ak/guide/accessibility/wa_intro.html">웹접근성 개요</a></li>');
+			document.write('<li><a href="/ak/guide/accessibility/wa_part.html">역활별 체크리스트</a></li>');
+			document.write('<li><a href="/ak/guide/accessibility/wa_process.html">개선작업 프로세스</a></li>');
 			document.write('<!-- <li><a href="">기본명칭 정의예시</a></li> -->');
 			document.write('</ul>');
 		},
