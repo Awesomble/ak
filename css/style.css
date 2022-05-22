@@ -133,29 +133,29 @@ caption {
   font-family: "SpoqaHanSansNeo";
   font-style: normal;
   font-weight: 300;
-  src: url(//ak/font/SpoqaHanSansNeo-Light.eot);
-  src: url(//ak/font/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"), url(//ak/font/SpoqaHanSansNeo-Light.woff2) format("woff2"), url(//ak/font/SpoqaHanSansNeo-Light.woff) format("woff"), url(//ak/font/SpoqaHanSansNeo-Light.ttf) format("truetype");
+  src: url(../font/SpoqaHanSansNeo-Light.eot);
+  src: url(../font/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Light.woff) format("woff"), url(../font/SpoqaHanSansNeo-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "SpoqaHanSansNeo";
   font-style: normal;
   font-weight: 400;
-  src: url(//ak/font/SpoqaHanSansNeo-Regular.eot);
-  src: url(//ak/font/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), url(//ak/font/SpoqaHanSansNeo-Regular.woff2) format("woff2"), url(//ak/font/SpoqaHanSansNeo-Regular.woff) format("woff"), url(//ak/font/SpoqaHanSansNeo-Regular.ttf) format("truetype");
+  src: url(../font/SpoqaHanSansNeo-Regular.eot);
+  src: url(../font/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Regular.woff) format("woff"), url(../font/SpoqaHanSansNeo-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "SpoqaHanSansNeo";
   font-style: normal;
   font-weight: 500;
-  src: url(//ak/font/SpoqaHanSansNeo-Medium.eot);
-  src: url(//ak/font/SpoqaHanSansNeo-Medium.eot?#iefix) format("embedded-opentype"), url(//ak/font/SpoqaHanSansNeo-Medium.woff2) format("woff2"), url(//ak/font/SpoqaHanSansNeo-Medium.woff) format("woff"), url(//ak/font/SpoqaHanSansNeo-Medium.ttf) format("truetype");
+  src: url(../font/SpoqaHanSansNeo-Medium.eot);
+  src: url(../font/SpoqaHanSansNeo-Medium.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Medium.woff) format("woff"), url(../font/SpoqaHanSansNeo-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "SpoqaHanSansNeo";
   font-style: normal;
   font-weight: 700;
-  src: url(//ak/font/SpoqaHanSansNeo-Bold.eot);
-  src: url(//ak/font/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"), url(//ak/font/SpoqaHanSansNeo-Bold.woff2) format("woff2"), url(//ak/font/SpoqaHanSansNeo-Bold.woff) format("woff"), url(//ak/font/SpoqaHanSansNeo-Bold.ttf) format("truetype");
+  src: url(../font/SpoqaHanSansNeo-Bold.eot);
+  src: url(../font/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Bold.woff) format("woff"), url(../font/SpoqaHanSansNeo-Bold.ttf) format("truetype");
 }
 .tk-arboria {
   font-family: "arboria", sans-serif;
@@ -164,6 +164,17 @@ caption {
 /* variables */
 /* Layout Style*/
 /* UI Style(Button, Form, Dialogs */
+.blind {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
 .content, .topArea {
   max-width: 2560px;
   margin: 0 auto;
@@ -204,6 +215,98 @@ caption {
     height: 240px;
     background-size: cover;
   }
+}
+.cont {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 90px;
+}
+
+.bbsWrap {
+  width: 100%;
+}
+
+.bbsTbl th {
+  height: 53px;
+  vertical-align: middle;
+  border-top: 2px solid #0D0D0D;
+  border-bottom: 1px solid #0D0D0D;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D0D0D;
+}
+.bbsTbl td {
+  height: 85px;
+  border-bottom: 1px solid #E8E8E8;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.bbsTbl td a {
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  color: #0D0D0D;
+}
+.bbsTbl td a:hover {
+  font-weight: 500;
+  color: #00498C;
+}
+
+.stockTbl td {
+  font-size: 14px;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+  border-left: 1px solid #ededed;
+  word-break: break-all;
+  font-family: "Rubik", "Noto Sans KR", NanumGothic, "Nanum Gothic", Dotum, Arial, sans-serif;
+}
+
+.table02 tr td, .table03 tr td, .table04 tr td, .table05 tr td {
+  border-bottom: 1px solid #ededed;
+}
+
+.table04 tr.subject td {
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #ededed;
+}
+
+.stock02-table tr td {
+  border-bottom: 1px solid #ddd;
+}
+
+.stock02-table tr td:first-child {
+  border-left: 0;
+}
+
+.stock03-table th {
+  border: 1px solid #afafaf;
+}
+
+.stock03-table td {
+  border: 1px solid #ddd;
+}
+
+.stock03-table td:first-child {
+  background-color: #f7f7f7;
+  border: 1px solid #afafaf;
+}
+
+.stock03-table td.bg {
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.stock03-table .black-line td {
+  border-bottom: 1px solid #737373;
+}
+
+.stock03-table td.price {
+  text-align: right;
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
