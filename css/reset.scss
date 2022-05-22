@@ -26,6 +26,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  word-break: break-word;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -66,6 +67,9 @@ img, a, frame, iframe, fieldset {
 }
 a {
   text-decoration:none;
+}
+a:-webkit-any-link{
+  color:#0D0D0D;
 }
 table {
   width:100%;
