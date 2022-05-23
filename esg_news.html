@@ -23,16 +23,18 @@
     <div class="cont">
         <div class="bbsWrap">
             <div class="bbs_util">
-                <div class="bbs_sort">
-                    <button class="bbs_button" type="button">계열사 전체</button>
-                    <ul class="bbs_sortList">
-                        <li><a href="#">계열사 전체</a></li>
-                        <li><a href="#">계열사1</a></li>
-                        <li><a href="#">계열사2</a></li>
-                        <li><a href="#">계열사3</a></li>
-                    </ul>
+                <div class="sortWrap">
+                    <div class="bbs_sort">
+                        <button class="bbs_button on" type="button">계열사 전체</button><!-- 활성화되면 on추가 -->
+                        <ul class="bbs_sortList">
+                            <li class="selected"><a href="#">계열사 전체</a></li>
+                            <li><a href="#">계열사1</a></li>
+                            <li><a href="#">계열사2</a></li>
+                            <li><a href="#">계열사3</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="right">
+                <div class="searchWrap">
                     <div class="bbs_sort">
                         <button class="bbs_button" type="button">전체</button>
                         <ul class="bbs_sortList">
@@ -43,13 +45,13 @@
                     </div>
                     <div class="select-input">
                         <input type="text" name="search_order" value="" placeholder="검색어">
-                        <button class="btn-search">검색</button>
+                        <button class="btn-search"><span class="blind">검색</span></button>
                     </div>
                 </div>
             </div>
 
             <!--게시판PC버전-->
-            <table class="bbsTbl">
+            <table class="bbsTbl pc">
                 <colgroup>
                     <col width="12%">
                     <col width="*">
@@ -106,7 +108,7 @@
             <!--//게시판PC버전-->
 
             <!--게시파MO버전-->
-            <div class="bbsList">
+            <div class="bbsList mo">
                 <ul>
                     <li>
                         <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
