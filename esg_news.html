@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>재무정보</title>
+    <title>ESG소식</title>
 </head>
 <body>
 <div>GNB영역</div>
@@ -11,7 +13,7 @@
 <div class="topArea">
     <div class="titArea">
         <strong class="tit"><span class="tk-arboria">ESG</span> 소식</strong>
-        <p class="desc">기업과 사회가 공존하는 ESG 관련 소식을 전달합니다</p>
+        <p class="desc">기업과 사회가 공존하는<br>ESG 관련 소식을 전달합니다</p>
     </div>
     <div class="visual" style="background-image:url(../ak/images/img_esgNews.png)"></div>
 </div>
@@ -20,15 +22,29 @@
 <div class="content">
     <div class="cont">
         <div class="bbsWrap">
-            <div class="bbs_search">
-                <div class="left">
-                    <select name="" class="select">
-                        <option disabled selected>계열사 전체</option>
-                        <option value="">AK레저</option>
-                        <option value="">AK레저</option>
-                        <option value="">AK레저</option>
-                        <option value="">AK레저</option>
-                    </select>
+            <div class="bbs_util">
+                <div class="bbs_sort">
+                    <button class="bbs_button" type="button">계열사 전체</button>
+                    <ul class="bbs_sortList">
+                        <li><a href="#">계열사 전체</a></li>
+                        <li><a href="#">계열사1</a></li>
+                        <li><a href="#">계열사2</a></li>
+                        <li><a href="#">계열사3</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="bbs_sort">
+                        <button class="bbs_button" type="button">전체</button>
+                        <ul class="bbs_sortList">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">제목</a></li>
+                            <li><a href="#">내용</a></li>
+                        </ul>
+                    </div>
+                    <div class="select-input">
+                        <input type="text" name="search_order" value="" placeholder="검색어">
+                        <button class="btn-search">검색</button>
+                    </div>
                 </div>
             </div>
 
