@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* Layout Style*/
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: get-vw(64px);
+  padding: 0 24px 0 20px;
+  box-sizing: border-box;
+  background-color: #ccc;
+  h1 {
+    a {
+      img {
+        width: auto;
+        height: get-vw(24px);
+      }
+    }
+  }
+  .btn-show-menu {
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: get-vw(30px);
+      height: get-vw(2px);
+      background-color: #454545;
+    }
+  }
+}
+main {
+  height: 100vh;
+  // box red
+
+
+
+
+}
+footer {
+  padding: get-vw(24px);
+  font-size: get-vw(14px);
+  font-weight: 500;
+  color: #ABABAB;
+  background-color: #202020;
+  a {
+    color: #ABABAB!important;
+    font-size: get-vw(14px);
+    font-weight: 500;
+  }
+  .info {
+    h1 {
+      a {
+        color: #FFF!important;
+        font-weight: 700;
+      }
+      & + p {
+        margin-top: get-vw(8px);
+        line-height: get-vw(20px);
+        padding-bottom: get-vw(20px);
+        border-bottom: 1px solid #444;
+      }
+    }
+  }
+  .link {
+    p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #444;
+    }
+    a {
+      display: inline-block;
+      line-height: get-vw(44px);
+    }
+    em {
+      content: '';
+      display: block;
+      width: get-vw(4px);
+      height: get-vw(4px);
+      border-radius: 50%;
+      background-color: #ABABAB;
+    }
+    &:after {
+      content: 'Copyright 2022 By AK Holdings, Inc. ALL Rights Reserved.';
+      display: block;
+      margin-top: get-vw(10px);
+      font-size: get-vw(11px);
+      font-weight: 500;
+      color: #777;
+    }
+  }
+}
+
+@media all and (min-width:961px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 60px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      h1 {
+        a {
+          font-weight: 700;
+        }
+        & + p {
+          margin-left: 30px;
+          margin-top: 0;
+          padding-left: 30px;
+          padding-bottom: 0;
+          line-height: 16px;
+          border-bottom: 0;
+          border-left: 1px solid #444;
+          &:after {
+            content: 'Copyright 2022 By AK Holdings, Inc. ALL Rights Reserved.';
+            display: block;
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #777;
+          }
+        }
+      }
+    }
+    .link {
+      width: 273px;
+      height: auto;
+      p {
+        border-bottom: 0;
+      }
+      a {
+        display: inline-block;
+        line-height: 26px;
+      }
+      em {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #ABABAB;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
