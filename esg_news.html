@@ -12,8 +12,8 @@
 <!--visual 영역-->
 <div class="topArea">
     <div class="titArea">
-        <strong class="tit"><span class="tk-arboria">ESG</span> 소식</strong>
-        <p class="desc">기업과 사회가 공존하는<br>ESG 관련 소식을 전달합니다</p>
+        <h2 class="tit"><span class="tk-arboria">ESG</span> 소식</h2>
+        <p class="desc">기업과 사회가 공존하는<br class="mo">ESG 관련 소식을 전달합니다</p>
     </div>
     <div class="visual" style="background-image:url(../ak/images/img_esgNews.png)"></div>
 </div>
@@ -27,7 +27,7 @@
                     <div class="bbs_sort">
                         <button class="bbs_button on" type="button">계열사 전체</button><!-- 활성화되면 on추가 -->
                         <ul class="bbs_sortList">
-                            <li class="selected"><a href="#">계열사 전체</a></li>
+                            <li class="active"><a href="#">계열사 전체</a></li>
                             <li><a href="#">계열사1</a></li>
                             <li><a href="#">계열사2</a></li>
                             <li><a href="#">계열사3</a></li>
@@ -43,7 +43,7 @@
                             <li><a href="#">내용</a></li>
                         </ul>
                     </div>
-                    <div class="select-input">
+                    <div class="search-input">
                         <input type="text" name="search_order" value="" placeholder="검색어">
                         <button class="btn-search"><span class="blind">검색</span></button>
                     </div>
@@ -114,17 +114,32 @@
                         <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
                         <span class="date">2022.04.29</span>
                     </li>
+                    <li>
+                        <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
+                        <span class="date">2022.04.29</span>
+                    </li>
+                    <li>
+                        <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
+                        <span class="date">2022.04.29</span>
+                    </li>
                 </ul>
             </div>
             <!--//게시파MO버전-->
         </div>
         <div class="paging">
-            <a href="javascript:;" class="first"><span class="blind">처음으로</span></a>
-            <a href="javascript:;" class="prev"><span class="blind">이전으로</span></a>
-            <a href="javascript:;" class="cur">1</a>
-            <a href="javascript:;" class="cur">1</a>
-            <a href="javascript:;" class="next"><span class="blind">다음으로</span></a>
-            <a href="javascript:;" class="last"><span class="blind">마지막으로</span></a>
+            <div class="left">
+                <a href="javascript:;" class="first arrow"><span class="blind">처음으로</span></a>
+                <a href="javascript:;" class="prev arrow"><span class="blind">이전으로</span></a>
+            </div>
+            <div class="center">
+                <a href="javascript:;" class="cur active">1</a>
+                <a href="javascript:;" class="cur">2</a>
+                <a href="javascript:;" class="cur">3</a>
+            </div>
+            <div class="right">
+                <a href="javascript:;" class="next arrow"><span class="blind">다음으로</span></a>
+                <a href="javascript:;" class="last arrow"><span class="blind">마지막으로</span></a>
+            </div>
         </div>
     </div>
 </div>
