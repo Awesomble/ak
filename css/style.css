@@ -30,6 +30,23 @@ time, mark, audio, video {
   word-break: break-word;
 }
 
+@media all and (min-width: 961px) {
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, input, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    font-size: 16px;
+  }
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -262,6 +279,9 @@ caption {
   .cont {
     margin: 0 auto;
   }
+  .cont .cont_tit {
+    font-size: 28px;
+  }
 }
 @media all and (min-width: 1321px) {
   .cont {
@@ -272,7 +292,7 @@ caption {
 @media all and (min-width: 961px) and (max-width: 1320px) {
   .cont {
     width: 100%;
-    padding: 60px 48px 44px;
+    padding: 60px 48px 110px;
   }
 }
 .bbs_util {
@@ -385,7 +405,6 @@ caption {
 .bbsList li a {
   display: block;
   text-align: left;
-  font-size: 16px;
   color: #0D0D0D;
 }
 .bbsList li .date {
@@ -634,6 +653,7 @@ caption {
 }
 
 .btn-p {
+  display: inline-block;
   width: 100%;
   height: 14.4444444444vw;
   background: #00498C;
@@ -645,11 +665,52 @@ caption {
 }
 
 @media all and (min-width: 961px) {
+  .bbs_detail {
+    margin-top: 40px;
+  }
   .bbs_detail .top .info {
     display: flex;
   }
   .bbs_detail .top .info div + div {
     margin-left: 50px;
+  }
+  .bbs_detail .top span, .bbs_detail .top em {
+    font-size: 16px;
+  }
+  .bbs_detail .bbs-view-content {
+    padding: 60px 0 60px;
+  }
+
+  .bbs-more li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    padding: 28px 60px 28px 0;
+  }
+  .bbs-more li + li {
+    border-top: 1px solid #E8E8E8;
+  }
+  .bbs-more li span {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 120px;
+    text-align: center;
+  }
+  .bbs-more li::after {
+    width: 16px;
+    height: 16px;
+    right: 30px;
+  }
+
+  .btn-area {
+    margin-top: 50px;
+  }
+
+  .btn-p {
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
   }
 }
 /* Layout Style*/
