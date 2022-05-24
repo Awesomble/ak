@@ -17,6 +17,12 @@
 }
 .cont{
   padding:get-vw(30px) get-vw(24px) get-vw(44px);
+  .cont_tit{
+    display:block;
+    text-align: center;
+    font-size:get-vw(22px);
+    font-weight:700;
+  }
 }
 .topArea{
   padding-top: get-vw(36px);
@@ -330,6 +336,10 @@
     &.arrow{
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      &.disabled{
+        opacity: 0.3;
+        filter:contrast(0.1);
+      }
     }
     &.first{
       background-image:url(../images/ico_arrow_rightbar.png);
@@ -377,6 +387,98 @@
     }
     .center{
       margin:0 20px;
+    }
+  }
+}
+.bbsWrap{
+  .cont_tit{
+    font-weight:500;
+  }
+}
+.bbs_detail{
+  margin-top:get-vw(24px);
+  border-top:1px solid #0D0D0D;
+  .top{
+    display:flex;
+    justify-content: space-between;
+    margin-top:get-vw(8px);
+    span, em{
+      display:inline-block;
+      font-size:get-vw(14px);
+    }
+    span.item{
+      font-weight:400;
+      color:#777;
+    }
+    em.value{
+      margin-left:5px;
+      font-weight:500;
+    }
+  }
+  .bbs-view-content{
+    padding:get-vw(35px) 0 get-vw(40px);
+    line-height: 1.5;
+    font-weight: 400;
+    color: #454545;
+    white-space: pre-line;
+  }
+}
+
+.bbs-more{
+  border-top:1px solid #0D0D0D;
+  border-bottom:1px solid #0D0D0D;
+  li{
+    position:relative;
+    padding:get-vw(16px) get-vw(40px) get-vw(16px) 0;
+    + li {
+      border-top:1px solid #E8E8E8;
+    }
+    a{
+      display:block;
+      word-break: keep-all;
+    }
+    &::after{
+      content:'';
+      display:block;
+      position:absolute;
+      top:50%;
+      right:0;
+      transform:translateY(-50%);
+      width:get-vw(16px);
+      height:get-vw(16px);
+      background:url(../images/ico_arrow_black.png) no-repeat 50% 50%;
+    }
+    &.prev::after{
+      transform:translateY(-50%) rotate(-180deg);
+    }
+  }
+}
+.btn-area{
+  margin-top:get-vw(24px);
+  text-align: center;
+  a, button{
+    display:inline-block;
+  }
+}
+.btn-p{
+  width:100%;
+  height:get-vw(52px);
+  background:#00498C;
+  text-align: center;
+  line-height: get-vw(52px);
+  span{
+    color: #FFFFFF;
+  }
+}
+@media all and (min-width: 961px){
+  .bbs_detail{
+    .top{
+      .info{
+        display:flex;
+        div + div{
+          margin-left:50px;
+        }
+      }
     }
   }
 }
