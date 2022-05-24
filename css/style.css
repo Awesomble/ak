@@ -321,6 +321,247 @@ caption {
 @media all and (max-width: 1320px) {
   /* mobile & 태블릿 */
 }
-/* variables */
+/* Layout Style*/
+body.fixed {
+  position: fixed;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 17.0666666667vw;
+  padding: 0 24px 0 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+header .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header .head h1 a img {
+  width: auto;
+  height: 6.4vw;
+}
+header .head h1 a img:nth-child(1) {
+  display: none;
+}
+header .head h1 a img:nth-child(2) {
+  display: block;
+}
+header .head .btn-show-menu {
+  width: 8vw;
+  height: 8vw;
+}
+header .head .btn-show-menu:before, header .head .btn-show-menu:after {
+  content: "";
+  display: block;
+  width: 8vw;
+  height: 0.5333333333vw;
+  background-color: #454545;
+  transition: background-color 0.3s, transform 0.3s;
+}
+header .head .btn-show-menu:after {
+  margin-top: 1.6vw;
+}
+header nav {
+  display: none;
+}
+header.top {
+  background-color: transparent;
+}
+header.top .head h1 a img:nth-child(1) {
+  display: block;
+}
+header.top .head h1 a img:nth-child(2) {
+  display: none;
+}
+header.top .head .btn-show-menu:before, header.top .head .btn-show-menu:after {
+  background-color: #fff;
+}
+header.expand {
+  position: relative;
+  background-color: #00498C !important;
+}
+header.expand .head h1 a img:nth-child(1) {
+  display: block !important;
+}
+header.expand .head h1 a img:nth-child(2) {
+  display: none !important;
+}
+header.expand .head .btn-show-menu:before, header.expand .head .btn-show-menu:after {
+  background-color: #fff !important;
+  transform-origin: 2.5333333333vw;
+}
+header.expand .head .btn-show-menu:before {
+  transform: rotate(45deg);
+}
+header.expand .head .btn-show-menu:after {
+  transform: rotate(-45deg);
+}
+header.expand nav {
+  display: block;
+  position: absolute;
+  top: 17.0666666667vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 17.0666666667vw);
+  padding: 0 6.4vw;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: #0D0D0D;
+  background-color: #fff;
+  overflow-y: auto;
+}
+header.expand nav a {
+  font-size: 3.7333333333vw;
+  font-weight: 500;
+}
+header.expand nav > ul > li {
+  background: url(../images/ico_nav_menu_arrow_blue.png) no-repeat right 9.3333333333vw;
+  background-size: auto 4.2666666667vw;
+}
+header.expand nav > ul > li h3 a {
+  display: flex;
+  align-items: center;
+  font-size: 5.8666666667vw;
+  height: 22.9333333333vw;
+}
+header.expand nav > ul > li > ul {
+  position: relative;
+  top: -8vw;
+  padding-left: 56.2666666667vw;
+}
+header.expand nav > ul > li > ul > li a {
+  display: block;
+  height: 6.9333333333vw;
+  margin-top: 2.1333333333vw;
+  color: #454545;
+}
+
+main {
+  height: 100vh;
+}
+
+footer {
+  padding: 6.4vw;
+  font-size: 3.7333333333vw;
+  font-weight: 500;
+  color: #ABABAB;
+  background-color: #202020;
+}
+footer a {
+  color: #ABABAB !important;
+  font-size: 3.7333333333vw;
+  font-weight: 500;
+}
+footer .info h1 a {
+  color: #FFF !important;
+  font-weight: 700;
+}
+footer .info h1 + p {
+  margin-top: 2.1333333333vw;
+  line-height: 5.3333333333vw;
+  padding-bottom: 5.3333333333vw;
+  border-bottom: 1px solid #444;
+}
+footer .link p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+}
+footer .link a {
+  display: inline-block;
+  line-height: 11.7333333333vw;
+}
+footer .link em {
+  content: "";
+  display: block;
+  width: 1.0666666667vw;
+  height: 1.0666666667vw;
+  border-radius: 50%;
+  background-color: #ABABAB;
+}
+footer .link:after {
+  content: "Copyright 2022 By AK Holdings, Inc. ALL Rights Reserved.";
+  display: block;
+  margin-top: 2.6666666667vw;
+  font-size: 2.9333333333vw;
+  font-weight: 500;
+  color: #777;
+}
+
+@media all and (min-width: 961px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 60px 40px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  footer a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  footer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer .info h1 a {
+    font-weight: 700;
+  }
+  footer .info h1 + p {
+    margin-left: 30px;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-bottom: 0;
+    line-height: 16px;
+    border-bottom: 0;
+    border-left: 1px solid #444;
+  }
+  footer .info h1 + p:after {
+    content: "Copyright 2022 By AK Holdings, Inc. ALL Rights Reserved.";
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+  }
+  footer .link {
+    width: 273px;
+    height: auto;
+  }
+  footer .link p {
+    border-bottom: 0;
+  }
+  footer .link a {
+    display: inline-block;
+    line-height: 26px;
+  }
+  footer .link em {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ABABAB;
+  }
+  footer .link:after {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
