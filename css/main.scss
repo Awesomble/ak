@@ -134,25 +134,66 @@ header {
         > li {
           background: url(../images/ico_nav_menu_arrow_blue.png) no-repeat right get-vw(35px);
           background-size: auto get-vw(16px);
+          border-bottom: 1px solid #E8E8E8;
           h3 {
             a {
               display: flex;
               align-items: center;
               font-size: get-vw(22px);
+              font-weight: 400;
               height: get-vw(86px);
             }
           }
           > ul {
             position: relative;
-            top: get-vw(-30px);
-            padding-left: get-vw(211px);
+            top: get-vw(-60px);
+            left: get-vw(150px);
+            display: block;
+            width: calc(100% - get-vw(150px));
+            height: 0;
+            overflow: hidden;
+            transition: height 0.6s ease-out;
             > li {
               a {
                 display: block;
                 height: get-vw(26px);
                 margin-top: get-vw(8px);
                 color: #454545;
+                opacity: 0.7;
               }
+              > ul {
+                margin-bottom: get-vw(20px);
+                padding-bottom: get-vw(20px);
+                border-bottom: 1px solid #E8E8E8;
+                &:last-child {
+                  margin-bottom: 0;
+                  padding-bottom: 0;
+                  border-bottom: 0;
+                }
+                > li {
+                  &:first-child {
+                    a {
+                      font-size: get-vw(16px);
+                      font-weight: 700;
+                      color: #0D0D0D;
+                      opacity: 1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &.active {
+            background: url(../images/ico_nav_menu_arrow_blue_active.png) no-repeat right get-vw(35px);
+            background-size: auto get-vw(16px);
+            h3 {
+              a {
+                font-weight: 700;
+                color: #00498C;
+              }
+            }
+            ul {
+              height: auto;
             }
           }
         }

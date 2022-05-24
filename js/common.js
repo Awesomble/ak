@@ -27,6 +27,16 @@ let AKCOMMON = (function() {
                 _public.bodyFixed()
             }
         });
+        $('nav ul li h3 a').on('click', function (e) {
+            const _parent = $(this).parent().parent();
+            console.log(_parent)
+            if (_parent.is('.active')) {
+                _parent.removeClass('active');
+            } else {
+                _parent.addClass('active');
+                _parent.siblings().removeClass('active');
+            }
+        });
     }
     _public.bodyFixed = function () {
         fixScVal = scrollVal
