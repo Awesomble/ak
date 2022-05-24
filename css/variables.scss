@@ -26,5 +26,5 @@ $bg_footer: 		#202020 !default;
   @return $number;
 }
 @function get-vw($px){
-  @return unquote(calc(strip-unit($px) * 100 / 375) + 'vw');
+  @return unquote(calc(strip-unit($px) * 100 / 360) + 'vw');
 }
