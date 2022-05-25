@@ -344,7 +344,7 @@
     &.arrow{
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      background-size:cover;
+      background-size:get-vw(16px);
       &.disabled{
         opacity: 0.3;
         filter:contrast(0.1);
@@ -392,6 +392,9 @@
       }
       &.last{
         margin-right:0;
+      }
+      &.arrow{
+        background-size:16px;
       }
     }
     .center{
