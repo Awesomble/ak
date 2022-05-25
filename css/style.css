@@ -533,7 +533,7 @@ caption {
 .paging a.arrow {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: 4.4444444444vw;
 }
 .paging a.arrow.disabled {
   opacity: 0.3;
@@ -581,6 +581,9 @@ caption {
   }
   .paging a.last {
     margin-right: 0;
+  }
+  .paging a.arrow {
+    background-size: 16px;
   }
   .paging .center {
     margin: 0 20px;
