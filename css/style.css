@@ -714,9 +714,6 @@ caption {
   }
 }
 /* Layout Style*/
-body {
-  background-color: #ff00ff;
-}
 body.fixed {
   position: fixed;
 }
