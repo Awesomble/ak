@@ -24,6 +24,8 @@
     font-weight:700;
   }
 }
+
+/* 상단 제목 및 비주얼 */
 .topArea{
   padding-top: get-vw(36px);
   text-align:center;
@@ -105,6 +107,7 @@
   }
 }
 
+/* 게시판 */
 .bbs_util{
   margin-bottom:get-vw(24px);
   .sortWrap{
@@ -145,7 +148,8 @@
       width: get-vw(16px);
       height: get-vw(16px);
       transform: translateY(-50%);
-      background:url(../images/ico_arrow_black.png) no-repeat 50% 50%;
+      background:url('../images/ico_arrow_black.png') no-repeat 50% 50%;
+      background-size:cover;
     }
     &.on::after{
       transform: rotate(180deg) translateY(50%);
@@ -180,7 +184,7 @@
   display:block;
   width:get-vw(24px);
   height:get-vw(24px);
-  background:url(../images/ico_search.png) no-repeat 50% 50%;
+  background:url('../images/ico_search.png') no-repeat 50% 50%;
 }
 .search-input{
   position:relative;
@@ -309,6 +313,8 @@
     }
   }
 }
+
+/* 페이징 */
 .paging{
   display:flex;
   justify-content: space-between;
@@ -338,25 +344,26 @@
     &.arrow{
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      background-size:cover;
       &.disabled{
         opacity: 0.3;
         filter:contrast(0.1);
       }
     }
     &.first{
-      background-image:url(../images/ico_arrow_rightbar.png);
+      background-image:url('../images/ico_arrow_rightbar.png');
       transform: rotate(180deg);
       margin-left:get-vw(-13px);
     }
     &.prev{
-      background-image:url(../images/ico_arrow_right.png);
+      background-image:url('../images/ico_arrow_right.png');
       transform: rotate(180deg);
     }
     &.next{
-      background-image:url(../images/ico_arrow_right.png);
+      background-image:url('../images/ico_arrow_right.png');
     }
     &.last{
-      background-image:url(../images/ico_arrow_rightbar.png);
+      background-image:url('../images/ico_arrow_rightbar.png');
       margin-right:get-vw(-13px);
     }
   }
@@ -392,6 +399,8 @@
     }
   }
 }
+
+/* 게시판 상세 */
 .bbsWrap{
   .cont_tit{
     font-weight:500;
@@ -425,7 +434,6 @@
     white-space: pre-line;
   }
 }
-
 .bbs-more{
   border-top:1px solid #0D0D0D;
   border-bottom:1px solid #0D0D0D;
@@ -448,13 +456,16 @@
       transform:translateY(-50%);
       width:get-vw(16px);
       height:get-vw(16px);
-      background:url(../images/ico_arrow_black.png) no-repeat 50% 50%;
+      background:url('../images/ico_arrow_black.png') no-repeat 50% 50%;
+      background-size:cover;
     }
     &.prev::after{
       transform:translateY(-50%) rotate(-180deg);
     }
   }
 }
+
+/* 하단버튼 */
 .btn-area{
   margin-top:get-vw(24px);
   text-align: center;
@@ -521,5 +532,118 @@
     width:312px;
     height:60px;
     line-height:60px;
+  }
+}
+
+/* 다운로드 리스트 */
+.download-list{
+  li{
+    + li {
+      margin-top:get-vw(12px);
+    }
+    .inner{
+      position: relative;
+      height:get-vw(160px);
+      padding:get-vw(22px) get-vw(24px);
+      border:1px solid #E8E8E8;
+      &:after{
+        content:'';
+        display:block;
+        position:absolute;
+        right:0;
+        bottom:0;
+        width:get-vw(125px);
+        height:get-vw(130px);
+        background: url('../images/bg_download_cont.png') no-repeat 50% 50%;
+        background-size:cover;
+      }
+    }
+    .number{
+      display:block;
+      margin-bottom:5px;
+      font-size:get-vw(14px);
+      color:#ABABAB;
+    }
+    .tit{
+      font-weight:500;
+      font-size: get-vw(16px);
+      word-break: keep-all;
+      color:#0D0D0D;
+    }
+    .btn-download{
+      position:absolute;
+      bottom:get-vw(22px);
+      left:get-vw(24px);
+    }
+  }
+}
+.btn-download{
+  height: get-vw(22px);
+  font-size:get-vw(13px);
+  color:#454545;
+  &::before{
+    content:'';
+    display:inline-block;
+    width:get-vw(18px);
+    height:get-vw(18px);
+    margin-right:get-vw(8px);
+    background:url('../images/ico_download.png') no-repeat 50% 50%;
+    background-size:cover;
+    vertical-align: bottom;
+  }
+}
+@media all and (min-width: 961px){
+  .download-list{
+    ul{
+      margin:-16px;
+      font-size:0;
+    }
+    li{
+      display:inline-block;
+      width:25%;
+      padding:16px;
+      + li {
+        margin-top:0;
+      }
+      .inner{
+        position: relative;
+        height:276px;
+        padding:30px 36px 32px;
+        &:after{
+          width:160px;
+          height:170px;
+        }
+        &:hover{
+          border:1px solid #08A2DC;
+          .btn-download{
+            color:#08A2DC;
+            font-weight:700;
+          }
+        }
+      }
+      .number{
+        margin-bottom:5px;
+        font-size:14px;
+      }
+      .tit{
+        font-size:18px;
+      }
+      .btn-download{
+        position:absolute;
+        bottom:32px;
+        left:36px;
+      }
+    }
+  }
+  .btn-download{
+    height: 24px;
+    font-size:14px;
+    &::before{
+      content:'';
+      display:inline-block;
+      width:18px;
+      height:18px;
+      margin-right:8px;
+    }
   }
 }
