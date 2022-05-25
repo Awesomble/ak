@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* Layout Style*/
 body {
+  background-color: #ff00ff;
   &.fixed {
     position: fixed;
   }
@@ -192,8 +193,19 @@ header {
                 color: #00498C;
               }
             }
-            ul {
+            > ul {
               height: auto;
+              > li {
+                > ul {
+                  > li {
+                    &.active {
+                      a {
+                        color: #08A2DC;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
