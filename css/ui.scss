@@ -650,3 +650,83 @@
     }
   }
 }
+
+/* 3depth tab */
+.tab{
+  display:flex;
+  justify-content: center;
+  margin:0 get-vw(-16px);
+  li{
+    margin:0 get-vw(8px);
+    a{
+      position:relative;
+      display:inline-block;
+      padding-bottom:get-vw(20px);
+      font-size:get-vw(14px);
+      color:#08A2DC;
+      &.active{
+        font-weight:700;
+        &::after{
+          display:block;
+        }
+      }
+      &::after{
+        content:'';
+        position: absolute;
+        display:none;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+        width:get-vw(16px);
+        height:get-vw(16px);
+        background: url('../images/ico_arrow_blue.png') no-repeat 50% 50%;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+/* 재무재표 */
+.tbl-title-area{
+  .tit{
+    font-weight: 500;
+    font-size:get-vw(22px);
+    color:#0D0D0D;
+  }
+  .tbl-util{
+    float:right;
+    position:relative;
+    top:get-vw(14px);
+    font-size:get-vw(13px);
+    color:#777;
+  }
+}
+.tbl-finance-wrap{
+  border-top:2px solid #0D0D0D;
+  .tbl-finance{
+    & + .tbl-finance{
+      border-top:1px solid #0D0D0D;
+    }
+    th, td{
+      padding:get-vw(15px) get-vw(16px);
+      border-bottom:1px solid #E8E8E8;
+    }
+    th{
+      text-align:left;
+    }
+    td{
+      text-align:right;
+    }
+    tfoot{
+      th, td {
+        background:rgba(239, 246, 252, 0.5);;
+      }
+      .total{
+        th, td{
+          background:rgba(0, 73, 140, 1);
+          color:#FFF;
+        }
+      }
+    }
+  }
+}
