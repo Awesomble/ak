@@ -833,6 +833,116 @@ caption {
     margin-right: 8px;
   }
 }
+/* 3depth tab */
+.tab {
+  display: flex;
+  justify-content: center;
+  margin: 0 -4.4444444444vw;
+}
+.tab li {
+  margin: 0 2.2222222222vw;
+}
+.tab li a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5.5555555556vw;
+  font-size: 3.8888888889vw;
+  color: #08A2DC;
+}
+.tab li a.active {
+  font-weight: 700;
+}
+.tab li a.active::after {
+  display: block;
+}
+.tab li a::after {
+  content: "";
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.4444444444vw;
+  height: 4.4444444444vw;
+  background: url("../images/ico_arrow_blue.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/* 재무재표 */
+.tbl-title-area .tit {
+  font-weight: 500;
+  font-size: 6.1111111111vw;
+  color: #0D0D0D;
+}
+.tbl-title-area .tbl-util {
+  float: right;
+  position: relative;
+  top: 3.8888888889vw;
+  font-size: 3.6111111111vw;
+  color: #777;
+}
+
+.tbl-finance-wrap {
+  border-top: 2px solid #0D0D0D;
+}
+.tbl-finance-wrap + .tbl-title-area {
+  margin-top: 13.8888888889vw;
+}
+.tbl-finance-wrap .tbl-finance + .tbl-finance {
+  border-top: 1px solid #0D0D0D;
+}
+.tbl-finance-wrap .tbl-finance th, .tbl-finance-wrap .tbl-finance td {
+  padding: 4.1666666667vw 4.4444444444vw;
+  border-bottom: 1px solid #E8E8E8;
+}
+.tbl-finance-wrap .tbl-finance th {
+  text-align: left;
+}
+.tbl-finance-wrap .tbl-finance td {
+  text-align: right;
+}
+.tbl-finance-wrap .tbl-finance tfoot th, .tbl-finance-wrap .tbl-finance tfoot td {
+  background: rgba(239, 246, 252, 0.5);
+}
+.tbl-finance-wrap .tbl-finance tfoot .total th, .tbl-finance-wrap .tbl-finance tfoot .total td {
+  background: rgb(0, 73, 140);
+  color: #FFF;
+}
+
+@media all and (min-width: 961px) {
+  .tab {
+    margin: 20px -16px 0;
+  }
+  .tab li {
+    margin: 0 8px;
+  }
+  .tab li a {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .tab li a::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tbl-title-area {
+    padding-bottom: 12px;
+  }
+  .tbl-title-area .tit {
+    font-size: 28px;
+  }
+  .tbl-title-area .tbl-util {
+    top: 24px;
+    font-size: 14px;
+  }
+
+  .tbl-finance-wrap + .tbl-title-area {
+    margin-top: 100px;
+  }
+  .tbl-finance-wrap .tbl-finance th, .tbl-finance-wrap .tbl-finance td {
+    padding: 20px;
+  }
+}
 /* Layout Style*/
 body.fixed {
   position: fixed;
