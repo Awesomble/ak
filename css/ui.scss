@@ -773,8 +773,29 @@
 }
 /* 애경가치 */
 .founded-story{
+  padding-top:get-vw(15px);
   text-align:center;
-  .caption{
-    font-size:get-vw(19px;)
+  .desc{
+    .caption{
+      font-size:get-vw(19px);
+    }
+    p{
+      margin-top:get-vw(9px);
+      font-weight:400;
+      color:#454545;
+      & + p{
+        margin-top:get-vw(14px);
+      }
+    }
+  }
+  .ak-cally{
+    width:100%;
+    height:auto;
+    margin-top:get-vw(32px);
+    text-align:right;
+    img{
+      width:get-vw(243px);
+      height:100%;
+    }
   }
 }
