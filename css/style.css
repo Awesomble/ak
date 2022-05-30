@@ -339,20 +339,38 @@ caption {
   .topArea .visual .top-tab {
     position: absolute;
     top: 443px;
-    left: 6.6666666667vw;
-    width: calc(100vw - 13.3333333333vw);
+    left: 24px;
+    width: 100%;
+    height: 74px;
     background-color: #00498C;
     z-index: 1;
   }
   .topArea .visual .top-tab ul {
     display: flex;
-    height: 74px !important;
+  }
+  .topArea .visual .top-tab ul li {
+    height: 74px;
+  }
+  .topArea .visual .top-tab ul li.active {
+    position: relative;
+  }
+  .topArea .visual .top-tab ul li.active a {
+    font-weight: 700;
+  }
+  .topArea .visual .top-tab ul li.active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #43C9FB;
   }
   .topArea .visual .top-tab ul li:first-child a {
     display: inline-flex !important;
-    position: relative;
-    background-color: #00498c;
-    font-weight: 700;
+    background-color: #00498C;
+    font-weight: 400;
   }
   .topArea .visual .top-tab ul li:first-child a::after {
     display: none;
@@ -360,8 +378,11 @@ caption {
   .topArea .visual .top-tab ul li a {
     display: flex;
     height: 74px;
+    line-height: 74px;
     font-size: 18px;
     font-weight: 400;
+    background-color: #00498C;
+    color: #fff;
   }
 
   .cont {
