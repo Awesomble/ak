@@ -924,37 +924,33 @@
       display:flex;
       position:relative;
       max-width:1200px;
-      margin:0 auto;
-      // margin-top:get-vw(-172px);
+      height:310px;
+      margin:-155px auto 0;
       li{
         position: relative;
         width:25%;
-        padding:40px 0 42px;
+        padding:118px 0 42px;
         text-align: center;
         & + li::before{
-          content:'';
-          display:block;
-          position: absolute;
           top:auto;
-          bottom:0;
+          bottom:42px;
           left:0;
           width:1px;
           height:104px;
-          background:#EFF6FC;
-          opacity: 0.2;
         }
         &::after{
           content:'';
           display:block;
           position:absolute;
-          top:get-vw(20px);
-          left:get-vw(24px);
-          width:get-vw(50px);
-          height:get-vw(50px);
+          top:40px;
+          left:50%;
+          width:72px;
+          height:72px;
+          transform: translateX(-50%);
         }
         &.clean{
           height:auto;
-          padding:40px 0 42px;
+          padding-top:118px;
         }
         &.clean::after{
           background:url("../images/ico_value_clean.png") no-repeat 50% 50%;
@@ -979,6 +975,24 @@
         .desc{
           margin-top:get-vw(5px);
           font-size:16px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 961px) and (max-width:1320px) {
+  .core-value{
+    .core-value-list{
+      width:100%;
+      padding:0 48px;
+      li{
+        padding:118px 20px 42px;
+        .desc{
+          word-break: keep-all;
+        }
+        br{
+          display:none;
         }
       }
     }
