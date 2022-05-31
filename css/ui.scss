@@ -172,13 +172,18 @@
       .top-tab {
         position: absolute;
         top: 443px;
-        left: 24px;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1200px;
         height: 74px;
-        background-color: #00498C;
+        background-color: transparent;
         z-index: 1;
         ul {
           display: flex;
+          position:relative;
+          justify-content: center;
+          width:100%;
+          background:#00498C;
           li {
             height: 74px;
             &.active {
