@@ -1158,7 +1158,7 @@
     }
   }
 }
-.black-quotes{
+.quotes{
   display:block;
   margin:get-vw(20px) 0;
   font-size:0;
@@ -1166,7 +1166,6 @@
   img{
     width:get-vw(14px);
     height:auto;
-    filter:brightness(0);
   }
 }
 .sub-desc{
@@ -1236,4 +1235,22 @@
       }
     }
   }
+}
+.value-talent{
+  .visual-wrap{
+    width:100%;
+    height:get-vw(170px);
+    padding-top:get-vw(47px);
+    padding-left:get-vw(24px);
+    background:url("../images/bg_talent.png") no-repeat 50% 50%;
+    background-size: cover;
+    span{
+      font-weight: 700;
+      font-size:get-vw(28px);
+      color:#43C9FB;
+    }
+  }
+}
+.blue-quotes{
+  filter: invert(16%) sepia(59%) saturate(4260%) hue-rotate(194deg) brightness(91%) contrast(106%);
 }
