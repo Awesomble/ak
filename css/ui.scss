@@ -169,6 +169,19 @@
     .visual{
       margin-top: 32px;
       height: 480px;
+      &.has-tab{
+        &::after{
+          content:'';
+          display:block;
+          position: absolute;
+          bottom:0;
+          right:0;
+          width:40%;
+          height:74px;
+          transform: translateY(50%);
+          background:#00498C;
+        }
+      }
       .top-tab {
         position: absolute;
         top: 443px;
