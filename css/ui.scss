@@ -10,7 +10,9 @@
   font-size: 0;
   line-height: 0;
 }
-
+.fw-300{
+  font-weight:300;
+}
 .content, .topArea{
   position:relative;
   font-size: get-vw(16px);
@@ -34,6 +36,9 @@
     text-align: center;
     font-size:get-vw(22px);
     font-weight:700;
+  }
+  &.pd-rl-20{
+    padding:get-vw(30px) get-vw(20px) get-vw(44px);
   }
 }
 
@@ -1012,6 +1017,23 @@
       }
     }
   }
+}
+.black-quotes{
+  display:block;
+  margin:get-vw(20px) 0;
+  font-size:0;
+  text-align:center;
+  img{
+    width:get-vw(14px);
+    height:auto;
+    filter:brightness(0);
+  }
+}
+.sub-desc{
+  font-size:get-vw(19px);
+  color:#0D0D0D;
+  text-align: center;
+  letter-spacing: -0.03em;
 }
 @media all and (min-width: 961px){
   .founded-story{
