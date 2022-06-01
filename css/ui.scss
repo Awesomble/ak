@@ -1242,14 +1242,18 @@
   .visual-wrap{
     width:100%;
     height:get-vw(170px);
-    padding-top:get-vw(47px);
+    padding-top:get-vw(55px);
     padding-left:get-vw(24px);
     background:url("../images/bg_talent.png") no-repeat 50% 50%;
     background-size: cover;
     span{
-      font-weight: 700;
-      font-size:get-vw(28px);
-      color:#43C9FB;
+      display:block;
+      width:get-vw(133px);
+      height:get-vw(66px);
+      img{
+        width:100%;
+        height:auto;
+      }
     }
   }
   .desc-wrap{
@@ -1273,10 +1277,11 @@
     position:relative;
     .visual-wrap{
       height:580px;
-      padding-top:72px;
+      padding-top:80px;
       padding-left:80px;
       span{
-        font-size:60px;
+        width:334px;
+        height:166px;
       }
     }
     .desc-wrap{
