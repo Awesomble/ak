@@ -1301,4 +1301,149 @@
       }
     }
   }
- }
+}
+.intro-ci{
+  position: relative;
+  text-align:center;
+  .tit-wrap{
+    .desc{
+      margin-top:get-vw(20px);
+      color:#454545;
+    }
+  }
+  .ci-wrap{
+    margin-top:get-vw(28px);
+    .symbol{
+      display:block;
+      width:100%;
+      height:get-vw(190px);
+      padding:get-vw(30px) 0;
+      border:1px solid #E8E8E8;
+      text-align: center;
+      img{
+        width:auto;
+        height:100%;
+      }
+    }
+    .symbol-size{
+      display:block;
+      width:100%;
+      height:auto;
+      margin-top:get-vw(5px);
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+    .comment{
+      margin-top:get-vw(5px);
+      font-size:get-vw(13px);
+      color:#777777;
+      text-align: left;
+    }
+  }
+  .download-wrap{
+    margin-top: get-vw(28px);
+    li + li{
+      margin:get-vw(5px) 0 0;
+    }
+    .btn-download{
+      display:block;
+      position:relative;
+      width:100%;
+      height:get-vw(52px);
+      line-height:get-vw(52px);
+      padding-left:get-vw(28px);
+      border:1px solid rgba(0, 73, 140, 0.8);
+      font-weight:700;
+      font-size:get-vw(15px);
+      color:#00498C;
+      text-align: left;
+      &::before {
+        content: "";
+        display: inline-block;
+        position:absolute;
+        top:50%;
+        right:get-vw(36px);
+        transform: translateY(-50%);
+        width: get-vw(18px);
+        height: get-vw(18px);
+        margin-right:0;
+        background:url(../images/ico_download_blue.png) no-repeat 50% 50%;
+        background-size: cover;
+      }
+    }
+  }
+}
+@media all and (min-width: 961px) {
+  .intro-ci{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align:left;
+    .tit-wrap{
+      margin-left:65px;
+      .cont_tit{
+        text-align:left;
+      }
+      .desc{
+        margin-top:20px;
+        font-size:18px;
+      }
+    }
+    .ci-wrap{
+      width:551px;
+      margin-top:0;
+      .symbol{
+        height:360px;
+        padding:63px 0 57px;
+      }
+      .symbol-size{
+        margin-top:5px;
+      }
+      .comment{
+        margin-top:5px;
+        font-size:14px;
+      }
+    }
+    .download-wrap{
+      display:flex;
+      justify-content: flex-start;
+      position:absolute;
+      bottom:25px;
+      right:0;
+      margin-top:0;
+      li + li{
+        margin:0 0 0 12px;
+      }
+      .btn-download{
+        width:286px;
+        height:60px;
+        line-height:60px;
+        padding-left:25px;
+        border:1px solid rgba(0, 73, 140, 0.8);
+        font-weight:700;
+        font-size:17px;
+        color:#00498C;
+        text-align: left;
+        &::before {
+          top:50%;
+          right:25px;
+          transform: translateY(-50%);
+          width:18px;
+          height:18px;
+          margin-right:0;
+          background:url(../images/ico_download_blue.png) no-repeat 50% 50%;
+          background-size: cover;
+        }
+        &:hover{
+          background:#00498C;
+          color:#FFFFFF;
+          &::before{
+            filter:brightness(30);
+          }
+        }
+      }
+    }
+  }
+}
