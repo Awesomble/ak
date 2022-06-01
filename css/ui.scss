@@ -10,10 +10,24 @@
   font-size: 0;
   line-height: 0;
 }
-
+.fw-300{
+  font-weight:300;
+}
 .content, .topArea{
   position:relative;
   font-size: get-vw(16px);
+}
+.topArea {
+  &.sub {
+    padding-top: get-vw(100px);
+  }
+}
+@media all and (min-width: 960px) {
+  .topArea {
+    &.sub {
+      padding-top: 158px;
+    }
+  }
 }
 .cont{
   padding:get-vw(30px) get-vw(24px) get-vw(44px);
@@ -22,6 +36,9 @@
     text-align: center;
     font-size:get-vw(22px);
     font-weight:700;
+  }
+  &.pd-rl-20{
+    padding:get-vw(30px) get-vw(20px) get-vw(44px);
   }
 }
 
@@ -47,11 +64,78 @@
     }
   }
   .visual{
+    position: relative;
     margin-top: get-vw(12px);
     height: get-vw(240px);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
+    .top-tab {
+      position: absolute;
+      top: get-vw(192px);
+      left: get-vw(24px);
+      width: calc(100vw - get-vw(48px));
+      height: get-vw(48px);
+      background-color: #00498C;
+      z-index: 1;
+      &.on {
+        height: auto;
+        ul {
+          li {
+            &.active {
+              a {
+                color: #8CE0FF;
+              }
+            }
+            &:first-child {
+              a {
+                &::after{
+                  transform: rotate(180deg) translateY(50%);
+                }
+              }
+            }
+            a {
+              display: flex;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          &:first-child {
+            a {
+              display: flex!important;
+              position: relative;
+              background-color: #00498c;
+              font-weight: 700;
+              &::after{
+                content:'';
+                display:block;
+                position: absolute;
+                right:get-vw(24px);
+                top:50%;
+                width: get-vw(16px);
+                height: get-vw(16px);
+                transform: translateY(-50%);
+                background:url('../images/ico_arrow_white.png') no-repeat 50% 50%;
+                background-size:cover;
+              }
+            }
+          }
+          a {
+            display: none;
+            width: 100%;
+            height: get-vw(48px);
+            padding: 0 get-vw(24px);
+            line-height: get-vw(48px);
+            font-size: get-vw(17px);
+            font-weight: 500;
+            color: #fff;
+            background-color: #003a70;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -85,6 +169,76 @@
     .visual{
       margin-top: 32px;
       height: 480px;
+      &.has-tab{
+        &::after{
+          content:'';
+          display:block;
+          position: absolute;
+          bottom:0;
+          right:0;
+          width:40%;
+          height:74px;
+          transform: translateY(50%);
+          background:#00498C;
+        }
+      }
+      .top-tab {
+        position: absolute;
+        top: 443px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1200px;
+        height: 74px;
+        background-color: transparent;
+        z-index: 1;
+        ul {
+          display: flex;
+          position:relative;
+          justify-content: center;
+          width:100%;
+          background:#00498C;
+          li {
+            height: 74px;
+            &.active {
+              position: relative;
+              a {
+                font-weight: 700;
+                &::after{
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  display: block;
+                  width: 100%;
+                  height: 6px;
+                  background-color: #43C9FB;
+                }
+              }
+
+            }
+            &:first-child {
+              a {
+                display: inline-flex!important;
+                background-color: #00498C;
+                font-weight: 400;
+                &::after{
+                  display: none;
+                }
+              }
+            }
+            a {
+              display: flex;
+              height: 74px;
+              padding:0 32px;
+              line-height: 74px;
+              font-size: 18px;
+              font-weight: 400;
+              background-color: #00498C;
+              color: #fff;
+            }
+          }
+        }
+      }
     }
   }
   .cont{
@@ -98,6 +252,9 @@
   .cont{
     width:1200px;
     padding:80px 0 110px;
+    &.pd-rl-20{
+      padding:80px 0 110px;
+    }
   }
 }
 @media all and (min-width: 961px) and (max-width:1320px) {
@@ -153,6 +310,9 @@
     }
     &.on::after{
       transform: rotate(180deg) translateY(50%);
+    }
+    &.on + .bbs_sortList {
+      display: block;
     }
   }
   .bbs_sortList{
@@ -994,6 +1154,294 @@
         }
         br{
           display:none;
+        }
+      }
+    }
+  }
+}
+.quotes{
+  display:block;
+  margin:get-vw(20px) 0;
+  font-size:0;
+  text-align:center;
+  img{
+    width:get-vw(14px);
+    height:auto;
+  }
+}
+.sub-desc{
+  font-size:get-vw(19px);
+  color:#0D0D0D;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+.ak-value-list{
+  margin-top:get-vw(20px);
+  li{
+    text-align:center;
+    &+li{
+      margin-top:get-vw(12px);
+    }
+    .img-wrap{
+      display:block;
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+    .inner{
+      border:1px solid #E8E8E8;
+      border-top:none;
+      padding:get-vw(24px) get-vw(20px) get-vw(28px);
+    }
+    .tit{
+      font-weight:500;
+      font-size:get-vw(19px);
+    }
+    .desc{
+      margin-top:get-vw(8px);
+      font-size:(14px);
+      color:#777;
+    }
+  }
+}
+@media all and (min-width: 961px) {
+  .quotes{
+    margin:40px 0 20px;
+    img{
+      width:17px;
+    }
+  }
+  .sub-desc{
+    font-size:24px;
+  }
+  .ak-value-list{
+    display:flex;
+    margin:25px -15px;
+    li{
+      width:33.33%;
+      padding:15px;
+      &+li{
+        margin-top:0;
+      }
+      .inner{
+        padding:28px 20px 40px;
+      }
+      .tit{
+        font-size:24px;
+      }
+      .desc{
+        margin-top:8px;
+        font-size:16px;
+      }
+    }
+  }
+}
+
+.value-talent{
+  .visual-wrap{
+    width:100%;
+    height:get-vw(170px);
+    padding-top:get-vw(47px);
+    padding-left:get-vw(24px);
+    background:url("../images/bg_talent.png") no-repeat 50% 50%;
+    background-size: cover;
+    span{
+      font-weight: 700;
+      font-size:get-vw(28px);
+      color:#43C9FB;
+    }
+  }
+  .desc-wrap{
+    text-align:center;
+    .quotes{
+      margin:get-vw(40px) 0 get-vw(20px);
+    }
+    .tit{
+      font-size:get-vw(19px);
+      color:#00498C
+    }
+    p{
+      margin-top:get-vw(15px);
+      font-size:get-vw(16px);
+      color:#454545;
+    }
+  }
+}
+@media all and (min-width: 961px) {
+  .value-talent{
+    position:relative;
+    .visual-wrap{
+      height:580px;
+      padding-top:72px;
+      padding-left:80px;
+      span{
+        font-size:60px;
+      }
+    }
+    .desc-wrap{
+      position: absolute;
+      bottom:70px;
+      left:80px;
+      text-align:left;
+      .quotes{
+        margin:0 0 12px;
+        filter: brightness(50);
+        text-align:left;
+      }
+      .tit{
+        font-size:24px;
+        color:#FFFFFF;
+      }
+      p{
+        margin-top:16px;
+        font-size:18px;
+        color:#FFFFFF;
+        opacity: 0.55;
+      }
+    }
+  }
+}
+.intro-ci{
+  position: relative;
+  text-align:center;
+  .tit-wrap{
+    .desc{
+      margin-top:get-vw(20px);
+      color:#454545;
+    }
+  }
+  .ci-wrap{
+    margin-top:get-vw(28px);
+    .symbol{
+      display:block;
+      width:100%;
+      height:get-vw(190px);
+      padding:get-vw(30px) 0;
+      border:1px solid #E8E8E8;
+      text-align: center;
+      img{
+        width:auto;
+        height:100%;
+      }
+    }
+    .symbol-size{
+      display:block;
+      width:100%;
+      height:auto;
+      margin-top:get-vw(5px);
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+    .comment{
+      margin-top:get-vw(5px);
+      font-size:get-vw(13px);
+      color:#777777;
+      text-align: left;
+    }
+  }
+  .download-wrap{
+    margin-top: get-vw(28px);
+    li + li{
+      margin:get-vw(5px) 0 0;
+    }
+    .btn-download{
+      display:block;
+      position:relative;
+      width:100%;
+      height:get-vw(52px);
+      line-height:get-vw(52px);
+      padding-left:get-vw(28px);
+      border:1px solid rgba(0, 73, 140, 0.8);
+      font-weight:700;
+      font-size:get-vw(15px);
+      color:#00498C;
+      text-align: left;
+      &::before {
+        content: "";
+        display: inline-block;
+        position:absolute;
+        top:50%;
+        right:get-vw(36px);
+        transform: translateY(-50%);
+        width: get-vw(18px);
+        height: get-vw(18px);
+        margin-right:0;
+        background:url(../images/ico_download_blue.png) no-repeat 50% 50%;
+        background-size: cover;
+      }
+    }
+  }
+}
+@media all and (min-width: 961px) {
+  .intro-ci{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align:left;
+    .tit-wrap{
+      margin-left:65px;
+      .cont_tit{
+        text-align:left;
+      }
+      .desc{
+        margin-top:20px;
+        font-size:18px;
+      }
+    }
+    .ci-wrap{
+      width:551px;
+      margin-top:0;
+      .symbol{
+        height:360px;
+        padding:63px 0 57px;
+      }
+      .symbol-size{
+        margin-top:5px;
+      }
+      .comment{
+        margin-top:5px;
+        font-size:14px;
+      }
+    }
+    .download-wrap{
+      display:flex;
+      justify-content: flex-start;
+      position:absolute;
+      bottom:25px;
+      right:0;
+      margin-top:0;
+      li + li{
+        margin:0 0 0 12px;
+      }
+      .btn-download{
+        width:286px;
+        height:60px;
+        line-height:60px;
+        padding-left:25px;
+        border:1px solid rgba(0, 73, 140, 0.8);
+        font-weight:700;
+        font-size:17px;
+        color:#00498C;
+        text-align: left;
+        &::before {
+          top:50%;
+          right:25px;
+          transform: translateY(-50%);
+          width:18px;
+          height:18px;
+          margin-right:0;
+          background:url(../images/ico_download_blue.png) no-repeat 50% 50%;
+          background-size: cover;
+        }
+        &:hover{
+          background:#00498C;
+          color:#FFFFFF;
+          &::before{
+            filter:brightness(30);
+          }
         }
       }
     }
