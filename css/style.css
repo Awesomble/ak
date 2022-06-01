@@ -729,6 +729,7 @@ caption {
   margin-top: 3.3333333333vw;
 }
 .download-list li .inner {
+  display: block;
   position: relative;
   height: 44.4444444444vw;
   padding: 6.1111111111vw 6.6666666667vw;
@@ -941,6 +942,231 @@ caption {
   }
   .tbl-finance-wrap .tbl-finance th, .tbl-finance-wrap .tbl-finance td {
     padding: 20px;
+  }
+}
+/* 애경가치 */
+.founded-story {
+  position: relative;
+  padding-top: 4.1666666667vw;
+  text-align: center;
+}
+.founded-story .desc .caption {
+  font-size: 5.2777777778vw;
+}
+.founded-story .desc p {
+  margin-top: 2.5vw;
+  font-weight: 400;
+  color: #454545;
+}
+.founded-story .desc p + p {
+  margin-top: 3.8888888889vw;
+}
+.founded-story .ak-cally {
+  width: 100%;
+  height: auto;
+  margin-top: 8.8888888889vw;
+  text-align: right;
+}
+.founded-story .ak-cally img {
+  width: 67.5vw;
+  height: 100%;
+}
+
+.core-value {
+  position: relative;
+  padding-bottom: 13.8888888889vw;
+}
+.core-value .visual {
+  height: 111.1111111111vw;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.core-value .visual .tit {
+  display: block;
+  padding-top: 13.8888888889vw;
+  text-align: center;
+  font-weight: 700;
+  font-size: 6.6666666667vw;
+  color: #00498C;
+}
+.core-value .core-value-list {
+  position: relative;
+  margin: 0 6.6666666667vw;
+  margin-top: -47.7777777778vw;
+}
+.core-value .core-value-list li {
+  position: relative;
+  padding: 5.5555555556vw 5vw 6.6666666667vw calc(5vw + 18.0555555556vw);
+  background: rgba(0, 69, 135, 0.92);
+  backdrop-filter: blur(20px);
+  color: #FFFFFF;
+}
+.core-value .core-value-list li + li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: calc(100% - 10vw);
+  height: 1px;
+  background: #EFF6FC;
+  opacity: 0.2;
+}
+.core-value .core-value-list li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5.5555555556vw;
+  left: 6.6666666667vw;
+  width: 13.8888888889vw;
+  height: 13.8888888889vw;
+}
+.core-value .core-value-list li.clean {
+  height: 47.7777777778vw;
+  padding-top: 7.2222222222vw;
+}
+.core-value .core-value-list li.clean::after {
+  background: url("../images/ico_value_clean.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.core-value .core-value-list li.trust::after {
+  background: url("../images/ico_value_trust.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.core-value .core-value-list li.innovation::after {
+  background: url("../images/ico_value_innovation.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.core-value .core-value-list li.challenge::after {
+  background: url("../images/ico_value_challenge.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.core-value .core-value-list li .tit {
+  font-weight: 500;
+  font-size: 5.2777777778vw;
+}
+.core-value .core-value-list li .desc {
+  margin-top: 1.3888888889vw;
+  font-size: 3.8888888889vw;
+  line-height: 1.57;
+}
+
+@media all and (min-width: 961px) {
+  .founded-story {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0;
+    text-align: left;
+  }
+  .founded-story .desc {
+    margin-left: 33px;
+  }
+  .founded-story .desc .caption {
+    font-size: 24px;
+  }
+  .founded-story .desc p {
+    margin-top: 16px;
+  }
+  .founded-story .desc p + p {
+    margin-top: 16px;
+  }
+  .founded-story .ak-cally {
+    width: 567.65px;
+    height: auto;
+    margin-top: 0;
+    text-align: left;
+  }
+  .founded-story .ak-cally img {
+    width: 100%;
+    height: auto;
+  }
+
+  .core-value {
+    padding-bottom: 100px;
+  }
+  .core-value .visual {
+    height: 600px;
+  }
+  .core-value .visual .tit {
+    display: block;
+    padding-top: 80px;
+    font-size: 36px;
+  }
+  .core-value .core-value-list {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    height: 310px;
+    margin: -155px auto 0;
+  }
+  .core-value .core-value-list li {
+    position: relative;
+    width: 25%;
+    padding: 118px 0 42px;
+    text-align: center;
+  }
+  .core-value .core-value-list li + li::before {
+    top: auto;
+    bottom: 42px;
+    left: 0;
+    width: 1px;
+    height: 104px;
+  }
+  .core-value .core-value-list li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 72px;
+    height: 72px;
+    transform: translateX(-50%);
+  }
+  .core-value .core-value-list li.clean {
+    height: auto;
+    padding-top: 118px;
+  }
+  .core-value .core-value-list li.clean::after {
+    background: url("../images/ico_value_clean.png") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .core-value .core-value-list li.trust::after {
+    background: url("../images/ico_value_trust.png") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .core-value .core-value-list li.innovation::after {
+    background: url("../images/ico_value_innovation.png") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .core-value .core-value-list li.challenge::after {
+    background: url("../images/ico_value_challenge.png") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .core-value .core-value-list li .tit {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .core-value .core-value-list li .desc {
+    margin-top: 1.3888888889vw;
+    font-size: 16px;
+  }
+}
+@media all and (min-width: 961px) and (max-width: 1320px) {
+  .core-value .core-value-list {
+    width: 100%;
+    padding: 0 48px;
+  }
+  .core-value .core-value-list li {
+    padding: 118px 20px 42px;
+  }
+  .core-value .core-value-list li .desc {
+    word-break: keep-all;
+  }
+  .core-value .core-value-list li br {
+    display: none;
   }
 }
 /* Layout Style*/
