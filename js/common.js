@@ -55,6 +55,13 @@ let AKCOMMON = (function() {
                 _this.addClass('on');
             }
         });
+        // Drag notice
+        if ($('.tbl-scrollable .drag-noti').length) {
+            $('.tbl-scrollable').on('scroll', function () {
+                console.log($(this).find('.drag-noti').length)
+                if ($(this).find('.drag-noti').length) $(this).find('.drag-noti').hide('slow');
+            })
+        }
     }
     _private.headerTopEffect = function () {
         window.addEventListener('scroll', function () {
