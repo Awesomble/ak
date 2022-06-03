@@ -70,6 +70,9 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
+    &.intro{
+      background-position:68% 50%;
+    }
     .top-tab {
       position: absolute;
       top: get-vw(192px);
@@ -169,6 +172,9 @@
     .visual{
       margin-top: 32px;
       height: 480px;
+      &.intro{
+        background-position:50% 50%;
+      }
       &.has-tab{
         &::after{
           content:'';
