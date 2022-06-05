@@ -25,7 +25,7 @@
 @media all and (min-width: 960px) {
   .topArea {
     &.sub {
-      padding-top: 158px;
+      padding-top: 153px;
     }
   }
 }
@@ -51,6 +51,7 @@
       font-weight:700;
       font-size: get-vw(28px);
       line-height:1.5;
+      color:#0D0D0D;
       .tk-arboria{
         font-size: get-vw(34px);
         font-weight:500;
@@ -61,6 +62,7 @@
       font-weight:400;
       font-size: get-vw(15px);
       line-height:1.4;
+      color:#454545;
     }
   }
   .visual{
