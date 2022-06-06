@@ -805,7 +805,8 @@ main {
           a {
             display: inline-block;
             width: 100%;
-            padding-top: get-vw(6px);
+            height: get-vw(40px);
+            line-height: get-vw(40px);
             border-top: 1px solid #fff;
             font-size: get-vw(15px);
             font-weight: 700;
@@ -902,7 +903,8 @@ main {
           a {
             display: inline-block;
             width: 100%;
-            padding-top: get-vw(6px);
+            height: get-vw(40px);
+            line-height: get-vw(40px);
             border-top: 1px solid #fff;
             font-size: get-vw(15px);
             font-weight: 700;
@@ -1040,7 +1042,9 @@ main {
             //max-width: 192px;
             line-height: 27px;
             a {
-              padding-top: 15px;
+              height: 40px;
+              line-height: 40px;
+              padding-top: 0;
               font-weight: 700;
               font-size: 17px;
               letter-spacing: 0;
@@ -1124,7 +1128,9 @@ main {
               margin-right: 0;
             }
             a {
-              padding-top: 15px;
+              height: 40px;
+              line-height: 40px;
+              padding-top: 0;
               font-weight: 700;
               font-size: 17px;
               letter-spacing: 0;
