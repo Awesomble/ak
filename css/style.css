@@ -4117,19 +4117,6 @@ footer .link:after {
   z-index: 10;
   overflow: hidden;
 }
-.popup:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-}
 .popup.active {
   display: block;
 }
@@ -4338,6 +4325,19 @@ footer .link:after {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .popup.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
   }
   .popup .pop-wrap {
     position: relative;

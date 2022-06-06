@@ -1463,19 +1463,6 @@ footer {
   height: 100vh;
   z-index: 10;
   overflow: hidden;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-  }
   &.active {
     display: block;
   }
@@ -1704,13 +1691,25 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+      }
     }
     .pop-wrap {
       position: relative;
       width: 1200px;
       height: 70vh;
       overflow: hidden;
-      //overflow-y: auto;
       .pop-con {
         height: calc(100% - 80px);
         //overflow-y: hidden;
