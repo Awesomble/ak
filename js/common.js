@@ -65,7 +65,7 @@ let AKCOMMON = (function() {
     }
     _private.headerTopEffect = function () {
         window.addEventListener('scroll', function () {
-            scrollVal = document.documentElement.scrollTop || document.body.scrollTop
+            scrollVal = document.documentElement.scrollTop || document.body.scrollTop;
             if (_public.topEffect) {
                 if (scrollVal > 0) {
                     $('header').removeClass('top');
