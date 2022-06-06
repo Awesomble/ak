@@ -21,7 +21,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 4.2666666667vw;
-  font-family: "SpoqaHanSansNeo", "돋움", Dotum, Arial, sans-serif;
+  font-family: "Spoqa Han Sans Neo", "돋움", Dotum, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   vertical-align: baseline;
@@ -158,31 +158,76 @@ caption {
   font-weight: 700;
   font-stretch: normal;
 }
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 700;
+  src: local("Spoqa Han Sans Neo Bold"), url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf") format("truetype");
+}
+/*
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 500;
+  src: local('Spoqa Han Sans Neo Medium'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Neo Regular'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 300;
+  src: local('Spoqa Han Sans Neo Light'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 100;
+  src: local('Spoqa Han Sans Neo Thin'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}*/
 /* 한글폰트 */
 @font-face {
-  font-family: "SpoqaHanSansNeo";
+  font-family: "Spoqa Han Sans Neo";
   font-style: normal;
+  font-display: auto;
   font-weight: 300;
   src: url(../font/SpoqaHanSansNeo-Light.eot);
   src: url(../font/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Light.woff) format("woff"), url(../font/SpoqaHanSansNeo-Light.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SpoqaHanSansNeo";
+  font-family: "Spoqa Han Sans Neo";
   font-style: normal;
+  font-display: auto;
   font-weight: 400;
   src: url(../font/SpoqaHanSansNeo-Regular.eot);
   src: url(../font/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Regular.woff) format("woff"), url(../font/SpoqaHanSansNeo-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SpoqaHanSansNeo";
+  font-family: "Spoqa Han Sans Neo";
   font-style: normal;
+  font-display: auto;
   font-weight: 500;
   src: url(../font/SpoqaHanSansNeo-Medium.eot);
   src: url(../font/SpoqaHanSansNeo-Medium.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Medium.woff) format("woff"), url(../font/SpoqaHanSansNeo-Medium.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SpoqaHanSansNeo";
+  font-family: "Spoqa Han Sans Neo";
   font-style: normal;
+  font-display: auto;
   font-weight: 700;
   src: url(../font/SpoqaHanSansNeo-Bold.eot);
   src: url(../font/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Bold.woff) format("woff"), url(../font/SpoqaHanSansNeo-Bold.ttf) format("truetype");
@@ -220,7 +265,7 @@ caption {
 
 @media all and (min-width: 960px) {
   .topArea.sub {
-    padding-top: 158px;
+    padding-top: 153px;
   }
 }
 .cont {
@@ -245,16 +290,18 @@ caption {
   font-weight: 700;
   font-size: 7.7777777778vw;
   line-height: 1.5;
+  color: #0D0D0D;
 }
 .topArea .titArea .tit .tk-arboria {
   font-size: 9.4444444444vw;
-  font-weight: 500;
+  font-weight: 600;
 }
 .topArea .titArea .desc {
   height: 12.2222222222vw;
   font-weight: 400;
   font-size: 4.1666666667vw;
   line-height: 1.4;
+  color: #454545;
 }
 .topArea .visual {
   position: relative;
@@ -263,6 +310,9 @@ caption {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.topArea .visual.intro {
+  background-position: 68% 50%;
 }
 .topArea .visual .top-tab {
   position: absolute;
@@ -347,6 +397,12 @@ caption {
     margin-top: 32px;
     height: 480px;
   }
+  .topArea .visual.intro {
+    background-position: 50% 50%;
+  }
+  .topArea .visual.has-tab {
+    margin-bottom: 38px;
+  }
   .topArea .visual.has-tab::after {
     content: "";
     display: block;
@@ -384,7 +440,7 @@ caption {
   .topArea .visual .top-tab ul li.active a {
     font-weight: 700;
   }
-  .topArea .visual .top-tab ul li.active a::after {
+  .topArea .visual .top-tab ul li.active a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -400,7 +456,7 @@ caption {
     font-weight: 400;
   }
   .topArea .visual .top-tab ul li:first-child a::after {
-    display: none;
+    content: none;
   }
   .topArea .visual .top-tab ul li a {
     display: flex;
@@ -417,7 +473,7 @@ caption {
     margin: 0 auto;
   }
   .cont .cont_tit {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 @media all and (min-width: 1321px) {
@@ -1129,6 +1185,7 @@ caption {
 }
 .core-value .visual {
   height: 111.1111111111vw;
+  background-image: url(../images/img_core_value_m.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1220,6 +1277,7 @@ caption {
   }
   .founded-story .desc p {
     margin-top: 16px;
+    font-size: 18px;
   }
   .founded-story .desc p + p {
     margin-top: 16px;
@@ -1240,6 +1298,7 @@ caption {
   }
   .core-value .visual {
     height: 600px;
+    background-image: url(../images/img_core_value.png);
   }
   .core-value .visual .tit {
     display: block;
@@ -2177,7 +2236,7 @@ caption {
   .esg-level-wrap .esg-mark-wrap .esg-mark-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 .tbl-scrollable {
