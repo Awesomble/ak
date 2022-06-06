@@ -1386,6 +1386,7 @@
   }
   .esg-reflection{
     position: relative;
+    overflow: hidden;
     width:100%;
     margin:-107px auto 0;
     padding:0;
@@ -1409,7 +1410,10 @@
     }
     .ak-value-list{
       width:1200px;
-      margin:0 auto;
+      margin:25px auto 0;
+      &.reflection{
+
+      }
     }
     .tk-arboria{
       margin-top:80px;
