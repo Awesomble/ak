@@ -368,17 +368,32 @@ header {
                     height: 26px;
                     line-height: 26px;
                     margin-top: 6px;
-                    &.active {
+                    text-align: center;
+                    a{
+                      position: relative;
+                    }
+                    &.active, &:hover {
                       a {
-                        color: #08A2DC!important;
-                        text-decoration: underline;
+                        color: #8CE0FF!important;
                         opacity: 1;
+                        &::before{
+                          content: '';
+                          display: block;
+                          position: absolute;
+                          bottom:0;
+                          left:0;
+                          right:0;
+                          height:1px;
+                          background:#8CE0FF;
+                        }
                       }
                     }
-                    &:first-child.active {
+                    &:first-child.active, &:first-child:hover {
                       a {
                         color: #fff!important;
-                        text-decoration: underline;
+                        &::before{
+                          background:#FFFFFF;
+                        }
                       }
                     }
                     &:first-child {
@@ -508,6 +523,9 @@ header {
             transform: rotate(-45deg);
           }
         }
+        .quick-menu{
+          display:none;
+        }
       }
       nav {
         top: 92px;
@@ -533,15 +551,32 @@ header {
           width: 100%;
           max-width: 1200px;
           > em {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #E8E8E8;
+
           }
           > li {
+            position: relative;
+            height:inherit;
+            padding:0 93px;
             background: none;
             border-bottom: none;
+            &:first-child{
+              padding-left:0;
+            }
+            &:last-child{
+              padding-right:0;
+            }
+            & + li{
+              &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top:0;
+                left:0;
+                width: 1px;
+                height: 100%;
+                background-color: #E8E8E8;
+              }
+            }
             h3 {
               a {
                 display: flex;
@@ -561,11 +596,25 @@ header {
               height: auto;
               > li {
                 a {
-                  display: block;
+                  display: inline-block;
+                  position: relative;
                   height: auto;
                   margin-top: 0;
                   color: #454545;
                   opacity: 0.7;
+                  &:hover{
+                    color:#08A2DC !important;
+                    &::before{
+                      content: '';
+                      display:block;
+                      position: absolute;
+                      bottom: 0;
+                      left:0;
+                      right:0;
+                      height:1px;
+                      background:#08A2DC;
+                    }
+                  }
                 }
                 > ul {
                   margin-top: 30px;
