@@ -175,7 +175,7 @@
 <!--본문영역-->
 <div class="content">
     <div class="history-cont">
-        <div class="history-tab"><!-- 열렸을 때 -->
+        <div class="history-tab"><!-- 열렸을 때 active 넣으면 select-tab display:block 됨-->
             <ul class="selected-tab">
                 <li class="active"><span>2020 ~ 현재</span></li><!-- 선택된 탭에 active추가 -->
                 <li><span>2010 ~ 2019</span></li>
@@ -187,14 +187,14 @@
                 <li><span>1945 ~ 1959</span></li>
             </ul>
             <ul class="select-tab">
-                <li><span>2020 ~ 현재</span></li>
-                <li><span>2010 ~ 2019</span></li>
-                <li><span>2000 ~ 2009</span></li>
-                <li><span>1990 ~ 1999</span></li>
-                <li><span>1980 ~ 1989</span></li>
-                <li><span>1970 ~ 1979</span></li>
-                <li><span>1960 ~ 1969</span></li>
-                <li><span>1945 ~ 1959</span></li>
+                <li class="active"><a href="javascript:;">2020 ~ 현재</a></li><!-- 활성화 되어있는 탭일때 active -->
+                <li><a href="javascript:;">2010 ~ 2019</a></li>
+                <li><a href="javascript:;">2000 ~ 2009</a></li>
+                <li><a href="javascript:;">1990 ~ 1999</a></li>
+                <li><a href="javascript:;">1980 ~ 1989</a></li>
+                <li><a href="javascript:;">1970 ~ 1979</a></li>
+                <li><a href="javascript:;">1960 ~ 1969</a></li>
+                <li><a href="javascript:;">1945 ~ 1959</a></li>
             </ul>
         </div>
         <div class="history-wrap">
@@ -203,23 +203,77 @@
                 <ul>
                     <li>
                         <span class="month">03</span>
-                        <p>애경산업 AGE 20’s 대한민국 마케팅대상</p>
-                        <p>디지털고객만족도 여성화장품부문1위 수상</p>
+                        <div class="desc">
+                            <p>애경산업 AGE 20’s 대한민국 마케팅대상</p>
+                            <p>디지털고객만족도 여성화장품부문1위 수상</p>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div class="year-wrap">
-                <em class="year">202</em>
+                <em class="year">2021</em>
                 <ul>
                     <li>
                         <span class="month">12</span>
-                        <p>AK홀딩스 AKIS 자회사 편입</p>
+                        <div class="desc">
+                            <p>AK홀딩스 AKIS 자회사 편입</p>
+                        </div>
                     </li>
                     <li>
                         <span class="month">11</span>
-                        <p>애경산업 2021년 ESG종합등급 A획득</p>
-                        <p>애경산업 용인물류센터 준공</p>
-                        <img src="../ak/images/img_2021_11.png" alt="">
+                        <div class="desc">
+                            <p>애경산업 2021년 ESG종합등급 A획득</p>
+                            <p>애경산업 용인물류센터 준공</p>
+                            <div class="img">
+                                <img src="../ak/images/img_2021_11.png" alt="">
+                            </div>
+                            <p>애경케미칼 출범(애경유화, 애경화학, AK켐텍 합병)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="month">10</span>
+                        <div class="desc">
+                            <p>AK플라자 광명점 오픈, 키네틱아트 ‘국내 최대 규모’ 한국기록원 인증 획득</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="month">08</span>
+                        <div class="desc">
+                            <p>애경화학 한국경영인증원(KMR) 2021년 경영시스템 최우수기업상 수상 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="month">06</span>
+                        <div class="desc">
+                            <p>애경산업 청양물류센터 증축</p>
+                            <p>애경특수도료 애경케미칼로부터 GELCOAT 생산설비 이관</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="month">05</span>
+                        <div class="desc">
+                            <p>AK VINA 베트남 동나이성 선정 ‘2020년 안전우수기업’</p>
+                            <div class="img">
+                                <img src="../ak/images/img_2021_06.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="month">04</span>
+                        <div class="desc">
+                            <p>애경특수도료 포항공장 본관 리뉴얼</p>
+                            <div class="img">
+                                <img src="../ak/images/img_2021_04.png" alt="">
+                            </div>
+                            <p>제주항공 한국경영인증원(KMR) GREEN-STAR인증 3년연속 LCC부문 1위 선정</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="month">03</span>
+                        <div class="desc">
+                            <p>애경산업 중국 2021 티몰 글로벌 파트너 서밋 ‘1억 RMB클럽상(100million Club)’ 수상</p>
+                            <p>제주항공 인천~호치민 화물노선 신규 취항</p>
+                        </div>
                     </li>
                 </ul>
             </div>
