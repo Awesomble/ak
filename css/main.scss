@@ -276,6 +276,8 @@ header {
         }
       }
       .btn-show-menu {
+        display:inline-block;
+        margin-left:144px;
         width: 30px;
         height: 30px;
         &:before, &:after {
