@@ -3298,11 +3298,103 @@ main .esg .esg-list ul li a div .img img {
 }
 
 @media all and (min-width: 961px) {
+  main h2 {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -0.01em;
+  }
   main .top-visual .video-box.pc {
     display: block;
   }
   main .top-visual .video-box.mo {
     display: none;
+  }
+  main .top-visual .typo-box div {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.03em;
+  }
+  main .top-visual .typo-box div p {
+    margin-top: 15px;
+  }
+  main .top-visual .typo-box div strong {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.03em;
+  }
+  main .top-visual .btn-scroll-down {
+    right: 0;
+    bottom: 0;
+    left: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    width: 50%;
+    height: 80px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #00498C;
+    background-color: #fff;
+  }
+  main .top-visual .btn-scroll-down:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    background: url(../images/ico_main_scroll_down_blue.png) no-repeat center center;
+    background-size: 16px;
+  }
+  main .news-room {
+    display: flex;
+  }
+  main .news-room .news-top {
+    width: 50%;
+    height: 720px;
+  }
+  main .news-room .news-top .btn-box {
+    bottom: 60px;
+    width: 100%;
+    padding: 0 60px;
+  }
+  main .news-room .news-top .btn-box h3 {
+    line-height: 27px;
+  }
+  main .news-room .news-top .btn-box h3 a {
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 17px;
+    background-size: auto 12.41px;
+  }
+  main .news-room .ak-news-list {
+    width: 50%;
+  }
+  main .news-room .ak-news-list h3 {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  main .news-room .ak-news-list ul {
+    display: flex;
+  }
+  main .news-room .ak-news-list ul li {
+    width: 360px;
+    height: 485px;
+  }
+  main .news-room .ak-news-list ul li a div h4 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  main .news-room .ak-news-list ul li a div .con {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  main .news-room .ak-news-list ul li a div .date {
+    font-weight: 400;
+    font-size: 14px;
   }
 }
 @media screen and (max-aspect-ratio: 1219/685) {

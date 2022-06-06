@@ -676,6 +676,7 @@ main {
       justify-content: center;
       flex-direction: column;
       div {
+        //max-width: get-vw(175px);
         font-size: get-vw(24px);
         font-weight: 300;
         letter-spacing: -0.02em;
@@ -923,6 +924,11 @@ main {
 
 @media all and (min-width:961px) {
   main {
+    h2 {
+      font-weight: 700;
+      font-size: 80px;
+      letter-spacing: -0.01em;
+    }
     .top-visual {
       .video-box {
         &.pc {
@@ -930,6 +936,100 @@ main {
         }
         &.mo {
           display: none;
+        }
+      }
+      .typo-box {
+        div {
+          font-weight: 300;
+          font-size: 36px;
+          line-height: 45px;
+          letter-spacing: -0.03em;
+          p {
+            margin-top: 15px;
+          }
+          strong {
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: -0.03em;
+          }
+        }
+      }
+      .btn-scroll-down {
+        right: 0;
+        bottom: 0;
+        left: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 50px;
+        width: 50%;
+        height: 80px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #00498C;
+        background-color: #fff;
+        &:after {
+          content: '';
+          width: 16px;
+          height: 16px;
+          margin-top: 0;
+          background: url(../images/ico_main_scroll_down_blue.png) no-repeat center center;
+          background-size: 16px;
+        }
+      }
+    }
+    .news-room {
+      display: flex;
+      .news-top {
+        width: 50%;
+        height: 720px;
+        .btn-box {
+          bottom: 60px;
+          width: 100%;
+          padding: 0 60px;
+          h3 {
+            //max-width: 192px;
+            line-height: 27px;
+            a {
+              padding-top: 15px;
+              font-weight: 700;
+              font-size: 17px;
+              background-size: auto 12.41px;
+            }
+          }
+        }
+      }
+      .ak-news-list {
+        width: 50%;
+        h3 {
+          font-weight: 300;
+          font-size: 28px;
+          line-height: 40px;
+        }
+        ul {
+          display: flex;
+          li {
+            width: 360px;
+            height: 485px;
+            a {
+              div {
+                h4 {
+                  font-weight: 500;
+                  font-size: 15px;
+                }
+                .con {
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 28px;
+                }
+                .date {
+                  font-weight: 400;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
         }
       }
     }
