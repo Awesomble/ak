@@ -341,7 +341,7 @@
       &+li{
         margin-top: get-vw(10px);
       }
-      &.active a{
+      &.active a, & a:hover{
         font-weight:700;
         color:#43C9FB;
       }
@@ -353,6 +353,7 @@
   width:get-vw(24px);
   height:get-vw(24px);
   background:url('../images/ico_search.png') no-repeat 50% 50%;
+  background-size: cover;
 }
 .search-input{
   position:relative;
@@ -410,6 +411,7 @@
     height:85px;
     border-bottom:1px solid #E8E8E8;
     vertical-align:middle;
+    color:#777777;
     text-align: center;
     font-weight: 400;
     line-height:1.5;
@@ -478,6 +480,10 @@
     padding-right: 24px;
     input{
       font-size:16px;
+      &::placeholder{
+        color:#0D0D0D;
+        opacity: 0.25;
+      }
     }
   }
 }
@@ -651,8 +657,11 @@
   background:#00498C;
   text-align: center;
   line-height: get-vw(52px);
+  font-weight:700;
   span{
     color: #FFFFFF;
+    font-size: inherit;
+    font-weight:inherit;
   }
 }
 @media all and (min-width: 961px){
@@ -671,6 +680,7 @@
     }
     .bbs-view-content{
       padding:60px 0 60px;
+      font-size:18px;
     }
   }
   .bbs-more{
@@ -687,7 +697,11 @@
         display:inline-block;
         flex-shrink: 0;
         width:120px;
+        color:#777777;
         text-align: center;
+      }
+      a{
+        font-size:18px;
       }
       &::after{
         width:16px;
@@ -703,6 +717,9 @@
     width:312px;
     height:60px;
     line-height:60px;
+    span{
+      font-size:17px;
+    }
   }
 }
 
@@ -889,6 +906,10 @@
     th, td{
       padding:get-vw(15px) get-vw(16px);
       border-bottom:1px solid #E8E8E8;
+      color:#0D0D0D;
+      &.txtc-skyblue {
+        color:#08A2DC;
+      }
     }
     th{
       text-align:left;
@@ -898,7 +919,8 @@
     }
     tfoot{
       th, td {
-        background:rgba(239, 246, 252, 0.5);;
+        background:rgba(239, 246, 252, 0.5);
+        font-weight:700;
       }
       .total{
         th, td{
