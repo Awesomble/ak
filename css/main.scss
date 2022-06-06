@@ -533,15 +533,31 @@ header {
           width: 100%;
           max-width: 1200px;
           > em {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #E8E8E8;
+
           }
           > li {
+            position: relative;
+            padding:0 93px;
             background: none;
             border-bottom: none;
+            &:first-child{
+              padding-left:0;
+            }
+            &:last-child{
+              padding-right:0;
+            }
+            & + li{
+              &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top:0;
+                left:0;
+                width: 1px;
+                height: 100%;
+                background-color: #E8E8E8;
+              }
+            }
             h3 {
               a {
                 display: flex;
