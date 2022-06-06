@@ -917,7 +917,7 @@
     td{
       text-align:right;
     }
-    tfoot{
+    tfoot, thead{
       th, td {
         background:rgba(239, 246, 252, 0.5);
         font-weight:700;
@@ -926,6 +926,9 @@
         th, td{
           background:rgba(0, 73, 140, 1);
           color:#FFF;
+          &.txtc-skyblue{
+            color:#8CE0FF;
+          }
         }
       }
     }
