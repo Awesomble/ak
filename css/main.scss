@@ -368,17 +368,32 @@ header {
                     height: 26px;
                     line-height: 26px;
                     margin-top: 6px;
-                    &.active {
+                    text-align: center;
+                    a{
+                      position: relative;
+                    }
+                    &.active, &:hover {
                       a {
-                        color: #08A2DC!important;
-                        text-decoration: underline;
+                        color: #8CE0FF!important;
                         opacity: 1;
+                        &::before{
+                          content: '';
+                          display: block;
+                          position: absolute;
+                          bottom:0;
+                          left:0;
+                          right:0;
+                          height:1px;
+                          background:#8CE0FF;
+                        }
                       }
                     }
-                    &:first-child.active {
+                    &:first-child.active, &:first-child:hover {
                       a {
                         color: #fff!important;
-                        text-decoration: underline;
+                        &::before{
+                          background:#FFFFFF;
+                        }
                       }
                     }
                     &:first-child {
