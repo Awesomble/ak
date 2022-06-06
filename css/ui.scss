@@ -189,7 +189,19 @@
       margin-top: 32px;
       height: 480px;
       &.intro-history{
-        background-image:url("../images/img_introduce_history_m.png");
+        background-image:url("../images/img_introduce_history.png");
+        .desc{
+          bottom: 0;
+          left:50%;
+          width:405px;
+          height:40px;
+          transform: translateX(80px);
+          padding:9px 15px 7px;
+          font-size:14px;
+          text-align:center;
+          letter-spacing: 0;
+          line-height:1.7;
+        }
       }
       &.intro{
         background-position:50% 50%;
@@ -2574,6 +2586,138 @@
           }
           & + * {
             margin-top:get-vw(10px);
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 961px) {
+  /* 연혁 */
+  .history-cont{
+    display:flex;
+    justify-content: space-between;
+    padding:80px 0 100px;
+    width:1200px;
+    margin:0 auto;
+    .history-tab{
+      position: relative;
+      &::after{
+        content:none;
+      }
+      .selected-tab{
+        display:none;
+      }
+      .select-tab{
+        display:block;
+        position:relative;
+        width:120px;
+        height:auto;
+        padding:0;
+        background:transparent;
+        li{
+          & + li{
+            margin-top:20px;
+          }
+          a{
+            font-size:16px;
+            &::before{
+              content:'';
+              display:inline-block;
+              width:5px;
+              height:5px;
+            }
+          }
+          &.active, &:hover{
+            a{
+              font-weight:700;
+              color:#00498C;
+              &::before{
+                background: #00498C;
+              }
+            }
+          }
+        }
+      }
+    }
+    .history-wrap{
+      padding:0;
+      margin-left:120px;
+      .year-wrap{
+        position: relative;
+        padding-left:173px;
+        padding-bottom:80px;
+        &:last-child{
+          padding-bottom:0;
+        }
+        &::before, &::after{
+          content:'';
+          display:block;
+          position: absolute;
+        }
+        &::before{
+          top:0;
+          left:118px;
+          width:25px;
+          height:25px;
+        }
+        &::after{
+          top:0;
+          left:130px;
+          width:1px;
+          height:100%;
+          background:#E8E8E8;
+          z-index:-1;
+        }
+        .year{
+          position: absolute;
+          top:-8px;
+          left:0;
+          font-size:36px;
+        }
+        ul{
+          margin-top:0;
+        }
+        li{
+          & + li{
+            margin-top:20px;
+          }
+          &::before{
+            content: '';
+            display:block;
+            position: absolute;
+            top:10px;
+            left:-45px;
+            width:5px;
+            height:5px;
+          }
+          &:first-child{
+            &::before{
+              content:none;
+            }
+          }
+        }
+        .month{
+          font-size:18px;
+        }
+        .desc{
+          margin-left:20px;
+          p{
+            font-size:18px;
+            & + * {
+              margin-top:6px;
+            }
+          }
+          .img{
+            width:100%;
+            font-size:0;
+            img{
+              width:100%;
+              height:auto;
+            }
+            & + * {
+              margin-top:6px;
+            }
           }
         }
       }
