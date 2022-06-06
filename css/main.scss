@@ -825,7 +825,6 @@ main {
           width: 100%;
           height: get-vw(315px);
           margin-top: get-vw(20px);
-          background: url(../images/bg_main_newslist01.png) no-repeat center center;
           background-size: 100% 100%;
           a {
             display: block;
@@ -863,7 +862,6 @@ main {
             }
           }
           &:nth-child(2) {
-            background: url(../images/bg_main_newslist02.png) no-repeat center center;
             background-size: 100% 100%;
           }
         }
@@ -1129,6 +1127,7 @@ main {
               padding-top: 15px;
               font-weight: 700;
               font-size: 17px;
+              letter-spacing: 0;
               background-size: auto 12.41px;
             }
           }
@@ -1200,6 +1199,7 @@ main {
           h3 {
             margin-right: 24px;
             a {
+
             }
           }
         }
