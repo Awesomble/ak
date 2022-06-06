@@ -19,6 +19,13 @@ let AKCOMMON = (function() {
             } else {
                 H.addClass('expand');
                 _public.bodyFixed()
+                let h = 0;
+                if ($('nav').length) {
+                    $('nav > ul > li').each(function (idx, t) {
+                        h = Math.max(h, $(t).outerHeight());
+                    });
+                }
+                $('nav > ul > li').css('height', h);
             }
         });
         $('header .head .quick-menu ul li').on('mouseenter', function (e) {
