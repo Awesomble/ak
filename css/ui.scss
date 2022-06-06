@@ -794,6 +794,16 @@
       + li {
         margin-top:0;
       }
+      &:hover{
+        padding:15px;
+        a{
+          border:2px solid #08A2DC;
+          .btn-download{
+            color:#08A2DC;
+            font-weight:700;
+          }
+        }
+      }
       .inner{
         position: relative;
         height:276px;
@@ -801,13 +811,6 @@
         &:after{
           width:160px;
           height:170px;
-        }
-        &:hover{
-          border:1px solid #08A2DC;
-          .btn-download{
-            color:#08A2DC;
-            font-weight:700;
-          }
         }
       }
       .number{
