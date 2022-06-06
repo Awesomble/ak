@@ -7,6 +7,7 @@ let AKCOMMON = (function() {
     _public.init = function () {
         _private.eventHandler();
         _private.headerTopEffect()
+        // $('header').addClass('top');
     }
     _private.eventHandler = function () {
         // Navigation
@@ -73,27 +74,28 @@ let AKCOMMON = (function() {
     _private.headerTopEffect = function () {
         window.addEventListener('scroll', function () {
             scrollVal = document.documentElement.scrollTop || document.body.scrollTop;
-            if (_public.topEffect) {
-                if (scrollVal > 0) {
-                    $('header').removeClass('top');
-                } else {
-                    $('header').addClass('top');
-                }
+            if (scrollVal > 0) {
+                if (_public.topEffect) $('header').removeClass('main-top');
+                else $('header').removeClass('top');
+            } else {
+                if (_public.topEffect) $('header').addClass('main-top');
+                else $('header').addClass('top');
             }
         })
     }
     _public.bodyFixed = function () {
         fixScVal = scrollVal
-        $('body').addClass('fixed')//.css('top', '-' + scrollVal + 'px');
-        $('body').attr('sc', fixScVal)//.css('top', '-' + scrollVal + 'px');
-
+        $('body').addClass('fixed').css('top', '-' + scrollVal + 'px');
+        $('body').attr('sc', fixScVal);
+        setTimeout(function () {
+            $('header').removeClass('top');
+        });
     }
     _public.bodyunFixed = function () {
         $('body').removeClass('fixed');
         setTimeout(function () {
             window.scrollTo(0, fixScVal)
         });
-
     }
     return _public;
 })();
