@@ -25,7 +25,7 @@ let AKCOMMON = (function() {
                         h = Math.max(h, $(t).outerHeight());
                     });
                 }
-                $('nav > ul > li').css('height', h);
+                $('nav > ul').css('height', h);
             }
         });
         $('header .head .quick-menu ul li').on('mouseenter', function (e) {
