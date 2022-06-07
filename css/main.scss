@@ -462,7 +462,7 @@ header {
         }
         nav {
           > ul {
-            > li:nth-child(3) {
+            > li:nth-child(2) {
               display: flex;
             }
           }
@@ -482,7 +482,7 @@ header {
         }
         nav {
           > ul {
-            > li:nth-child(5) {
+            > li:nth-child(3) {
               display: flex;
             }
           }
@@ -502,7 +502,7 @@ header {
         }
         nav {
           > ul {
-            > li:nth-child(7) {
+            > li:nth-child(4) {
               display: flex;
             }
           }
@@ -1685,6 +1685,7 @@ footer {
     }
   }
 }
+
 @media all and (min-width:1201px) {
   .popup {
     &.active {

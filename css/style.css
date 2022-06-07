@@ -3315,19 +3315,19 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   header.show-menu.menu1 .quick-menu ul li:nth-child(2) a:after {
     display: block;
   }
-  header.show-menu.menu1 nav > ul > li:nth-child(3) {
+  header.show-menu.menu1 nav > ul > li:nth-child(2) {
     display: flex;
   }
   header.show-menu.menu2 .quick-menu ul li:nth-child(3) a:after {
     display: block;
   }
-  header.show-menu.menu2 nav > ul > li:nth-child(5) {
+  header.show-menu.menu2 nav > ul > li:nth-child(3) {
     display: flex;
   }
   header.show-menu.menu3 .quick-menu ul li:nth-child(4) a:after {
     display: block;
   }
-  header.show-menu.menu3 nav > ul > li:nth-child(7) {
+  header.show-menu.menu3 nav > ul > li:nth-child(4) {
     display: flex;
   }
   header.expand {
