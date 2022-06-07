@@ -332,9 +332,6 @@ caption {
 .topArea .visual .top-tab.on {
   height: auto;
 }
-.topArea .visual .top-tab.on ul li.active {
-  display: none;
-}
 .topArea .visual .top-tab.on ul li.active a {
   color: #8CE0FF;
 }
@@ -2717,6 +2714,16 @@ caption {
 .history-cont .history-tab.active .select-tab {
   display: block;
 }
+.history-cont .history-tab.active .select-tab::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0) 100%);
+}
 .history-cont .history-wrap {
   padding: 6.6666666667vw 6.6666666667vw 13.8888888889vw;
 }
@@ -3363,6 +3370,8 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   }
   header.show-menu.menu0 nav > ul > li:nth-child(1) {
     display: flex;
+    width: 820px;
+    margin: 0 auto;
   }
   header.show-menu.menu1 .quick-menu ul li:nth-child(2) a {
     color: #00498C;
@@ -3372,6 +3381,8 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   }
   header.show-menu.menu1 nav > ul > li:nth-child(2) {
     display: flex;
+    width: 500px;
+    margin: 0 auto;
   }
   header.show-menu.menu2 .quick-menu ul li:nth-child(3) a {
     color: #00498C;
@@ -3390,6 +3401,8 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   }
   header.show-menu.menu3 nav > ul > li:nth-child(4) {
     display: flex;
+    width: 820px;
+    margin: 0 auto;
   }
   header.expand {
     background-color: #fff !important;

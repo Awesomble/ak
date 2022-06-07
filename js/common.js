@@ -111,7 +111,7 @@ let AKCOMMON = (function() {
                     if ($('.history-tab').is('.active')) $('.history-tab').removeClass('active');
                 }
             });
-            $('.selected-tab').on('click', function (e) {
+            $('.history-tab').on('click', function (e) {
                 if ($('.history-tab').is('.active')) {
                     $('.history-tab').removeClass('active');
                 } else {

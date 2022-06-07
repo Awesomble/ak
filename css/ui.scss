@@ -111,7 +111,7 @@
         ul {
           li {
             &.active {
-              display: none;
+              //display: none;
               a {
                 color: #8CE0FF;
               }
@@ -2536,6 +2536,16 @@
       }
       .select-tab{
         display:block;
+        &::before{
+          content: '';
+          display:block;
+          position: absolute;
+          bottom: 0;
+          left:0;
+          right:0;
+          height:4px;
+          background:linear-gradient(180deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0) 100%);
+        }
       }
     }
   }
