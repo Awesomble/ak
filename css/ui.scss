@@ -2735,7 +2735,7 @@
         }
         .year{
           position: absolute;
-          top:-8px;
+          top:-13px;
           left:0;
           font-size:36px;
         }
@@ -2786,12 +2786,8 @@
         }
         &.active{
           .year::after{
-            content:none;
-          }
-          ul{
-            overflow: visible;
-            height:auto;
-            margin:0;
+            font-size:15px;
+            margin-left:88px;
           }
         }
       }
