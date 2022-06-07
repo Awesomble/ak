@@ -136,7 +136,7 @@ header {
           display: none;
         }
         > li {
-          background: url(../images/ico_nav_menu_arrow_blue.png) no-repeat right get-vw(35px);
+          background: url(/images/ico_nav_menu_arrow_blue.png) no-repeat right get-vw(35px);
           background-size: auto get-vw(16px);
           border-bottom: 1px solid #E8E8E8;
           h3 {
@@ -188,7 +188,7 @@ header {
             }
           }
           &.active {
-            background: url(../images/ico_nav_menu_arrow_blue_active.png) no-repeat right get-vw(35px);
+            background: url(/images/ico_nav_menu_arrow_blue_active.png) no-repeat right get-vw(35px);
             background-size: auto get-vw(16px);
             h3 {
               a {
@@ -768,7 +768,7 @@ main {
         width: get-vw(16px);
         height: get-vw(16px);
         margin-top: get-vw(10px);
-        background: url(../images/ico_scroll_down.png) no-repeat center center;
+        background: url(/images/ico_scroll_down.png) no-repeat center center;
         background-size: get-vw(16px);
         animation: move 1s linear infinite;
       }
@@ -787,7 +787,7 @@ main {
       justify-content: center;
       width: 100vw;
       height: get-vw(380px);
-      background: url(../images/bg_main_newsroom.png) no-repeat center center;
+      background: url(/images/bg_main_newsroom.png) no-repeat center center;
       background-size: cover;
       h2 {
         padding-bottom: get-vw(50px);
@@ -818,7 +818,7 @@ main {
             font-size: get-vw(15px);
             font-weight: 700;
             color: #fff;
-            background: url(../images/ico_arrow_right_white.png) no-repeat right center;
+            background: url(/images/ico_arrow_right_white.png) no-repeat right center;
             background-size: get-vw(7.62px);
           }
         }
@@ -884,7 +884,7 @@ main {
       justify-content: center;
       width: 100vw;
       height: get-vw(380px);
-      background: url(../images/bg_main.esg.png) no-repeat center center;
+      background: url(/images/bg_main.esg.png) no-repeat center center;
       background-size: cover;
       h2 {
         padding-bottom: get-vw(50px);
@@ -916,7 +916,7 @@ main {
             font-size: get-vw(15px);
             font-weight: 700;
             color: #fff;
-            background: url(../images/ico_arrow_right_white.png) no-repeat right center;
+            background: url(/images/ico_arrow_right_white.png) no-repeat right center;
             background-size: get-vw(7.62px);
           }
         }
@@ -928,7 +928,7 @@ main {
           position: relative;
           width: 100%;
           height: get-vw(360px);
-          background: url(../images/bg_main_esg_list02.png) no-repeat center center;
+          background: url(/images/bg_main_esg_list02.png) no-repeat center center;
           background-size: cover;
           &:first-child {
             background: none;
@@ -964,7 +964,7 @@ main {
                   content: '';
                   width: get-vw(40px);
                   height: get-vw(10px);
-                  background: url(../images/ico_main_list_arrow.png) no-repeat center center;
+                  background: url(/images/ico_main_list_arrow.png) no-repeat center center;
                   background-size: get-vw(40px);
                 }
                 img {
@@ -1031,7 +1031,7 @@ main {
           width: 16px;
           height: 16px;
           margin-top: 0;
-          background: url(../images/ico_main_scroll_down_blue.png) no-repeat center center;
+          background: url(/images/ico_main_scroll_down_blue.png) no-repeat center center;
           background-size: 16px;
         }
       }
@@ -1156,7 +1156,7 @@ main {
               height: 360px;
               a {
                 div {
-                  background: url(../images/bg_main_esg_list01.png) no-repeat right bottom;
+                  background: url(/images/bg_main_esg_list01.png) no-repeat right bottom;
                   background-size: 288px 270px;
                 }
               }
@@ -1274,7 +1274,7 @@ main {
               height: 540px;
               a {
                 div {
-                  background: url(../images/bg_main_esg_list01.png) no-repeat right bottom;
+                  background: url(/images/bg_main_esg_list01.png) no-repeat right bottom;
                   background-size: 288px 270px;
                 }
               }
@@ -1492,7 +1492,7 @@ footer {
     .btn-close {
       width: get-vw(30px);
       height: get-vw(30px);
-      background: url(../images/ico_close_white.png) no-repeat center;
+      background: url(/images/ico_close_white.png) no-repeat center;
       background-size: get-vw(30px);
     }
   }

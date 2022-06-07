@@ -72,15 +72,15 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
-    &.esg-news{background-image:url("../images/img_esgNews_m.png");}
-    &.ak-news{background-image:url("../images/img_akNews_m.png");}
-    &.management{background-image:url("../images/img_esg_management_m.png");}
-    &.value{background-image:url("../images/img_value_m.png");}
-    &.ir{background-image:url("../images/img_ir_m.png");}
-    &.ir-governance{background-image:url("../images/img_ir_governance_m.png");}
-    &.investment{background-image:url("../images/img_investment_m.png");}
+    &.esg-news{background-image:url("/images/img_esgNews_m.png");}
+    &.ak-news{background-image:url("/images/img_akNews_m.png");}
+    &.management{background-image:url("/images/img_esg_management_m.png");}
+    &.value{background-image:url("/images/img_value_m.png");}
+    &.ir{background-image:url("/images/img_ir_m.png");}
+    &.ir-governance{background-image:url("/images/img_ir_governance_m.png");}
+    &.investment{background-image:url("/images/img_investment_m.png");}
     &.intro-history{
-      background-image:url("../images/img_introduce_history_m.png");
+      background-image:url("/images/img_introduce_history_m.png");
       .desc{
         position: absolute;
         bottom: 0;
@@ -94,10 +94,10 @@
       }
     }
     &.intro{
-      background-image:url("../images/img_introduce_m.png");
+      background-image:url("/images/img_introduce_m.png");
     }
-    &.intro-company{background-image:url("../images/img_introduce_company_m.png");}
-    &.financial{background-image:url("../images/img_financial_m.png");}
+    &.intro-company{background-image:url("/images/img_introduce_company_m.png");}
+    &.financial{background-image:url("/images/img_financial_m.png");}
     .top-tab {
       position: absolute;
       top: get-vw(192px);
@@ -145,7 +145,7 @@
                 width: get-vw(16px);
                 height: get-vw(16px);
                 transform: translateY(-50%);
-                background:url('../images/ico_arrow_white.png') no-repeat 50% 50%;
+                background:url('/images/ico_arrow_white.png') no-repeat 50% 50%;
                 background-size:cover;
               }
             }
@@ -197,15 +197,15 @@
     .visual{
       margin-top: 32px;
       height: 480px;
-      &.esg-news{background-image:url("../images/img_esgNews.png");}
-      &.ak-news{background-image:url("../images/img_akNews.png");}
-      &.management{background-image:url("../images/img_esg_management.png");}
-      &.value{background-image:url("../images/img_value.png");}
-      &.ir{background-image:url("../images/img_ir.png");}
-      &.ir-governance{background-image:url("../images/img_ir_governance.png");}
-      &.investment{background-image:url("../images/img_investment.png");}
+      &.esg-news{background-image:url("/images/img_esgNews.png");}
+      &.ak-news{background-image:url("/images/img_akNews.png");}
+      &.management{background-image:url("/images/img_esg_management.png");}
+      &.value{background-image:url("/images/img_value.png");}
+      &.ir{background-image:url("/images/img_ir.png");}
+      &.ir-governance{background-image:url("/images/img_ir_governance.png");}
+      &.investment{background-image:url("/images/img_investment.png");}
       &.intro-history{
-        background-image:url("../images/img_introduce_history.png");
+        background-image:url("/images/img_introduce_history.png");
         .desc{
           bottom: 0;
           left:50%;
@@ -220,10 +220,10 @@
         }
       }
       &.intro{
-        background-image:url("../images/img_introduce.png");
+        background-image:url("/images/img_introduce.png");
       }
-      &.intro-company{background-image:url("../images/img_introduce_company.png");}
-      &.financial{background-image:url("../images/img_financial.png");}
+      &.intro-company{background-image:url("/images/img_introduce_company.png");}
+      &.financial{background-image:url("/images/img_financial.png");}
       &.has-tab{
         margin-bottom:38px;
         &::after{
@@ -360,7 +360,7 @@
       width: get-vw(16px);
       height: get-vw(16px);
       transform: translateY(-50%);
-      background:url('../images/ico_arrow_black.png') no-repeat 50% 50%;
+      background:url('/images/ico_arrow_black.png') no-repeat 50% 50%;
       background-size:cover;
     }
     &.on::after{
@@ -399,7 +399,7 @@
   display:block;
   width:get-vw(24px);
   height:get-vw(24px);
-  background:url('../images/ico_search.png') no-repeat 50% 50%;
+  background:url('/images/ico_search.png') no-repeat 50% 50%;
   background-size: cover;
 }
 .search-input{
@@ -572,19 +572,19 @@
       }
     }
     &.first{
-      background-image:url('../images/ico_arrow_rightbar.png');
+      background-image:url('/images/ico_arrow_rightbar.png');
       transform: rotate(180deg);
       margin-left:get-vw(-13px);
     }
     &.prev{
-      background-image:url('../images/ico_arrow_right.png');
+      background-image:url('/images/ico_arrow_right.png');
       transform: rotate(180deg);
     }
     &.next{
-      background-image:url('../images/ico_arrow_right.png');
+      background-image:url('/images/ico_arrow_right.png');
     }
     &.last{
-      background-image:url('../images/ico_arrow_rightbar.png');
+      background-image:url('/images/ico_arrow_rightbar.png');
       margin-right:get-vw(-13px);
     }
   }
@@ -680,7 +680,7 @@
       transform:translateY(-50%);
       width:get-vw(16px);
       height:get-vw(16px);
-      background:url('../images/ico_arrow_black.png') no-repeat 50% 50%;
+      background:url('/images/ico_arrow_black.png') no-repeat 50% 50%;
       background-size:cover;
     }
     &.prev::after{
@@ -790,7 +790,7 @@
         bottom:0;
         width:get-vw(125px);
         height:get-vw(130px);
-        background: url('../images/bg_download_cont.png') no-repeat 50% 50%;
+        background: url('/images/bg_download_cont.png') no-repeat 50% 50%;
         background-size:cover;
       }
     }
@@ -823,7 +823,7 @@
     width:get-vw(18px);
     height:get-vw(18px);
     margin-right:get-vw(8px);
-    background:url('../images/ico_download.png') no-repeat 50% 50%;
+    background:url('/images/ico_download.png') no-repeat 50% 50%;
     background-size:cover;
     vertical-align: bottom;
   }
@@ -916,7 +916,7 @@
         transform:translateX(-50%);
         width:get-vw(16px);
         height:get-vw(16px);
-        background: url('../images/ico_arrow_blue.png') no-repeat 50% 50%;
+        background: url('/images/ico_arrow_blue.png') no-repeat 50% 50%;
         background-size: cover;
       }
     }
@@ -1056,7 +1056,7 @@
   padding-bottom:get-vw(50px);
   .visual{
     height: get-vw(400px);
-    background-image:url(../images/img_core_value_m.png);
+    background-image:url(/images/img_core_value_m.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
@@ -1104,19 +1104,19 @@
         padding-top:get-vw(26px);
       }
       &.clean::after{
-        background:url("../images/ico_value_clean.png") no-repeat 50% 50%;
+        background:url("/images/ico_value_clean.png") no-repeat 50% 50%;
         background-size:cover;
       }
       &.trust::after{
-        background:url("../images/ico_value_trust.png") no-repeat 50% 50%;
+        background:url("/images/ico_value_trust.png") no-repeat 50% 50%;
         background-size:cover;
       }
       &.innovation::after{
-        background:url("../images/ico_value_innovation.png") no-repeat 50% 50%;
+        background:url("/images/ico_value_innovation.png") no-repeat 50% 50%;
         background-size:cover;
       }
       &.challenge::after{
-        background:url("../images/ico_value_challenge.png") no-repeat 50% 50%;
+        background:url("/images/ico_value_challenge.png") no-repeat 50% 50%;
         background-size:cover;
       }
       .tit{
@@ -1167,7 +1167,7 @@
     padding-bottom:100px;
     .visual{
       height: 600px;
-      background-image:url(../images/img_core_value.png);
+      background-image:url(/images/img_core_value.png);
       .tit{
         display:block;
         padding-top: 80px;
@@ -1207,19 +1207,19 @@
           padding-top:118px;
         }
         &.clean::after{
-          background:url("../images/ico_value_clean.png") no-repeat 50% 50%;
+          background:url("/images/ico_value_clean.png") no-repeat 50% 50%;
           background-size:cover;
         }
         &.trust::after{
-          background:url("../images/ico_value_trust.png") no-repeat 50% 50%;
+          background:url("/images/ico_value_trust.png") no-repeat 50% 50%;
           background-size:cover;
         }
         &.innovation::after{
-          background:url("../images/ico_value_innovation.png") no-repeat 50% 50%;
+          background:url("/images/ico_value_innovation.png") no-repeat 50% 50%;
           background-size:cover;
         }
         &.challenge::after{
-          background:url("../images/ico_value_challenge.png") no-repeat 50% 50%;
+          background:url("/images/ico_value_challenge.png") no-repeat 50% 50%;
           background-size:cover;
         }
         .tit{
@@ -1322,7 +1322,7 @@
       transform: translateX(-50%);
       width:get-vw(37px);
       height:get-vw(37px);
-      background:url("../images/ico_arrow_o_down.png") no-repeat 50% 50%;
+      background:url("/images/ico_arrow_o_down.png") no-repeat 50% 50%;
       background-size: cover;
     }
     li{
@@ -1366,7 +1366,7 @@
     bottom:0;
     left:0;
     right:0;
-    background: url("../images/bg_vision_mo.png") no-repeat 50% 50%;
+    background: url("/images/bg_vision_mo.png") no-repeat 50% 50%;
     background-size: cover;
     z-index: -1;
   }
@@ -1443,7 +1443,7 @@
         transform:translateX(-50%);
         width:100%;
         height:161px;
-        background: url("../images/img_diagram_arrow.png") no-repeat 50% 100%;
+        background: url("/images/img_diagram_arrow.png") no-repeat 50% 100%;
         z-index:1;
       }
       &::after{
@@ -1477,7 +1477,7 @@
       right:0;
       width:1920px;
       height:448px;
-      background: url("../images/bg_vision_pc.png") no-repeat 50% 50%;
+      background: url("/images/bg_vision_pc.png") no-repeat 50% 50%;
       background-size: cover;
       z-index: -1;
     }
@@ -1513,7 +1513,7 @@
     height:get-vw(170px);
     padding-top:get-vw(55px);
     padding-left:get-vw(24px);
-    background:url("../images/bg_talent.png") no-repeat 50% 50%;
+    background:url("/images/bg_talent.png") no-repeat 50% 50%;
     background-size: cover;
     span{
       display:block;
@@ -1643,7 +1643,7 @@
         width: get-vw(18px);
         height: get-vw(18px);
         margin-right:0;
-        background:url(../images/ico_download_blue.png) no-repeat 50% 50%;
+        background:url(/images/ico_download_blue.png) no-repeat 50% 50%;
         background-size: cover;
       }
     }
@@ -1707,7 +1707,7 @@
           width:18px;
           height:18px;
           margin-right:0;
-          background:url(../images/ico_download_blue.png) no-repeat 50% 50%;
+          background:url(/images/ico_download_blue.png) no-repeat 50% 50%;
           background-size: cover;
         }
         &:hover{
@@ -1945,7 +1945,7 @@
     width:get-vw(312px);
     height:get-vw(170vw);
     padding:get-vw(66px) get-vw(20px) 0;
-    background:url("../images/img_ir_contact.png") no-repeat 50% 50%;
+    background:url("/images/img_ir_contact.png") no-repeat 50% 50%;
     background-size: cover;
     .quotes{
       margin:0;
@@ -2430,7 +2430,7 @@
       right:get-vw(22px);
       width:get-vw(16px);
       height:get-vw(16px);
-      background: url("../images/ico_arrow_s_dwon_blue.png") no-repeat 50% 50%;
+      background: url("/images/ico_arrow_s_dwon_blue.png") no-repeat 50% 50%;
       background-size: cover;
       transition: all 0.3s ease-out;
       z-index:1;
@@ -2552,12 +2552,12 @@
         left:0;
         width:get-vw(25px);
         height:get-vw(25px);
-        background: url("../images/ico_history_close.png") no-repeat 50% 50%;
+        background: url("/images/ico_history_close.png") no-repeat 50% 50%;
         background-size: cover;
       }
       &.active{
         &::before{
-          background: url("../images/ico_history_open.png") no-repeat 50% 50%;
+          background: url("/images/ico_history_open.png") no-repeat 50% 50%;
         }
       }
       &::after{

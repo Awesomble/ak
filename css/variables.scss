@@ -18,7 +18,6 @@ $bg_2: 		#F3F4F6 !default;
 $bg_3: 		#E8E8E8 !default;
 $bg_footer: 		#202020 !default;
 
-
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
     @return math.div($number, $number * 0 + 1);

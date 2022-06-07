@@ -170,32 +170,32 @@ caption {
   font-style: normal;
   font-display: auto;
   font-weight: 300;
-  src: url(../font/SpoqaHanSansNeo-Light.eot);
-  src: url(../font/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Light.woff) format("woff"), url(../font/SpoqaHanSansNeo-Light.ttf) format("truetype");
+  src: url(/font/SpoqaHanSansNeo-Light.eot);
+  src: url(/font/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"), url(/font/SpoqaHanSansNeo-Light.woff) format("woff"), url(/font/SpoqaHanSansNeo-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Spoqa Han Sans Neo";
   font-style: normal;
   font-display: auto;
   font-weight: 400;
-  src: url(../font/SpoqaHanSansNeo-Regular.eot);
-  src: url(../font/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Regular.woff) format("woff"), url(../font/SpoqaHanSansNeo-Regular.ttf) format("truetype");
+  src: url(/font/SpoqaHanSansNeo-Regular.eot);
+  src: url(/font/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), url(/font/SpoqaHanSansNeo-Regular.woff) format("woff"), url(/font/SpoqaHanSansNeo-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Spoqa Han Sans Neo";
   font-style: normal;
   font-display: auto;
   font-weight: 500;
-  src: url(../font/SpoqaHanSansNeo-Medium.eot);
-  src: url(../font/SpoqaHanSansNeo-Medium.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Medium.woff) format("woff"), url(../font/SpoqaHanSansNeo-Medium.ttf) format("truetype");
+  src: url(/font/SpoqaHanSansNeo-Medium.eot);
+  src: url(/font/SpoqaHanSansNeo-Medium.eot?#iefix) format("embedded-opentype"), url(/font/SpoqaHanSansNeo-Medium.woff) format("woff"), url(/font/SpoqaHanSansNeo-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "Spoqa Han Sans Neo";
   font-style: normal;
   font-display: auto;
   font-weight: 700;
-  src: url(../font/SpoqaHanSansNeo-Bold.eot);
-  src: url(../font/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"), url(../font/SpoqaHanSansNeo-Bold.woff) format("woff"), url(../font/SpoqaHanSansNeo-Bold.ttf) format("truetype");
+  src: url(/font/SpoqaHanSansNeo-Bold.eot);
+  src: url(/font/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"), url(/font/SpoqaHanSansNeo-Bold.woff) format("woff"), url(/font/SpoqaHanSansNeo-Bold.ttf) format("truetype");
 }
 .tk-arboria {
   font-family: "arboria", sans-serif;
@@ -277,28 +277,28 @@ caption {
   background-size: cover;
 }
 .topArea .visual.esg-news {
-  background-image: url("../images/img_esgNews_m.png");
+  background-image: url("/images/img_esgNews_m.png");
 }
 .topArea .visual.ak-news {
-  background-image: url("../images/img_akNews_m.png");
+  background-image: url("/images/img_akNews_m.png");
 }
 .topArea .visual.management {
-  background-image: url("../images/img_esg_management_m.png");
+  background-image: url("/images/img_esg_management_m.png");
 }
 .topArea .visual.value {
-  background-image: url("../images/img_value_m.png");
+  background-image: url("/images/img_value_m.png");
 }
 .topArea .visual.ir {
-  background-image: url("../images/img_ir_m.png");
+  background-image: url("/images/img_ir_m.png");
 }
 .topArea .visual.ir-governance {
-  background-image: url("../images/img_ir_governance_m.png");
+  background-image: url("/images/img_ir_governance_m.png");
 }
 .topArea .visual.investment {
-  background-image: url("../images/img_investment_m.png");
+  background-image: url("/images/img_investment_m.png");
 }
 .topArea .visual.intro-history {
-  background-image: url("../images/img_introduce_history_m.png");
+  background-image: url("/images/img_introduce_history_m.png");
 }
 .topArea .visual.intro-history .desc {
   position: absolute;
@@ -312,13 +312,13 @@ caption {
   letter-spacing: -0.02em;
 }
 .topArea .visual.intro {
-  background-image: url("../images/img_introduce_m.png");
+  background-image: url("/images/img_introduce_m.png");
 }
 .topArea .visual.intro-company {
-  background-image: url("../images/img_introduce_company_m.png");
+  background-image: url("/images/img_introduce_company_m.png");
 }
 .topArea .visual.financial {
-  background-image: url("../images/img_financial_m.png");
+  background-image: url("/images/img_financial_m.png");
 }
 .topArea .visual .top-tab {
   position: absolute;
@@ -356,7 +356,7 @@ caption {
   width: 4.4444444444vw;
   height: 4.4444444444vw;
   transform: translateY(-50%);
-  background: url("../images/ico_arrow_white.png") no-repeat 50% 50%;
+  background: url("/images/ico_arrow_white.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .topArea .visual .top-tab ul li a {
@@ -404,28 +404,28 @@ caption {
     height: 480px;
   }
   .topArea .visual.esg-news {
-    background-image: url("../images/img_esgNews.png");
+    background-image: url("/images/img_esgNews.png");
   }
   .topArea .visual.ak-news {
-    background-image: url("../images/img_akNews.png");
+    background-image: url("/images/img_akNews.png");
   }
   .topArea .visual.management {
-    background-image: url("../images/img_esg_management.png");
+    background-image: url("/images/img_esg_management.png");
   }
   .topArea .visual.value {
-    background-image: url("../images/img_value.png");
+    background-image: url("/images/img_value.png");
   }
   .topArea .visual.ir {
-    background-image: url("../images/img_ir.png");
+    background-image: url("/images/img_ir.png");
   }
   .topArea .visual.ir-governance {
-    background-image: url("../images/img_ir_governance.png");
+    background-image: url("/images/img_ir_governance.png");
   }
   .topArea .visual.investment {
-    background-image: url("../images/img_investment.png");
+    background-image: url("/images/img_investment.png");
   }
   .topArea .visual.intro-history {
-    background-image: url("../images/img_introduce_history.png");
+    background-image: url("/images/img_introduce_history.png");
   }
   .topArea .visual.intro-history .desc {
     bottom: 0;
@@ -440,13 +440,13 @@ caption {
     line-height: 1.7;
   }
   .topArea .visual.intro {
-    background-image: url("../images/img_introduce.png");
+    background-image: url("/images/img_introduce.png");
   }
   .topArea .visual.intro-company {
-    background-image: url("../images/img_introduce_company.png");
+    background-image: url("/images/img_introduce_company.png");
   }
   .topArea .visual.financial {
-    background-image: url("../images/img_financial.png");
+    background-image: url("/images/img_financial.png");
   }
   .topArea .visual.has-tab {
     margin-bottom: 38px;
@@ -583,7 +583,7 @@ caption {
   width: 4.4444444444vw;
   height: 4.4444444444vw;
   transform: translateY(-50%);
-  background: url("../images/ico_arrow_black.png") no-repeat 50% 50%;
+  background: url("/images/ico_arrow_black.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .bbs_sort .bbs_button.on::after {
@@ -619,7 +619,7 @@ caption {
   display: block;
   width: 6.6666666667vw;
   height: 6.6666666667vw;
-  background: url("../images/ico_search.png") no-repeat 50% 50%;
+  background: url("/images/ico_search.png") no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -792,19 +792,19 @@ caption {
   filter: contrast(0.1);
 }
 .paging a.first {
-  background-image: url("../images/ico_arrow_rightbar.png");
+  background-image: url("/images/ico_arrow_rightbar.png");
   transform: rotate(180deg);
   margin-left: -3.6111111111vw;
 }
 .paging a.prev {
-  background-image: url("../images/ico_arrow_right.png");
+  background-image: url("/images/ico_arrow_right.png");
   transform: rotate(180deg);
 }
 .paging a.next {
-  background-image: url("../images/ico_arrow_right.png");
+  background-image: url("/images/ico_arrow_right.png");
 }
 .paging a.last {
-  background-image: url("../images/ico_arrow_rightbar.png");
+  background-image: url("/images/ico_arrow_rightbar.png");
   margin-right: -3.6111111111vw;
 }
 
@@ -899,7 +899,7 @@ caption {
   transform: translateY(-50%);
   width: 4.4444444444vw;
   height: 4.4444444444vw;
-  background: url("../images/ico_arrow_black.png") no-repeat 50% 50%;
+  background: url("/images/ico_arrow_black.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .bbs-more li.prev::after {
@@ -1006,7 +1006,7 @@ caption {
   bottom: 0;
   width: 34.7222222222vw;
   height: 36.1111111111vw;
-  background: url("../images/bg_download_cont.png") no-repeat 50% 50%;
+  background: url("/images/bg_download_cont.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .download-list li .number {
@@ -1038,7 +1038,7 @@ caption {
   width: 5vw;
   height: 5vw;
   margin-right: 2.2222222222vw;
-  background: url("../images/ico_download.png") no-repeat 50% 50%;
+  background: url("/images/ico_download.png") no-repeat 50% 50%;
   background-size: cover;
   vertical-align: bottom;
 }
@@ -1052,6 +1052,7 @@ caption {
     display: inline-block;
     width: 25%;
     padding: 16px;
+    vertical-align: top;
   }
   .download-list li + li {
     margin-top: 0;
@@ -1131,7 +1132,7 @@ caption {
   transform: translateX(-50%);
   width: 4.4444444444vw;
   height: 4.4444444444vw;
-  background: url("../images/ico_arrow_blue.png") no-repeat 50% 50%;
+  background: url("/images/ico_arrow_blue.png") no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -1261,7 +1262,7 @@ caption {
 }
 .core-value .visual {
   height: 111.1111111111vw;
-  background-image: url(../images/img_core_value_m.png);
+  background-image: url(/images/img_core_value_m.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1311,19 +1312,19 @@ caption {
   padding-top: 7.2222222222vw;
 }
 .core-value .core-value-list li.clean::after {
-  background: url("../images/ico_value_clean.png") no-repeat 50% 50%;
+  background: url("/images/ico_value_clean.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .core-value .core-value-list li.trust::after {
-  background: url("../images/ico_value_trust.png") no-repeat 50% 50%;
+  background: url("/images/ico_value_trust.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .core-value .core-value-list li.innovation::after {
-  background: url("../images/ico_value_innovation.png") no-repeat 50% 50%;
+  background: url("/images/ico_value_innovation.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .core-value .core-value-list li.challenge::after {
-  background: url("../images/ico_value_challenge.png") no-repeat 50% 50%;
+  background: url("/images/ico_value_challenge.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .core-value .core-value-list li .tit {
@@ -1374,7 +1375,7 @@ caption {
   }
   .core-value .visual {
     height: 600px;
-    background-image: url(../images/img_core_value.png);
+    background-image: url(/images/img_core_value.png);
   }
   .core-value .visual .tit {
     display: block;
@@ -1416,19 +1417,19 @@ caption {
     padding-top: 118px;
   }
   .core-value .core-value-list li.clean::after {
-    background: url("../images/ico_value_clean.png") no-repeat 50% 50%;
+    background: url("/images/ico_value_clean.png") no-repeat 50% 50%;
     background-size: cover;
   }
   .core-value .core-value-list li.trust::after {
-    background: url("../images/ico_value_trust.png") no-repeat 50% 50%;
+    background: url("/images/ico_value_trust.png") no-repeat 50% 50%;
     background-size: cover;
   }
   .core-value .core-value-list li.innovation::after {
-    background: url("../images/ico_value_innovation.png") no-repeat 50% 50%;
+    background: url("/images/ico_value_innovation.png") no-repeat 50% 50%;
     background-size: cover;
   }
   .core-value .core-value-list li.challenge::after {
-    background: url("../images/ico_value_challenge.png") no-repeat 50% 50%;
+    background: url("/images/ico_value_challenge.png") no-repeat 50% 50%;
     background-size: cover;
   }
   .core-value .core-value-list li .tit {
@@ -1529,7 +1530,7 @@ caption {
   transform: translateX(-50%);
   width: 10.2777777778vw;
   height: 10.2777777778vw;
-  background: url("../images/ico_arrow_o_down.png") no-repeat 50% 50%;
+  background: url("/images/ico_arrow_o_down.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .ak-value-list.goal li {
@@ -1573,7 +1574,7 @@ caption {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("../images/bg_vision_mo.png") no-repeat 50% 50%;
+  background: url("/images/bg_vision_mo.png") no-repeat 50% 50%;
   background-size: cover;
   z-index: -1;
 }
@@ -1650,7 +1651,7 @@ caption {
     transform: translateX(-50%);
     width: 100%;
     height: 161px;
-    background: url("../images/img_diagram_arrow.png") no-repeat 50% 100%;
+    background: url("/images/img_diagram_arrow.png") no-repeat 50% 100%;
     z-index: 1;
   }
   .ak-value-list.goal::after {
@@ -1684,7 +1685,7 @@ caption {
     right: 0;
     width: 1920px;
     height: 448px;
-    background: url("../images/bg_vision_pc.png") no-repeat 50% 50%;
+    background: url("/images/bg_vision_pc.png") no-repeat 50% 50%;
     background-size: cover;
     z-index: -1;
   }
@@ -1714,7 +1715,7 @@ caption {
   height: 47.2222222222vw;
   padding-top: 15.2777777778vw;
   padding-left: 6.6666666667vw;
-  background: url("../images/bg_talent.png") no-repeat 50% 50%;
+  background: url("/images/bg_talent.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .value-talent .visual-wrap span {
@@ -1845,7 +1846,7 @@ caption {
   width: 5vw;
   height: 5vw;
   margin-right: 0;
-  background: url(../images/ico_download_blue.png) no-repeat 50% 50%;
+  background: url(/images/ico_download_blue.png) no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -1910,7 +1911,7 @@ caption {
     width: 18px;
     height: 18px;
     margin-right: 0;
-    background: url(../images/ico_download_blue.png) no-repeat 50% 50%;
+    background: url(/images/ico_download_blue.png) no-repeat 50% 50%;
     background-size: cover;
   }
   .intro-ci .download-wrap .btn-download:hover {
@@ -2151,7 +2152,7 @@ caption {
   width: 86.6666666667vw;
   height: 47.2222222222vw;
   padding: 18.3333333333vw 5.5555555556vw 0;
-  background: url("../images/img_ir_contact.png") no-repeat 50% 50%;
+  background: url("/images/img_ir_contact.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .contact-ir .inner .quotes {
@@ -2618,7 +2619,7 @@ caption {
   right: 6.1111111111vw;
   width: 4.4444444444vw;
   height: 4.4444444444vw;
-  background: url("../images/ico_arrow_s_dwon_blue.png") no-repeat 50% 50%;
+  background: url("/images/ico_arrow_s_dwon_blue.png") no-repeat 50% 50%;
   background-size: cover;
   transition: all 0.3s ease-out;
   z-index: 1;
@@ -2733,11 +2734,11 @@ caption {
   left: 0;
   width: 6.9444444444vw;
   height: 6.9444444444vw;
-  background: url("../images/ico_history_close.png") no-repeat 50% 50%;
+  background: url("/images/ico_history_close.png") no-repeat 50% 50%;
   background-size: cover;
 }
 .history-cont .history-wrap .year-wrap.active::before {
-  background: url("../images/ico_history_open.png") no-repeat 50% 50%;
+  background: url("/images/ico_history_open.png") no-repeat 50% 50%;
 }
 .history-cont .history-wrap .year-wrap::after {
   top: 1.1111111111vw;
@@ -3074,7 +3075,7 @@ header.expand nav > ul > em {
   display: none;
 }
 header.expand nav > ul > li {
-  background: url(../images/ico_nav_menu_arrow_blue.png) no-repeat right 9.7222222222vw;
+  background: url(/images/ico_nav_menu_arrow_blue.png) no-repeat right 9.7222222222vw;
   background-size: auto 4.4444444444vw;
   border-bottom: 1px solid #E8E8E8;
 }
@@ -3119,7 +3120,7 @@ header.expand nav > ul > li > ul > li > ul > li:first-child a {
   opacity: 1;
 }
 header.expand nav > ul > li.active {
-  background: url(../images/ico_nav_menu_arrow_blue_active.png) no-repeat right 9.7222222222vw;
+  background: url(/images/ico_nav_menu_arrow_blue_active.png) no-repeat right 9.7222222222vw;
   background-size: auto 4.4444444444vw;
 }
 header.expand nav > ul > li.active h3 a {
@@ -3555,7 +3556,7 @@ main .top-visual .btn-scroll-down:after {
   width: 4.4444444444vw;
   height: 4.4444444444vw;
   margin-top: 2.7777777778vw;
-  background: url(../images/ico_scroll_down.png) no-repeat center center;
+  background: url(/images/ico_scroll_down.png) no-repeat center center;
   background-size: 4.4444444444vw;
   animation: move 1s linear infinite;
 }
@@ -3577,7 +3578,7 @@ main .news-room .news-top {
   justify-content: center;
   width: 100vw;
   height: 105.5555555556vw;
-  background: url(../images/bg_main_newsroom.png) no-repeat center center;
+  background: url(/images/bg_main_newsroom.png) no-repeat center center;
   background-size: cover;
 }
 main .news-room .news-top h2 {
@@ -3611,7 +3612,7 @@ main .news-room .news-top .btn-box h3 a {
   font-size: 4.1666666667vw;
   font-weight: 700;
   color: #fff;
-  background: url(../images/ico_arrow_right_white.png) no-repeat right center;
+  background: url(/images/ico_arrow_right_white.png) no-repeat right center;
   background-size: 2.1166666667vw;
 }
 main .news-room .ak-news-list {
@@ -3672,7 +3673,7 @@ main .esg .esg-top {
   justify-content: center;
   width: 100vw;
   height: 105.5555555556vw;
-  background: url(../images/bg_main.esg.png) no-repeat center center;
+  background: url(/images/bg_main.esg.png) no-repeat center center;
   background-size: cover;
 }
 main .esg .esg-top h2 {
@@ -3707,14 +3708,14 @@ main .esg .esg-top .btn-box h3 a {
   font-size: 4.1666666667vw;
   font-weight: 700;
   color: #fff;
-  background: url(../images/ico_arrow_right_white.png) no-repeat right center;
+  background: url(/images/ico_arrow_right_white.png) no-repeat right center;
   background-size: 2.1166666667vw;
 }
 main .esg .esg-list ul li {
   position: relative;
   width: 100%;
   height: 100vw;
-  background: url(../images/bg_main_esg_list02.png) no-repeat center center;
+  background: url(/images/bg_main_esg_list02.png) no-repeat center center;
   background-size: cover;
 }
 main .esg .esg-list ul li:first-child {
@@ -3752,7 +3753,7 @@ main .esg .esg-list ul li a div .img:before {
   content: "";
   width: 11.1111111111vw;
   height: 2.7777777778vw;
-  background: url(../images/ico_main_list_arrow.png) no-repeat center center;
+  background: url(/images/ico_main_list_arrow.png) no-repeat center center;
   background-size: 11.1111111111vw;
 }
 main .esg .esg-list ul li a div .img img {
@@ -3807,7 +3808,7 @@ main .esg .esg-list ul li a div .img img {
     width: 16px;
     height: 16px;
     margin-top: 0;
-    background: url(../images/ico_main_scroll_down_blue.png) no-repeat center center;
+    background: url(/images/ico_main_scroll_down_blue.png) no-repeat center center;
     background-size: 16px;
   }
   main .news-room {
@@ -3926,7 +3927,7 @@ main .esg .esg-list ul li a div .img img {
     height: 360px;
   }
   main .esg .esg-list ul li:first-child a div {
-    background: url(../images/bg_main_esg_list01.png) no-repeat right bottom;
+    background: url(/images/bg_main_esg_list01.png) no-repeat right bottom;
     background-size: 288px 270px;
   }
   main .esg .esg-list ul li a {
@@ -4013,7 +4014,7 @@ main .esg .esg-list ul li a div .img img {
     height: 540px;
   }
   main .esg .esg-list ul li:first-child a div {
-    background: url(../images/bg_main_esg_list01.png) no-repeat right bottom;
+    background: url(/images/bg_main_esg_list01.png) no-repeat right bottom;
     background-size: 288px 270px;
   }
   main .esg .esg-list ul li a {
@@ -4212,7 +4213,7 @@ footer .link:after {
 .popup .pop-top .btn-close {
   width: 8.3333333333vw;
   height: 8.3333333333vw;
-  background: url(../images/ico_close_white.png) no-repeat center;
+  background: url(/images/ico_close_white.png) no-repeat center;
   background-size: 8.3333333333vw;
 }
 .popup .pop-con {
