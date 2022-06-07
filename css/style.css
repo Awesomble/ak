@@ -2979,8 +2979,18 @@ header {
   height: 17.7777777778vw;
   padding: 0 24px 0 20px;
   box-sizing: border-box;
+  background-color: #fff;
   transition: background-color 0.3s;
   z-index: 9;
+}
+header.main {
+  background-color: transparent;
+}
+header.main .head h1 a img:nth-child(1) {
+  display: block;
+}
+header.main .head h1 a img:nth-child(2) {
+  display: none;
 }
 header .head {
   display: flex;
@@ -3035,10 +3045,10 @@ header.expand {
   background-color: #00498C !important;
 }
 header.expand .head h1 a img:nth-child(1) {
-  display: block !important;
+  display: block;
 }
 header.expand .head h1 a img:nth-child(2) {
-  display: none !important;
+  display: none;
 }
 header.expand .head .btn-show-menu:before, header.expand .head .btn-show-menu:after {
   background-color: #fff !important;
@@ -3137,6 +3147,7 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   header {
     height: 92px;
     padding: 0 60px;
+    background-color: transparent;
   }
   header.top .head .quick-menu {
     display: block;

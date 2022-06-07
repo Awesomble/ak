@@ -120,6 +120,12 @@ let AKCOMMON = (function() {
                 if (_public.topEffect) $('header').addClass('main-top');
                 else $('header').addClass('top');
             }
+            // Todo : 2nd develop
+            // if (_public.WIDTH < 961) {
+            //     console.log($('header').height(), scrollVal)
+            //     if (scrollVal > $('header').height()) $('body').addClass('mo-header-fix');
+            //     else $('body').removeClass('mo-header-fix');
+            // }
             // history
             if (_public.historyEffect) {
                 _public.historyEffectSpot = [];
