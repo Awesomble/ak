@@ -3,13 +3,14 @@ let AKCOMMON = (function() {
     let _private = {};
     let scrollVal = 0;
     let fixScVal = 0;
-    _public.topEffect = false
-    _public.historyEffect = false
-    _public.WIDTH = 0
-    _public.HEIGHT = 0
+    _public.topEffect = false;
+    _public.historyEffect = false;
+    _public.historyEffectSpot = [];
+    _public.WIDTH = 0;
+    _public.HEIGHT = 0;
     _public.init = function () {
         _private.eventHandler();
-        _private.headerTopEffect()
+        _private.headerTopEffect();
         // $('header').addClass('top');
     }
     _private.eventHandler = function () {
@@ -80,6 +81,16 @@ let AKCOMMON = (function() {
                 if ($(this).find('.drag-noti').length) $(this).find('.drag-noti').hide('slow');
             })
         }
+        // History
+        if ($('.history-cont').length) {
+            $('.select-tab li').on('click', function () {
+                const _this = $(this);
+                $('.select-tab li.active').removeClass('active');
+                _this.addClass('active');
+                console.log(_this.attr('data-btn-year'))
+                _public.scrollTo(_this.attr('data-btn-year'));
+            });
+        }
     }
     _private.headerTopEffect = function () {
         window.addEventListener('scroll', function () {
@@ -94,7 +105,18 @@ let AKCOMMON = (function() {
             }
             // history
             if (_public.WIDTH > 961 && _public.historyEffect) {
-                console.log($('.content').offset().top)
+                _public.historyEffectSpot = [];
+                $('.history-wrap .year-wrap.spot').each(function (idx, itm) {
+                    _public.historyEffectSpot.push($(itm).offset().top - 100);
+                });
+                for (let i = 0; i < _public.historyEffectSpot.length; i++) {
+                    console.log(i, scrollVal , _public.historyEffectSpot[i])
+                    if (scrollVal > _public.historyEffectSpot[i]) {
+                        $('.select-tab li.active').removeClass('active');
+                        $('.select-tab li').eq(i).addClass('active');
+                    }
+                }
+                // Tab navi fix
                 if (scrollVal > $('.content').offset().top) {
                     $('.select-tab').addClass('fix');
                 } else {
@@ -102,6 +124,16 @@ let AKCOMMON = (function() {
                 }
             }
         })
+    }
+    // Scroll effect
+    _public.scrollTo = function (o) {
+        console.log(o)
+        console.log($(o).length)
+        if ($(o).offset().top > 0) {
+            setTimeout(function () {
+                window.scrollTo(0, $(o).offset().top - 92);
+            });
+        }
     }
     _public.bodyFixed = function () {
         fixScVal = scrollVal

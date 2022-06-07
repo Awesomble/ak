@@ -311,6 +311,24 @@ caption {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.topArea .visual.ak-news {
+  background-image: url("../images/img_akNews_m.png");
+}
+.topArea .visual.management {
+  background-image: url("../images/img_esg_management_m.png");
+}
+.topArea .visual.value {
+  background-image: url("../images/img_value_m.png");
+}
+.topArea .visual.ir {
+  background-image: url("../images/img_ir_m.png");
+}
+.topArea .visual.ir-governance {
+  background-image: url("../images/img_ir_governance_m.png");
+}
+.topArea .visual.investment {
+  background-image: url("../images/img_investment_m.png");
+}
 .topArea .visual.intro-history {
   background-image: url("../images/img_introduce_history_m.png");
 }
@@ -326,7 +344,13 @@ caption {
   letter-spacing: -0.02em;
 }
 .topArea .visual.intro {
-  background-position: 68% 50%;
+  background-image: url("../images/img_introduce_m.png");
+}
+.topArea .visual.intro-company {
+  background-image: url("../images/img_introduce_company_m.png");
+}
+.topArea .visual.financial {
+  background-image: url("../images/img_financial_m.png");
 }
 .topArea .visual .top-tab {
   position: absolute;
@@ -411,6 +435,24 @@ caption {
     margin-top: 32px;
     height: 480px;
   }
+  .topArea .visual.ak-news {
+    background-image: url("../images/img_akNews.png");
+  }
+  .topArea .visual.management {
+    background-image: url("../images/img_esg_management.png");
+  }
+  .topArea .visual.value {
+    background-image: url("../images/img_value.png");
+  }
+  .topArea .visual.ir {
+    background-image: url("../images/img_ir.png");
+  }
+  .topArea .visual.ir-governance {
+    background-image: url("../images/img_ir_governance.png");
+  }
+  .topArea .visual.investment {
+    background-image: url("../images/img_investment.png");
+  }
   .topArea .visual.intro-history {
     background-image: url("../images/img_introduce_history.png");
   }
@@ -427,7 +469,13 @@ caption {
     line-height: 1.7;
   }
   .topArea .visual.intro {
-    background-position: 50% 50%;
+    background-image: url("../images/img_introduce.png");
+  }
+  .topArea .visual.intro-company {
+    background-image: url("../images/img_introduce_company.png");
+  }
+  .topArea .visual.financial {
+    background-image: url("../images/img_financial.png");
   }
   .topArea .visual.has-tab {
     margin-bottom: 38px;
@@ -2773,6 +2821,21 @@ caption {
 .history-cont .history-wrap .year-wrap .desc .img + * {
   margin-top: 2.7777777778vw;
 }
+.history-cont .history-wrap .year-wrap.active .year::after {
+  content: "자세히보기";
+  display: inline-block;
+  margin-left: 2.7777777778vw;
+  font-size: 3.6111111111vw;
+  font-weight: 500;
+  color: inherit;
+  vertical-align: middle;
+}
+.history-cont .history-wrap .year-wrap.active ul {
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  transition: height 0.3s;
+}
 
 @media all and (min-width: 961px) {
   /* 연혁 */
@@ -2900,6 +2963,14 @@ caption {
   }
   .history-cont .history-wrap .year-wrap .desc .img + * {
     margin-top: 6px;
+  }
+  .history-cont .history-wrap .year-wrap.active .year::after {
+    content: none;
+  }
+  .history-cont .history-wrap .year-wrap.active ul {
+    overflow: visible;
+    height: auto;
+    margin: 0;
   }
 }
 /* Layout Style*/
