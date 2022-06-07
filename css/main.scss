@@ -794,11 +794,14 @@ main {
     position: relative;
     height: 100vh;
     .video-box {
-      padding: 0;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100vw;
       height: 100vh;
+      padding: 0;
       overflow: hidden;
-      position: absolute;
       &.pc {
         display: none;
       }
@@ -808,7 +811,7 @@ main {
       video {
         z-index: -1;
         width: 100vw;
-        position: absolute;
+        //position: absolute;
       }
     }
     .typo-box {
@@ -831,13 +834,16 @@ main {
         letter-spacing: -0.02em;
         color: #fff;
         text-align: center;
-        p {
-          margin-top: get-vw(15px);
-        }
         strong {
           font-size: get-vw(24px);
           font-weight: 700;
           letter-spacing: -0.04em;
+        }
+        p {
+          margin-top: get-vw(15px);
+          strong {
+            font-size: get-vw(28px);
+          }
         }
       }
     }
@@ -1089,13 +1095,16 @@ main {
           font-size: 36px;
           line-height: 45px;
           letter-spacing: -0.03em;
-          p {
-            margin-top: 15px;
-          }
           strong {
             font-weight: 700;
             font-size: 36px;
             letter-spacing: -0.03em;
+          }
+          p {
+            margin-top: 15px;
+            strong {
+              font-size: 60px;
+            }
           }
         }
       }

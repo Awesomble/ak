@@ -3544,11 +3544,14 @@ main .top-visual {
   height: 100vh;
 }
 main .top-visual .video-box {
-  padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  padding: 0;
   overflow: hidden;
-  position: absolute;
 }
 main .top-visual .video-box.pc {
   display: none;
@@ -3559,7 +3562,6 @@ main .top-visual .video-box.mo {
 main .top-visual .video-box video {
   z-index: -1;
   width: 100vw;
-  position: absolute;
 }
 main .top-visual .typo-box {
   position: absolute;
@@ -3582,13 +3584,16 @@ main .top-visual .typo-box div {
   color: #fff;
   text-align: center;
 }
-main .top-visual .typo-box div p {
-  margin-top: 4.1666666667vw;
-}
 main .top-visual .typo-box div strong {
   font-size: 6.6666666667vw;
   font-weight: 700;
   letter-spacing: -0.04em;
+}
+main .top-visual .typo-box div p {
+  margin-top: 4.1666666667vw;
+}
+main .top-visual .typo-box div p strong {
+  font-size: 7.7777777778vw;
 }
 main .top-visual .btn-scroll-down {
   position: absolute;
@@ -3829,13 +3834,16 @@ main .esg .esg-list ul li a div .img img {
     line-height: 45px;
     letter-spacing: -0.03em;
   }
-  main .top-visual .typo-box div p {
-    margin-top: 15px;
-  }
   main .top-visual .typo-box div strong {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: -0.03em;
+  }
+  main .top-visual .typo-box div p {
+    margin-top: 15px;
+  }
+  main .top-visual .typo-box div p strong {
+    font-size: 60px;
   }
   main .top-visual .btn-scroll-down {
     right: 0;
