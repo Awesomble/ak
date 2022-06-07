@@ -11,6 +11,10 @@ let AKCOMMON = (function() {
     _public.init = function () {
         _private.eventHandler();
         _private.headerTopEffect();
+
+        // reset css
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
         // $('header').addClass('top');
     }
     _private.eventHandler = function () {

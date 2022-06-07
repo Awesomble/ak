@@ -1969,9 +1969,11 @@
         color:#08A2DC;
       }
       .number{
-        font-weight:700;
-        font-size:get-vw(20px);
-        color:#00498C;
+        a {
+          font-weight:700;
+          font-size:get-vw(20px);
+          color:#00498C;
+        }
       }
     }
   }

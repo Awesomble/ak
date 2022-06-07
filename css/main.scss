@@ -792,7 +792,7 @@ main {
   }
   .top-visual {
     position: relative;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     .video-box {
       position: absolute;
       display: flex;
@@ -884,7 +884,8 @@ main {
       background: url(/images/bg_main_newsroom.png) no-repeat center center;
       background-size: cover;
       h2 {
-        padding-bottom: get-vw(50px);
+        //padding-bottom: get-vw(50px);
+        font-family: "arboria",sans-serif;
       }
       .btn-box {
         position: absolute;
@@ -895,10 +896,12 @@ main {
         align-items: center;
         justify-content: space-between;
         width: 100vw;
+        max-width: 408px;
+        margin: 0 auto;
         padding: 0 get-vw(24px);
         h3 {
           width: 100%;
-          margin-right: get-vw(15px);
+          //margin-right: get-vw(15px);
           box-sizing: border-box;
           &:last-child {
             margin-right: 0;
@@ -981,7 +984,8 @@ main {
       background: url(/images/bg_main.esg.png) no-repeat center center;
       background-size: cover;
       h2 {
-        padding-bottom: get-vw(50px);
+        //padding-bottom: get-vw(50px);
+        font-family: "arboria",sans-serif;
       }
       .btn-box {
         position: absolute;
@@ -991,8 +995,10 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         width: 100vw;
+        max-width: 408px;
+        margin: 0 auto;
         padding: 0 get-vw(24px);
         h3 {
           width: calc(50% - get-vw(15px));
@@ -1225,7 +1231,7 @@ main {
           width: 100%;
           padding: 0 60px;
           h3 {
-            width: calc(50% - 20px);
+            width: 50%;
             margin-right: 20px;
             line-height: 27px;
             &:nth-child(2n) {
@@ -1307,7 +1313,7 @@ main {
           left: 50%;
           margin-left: -204px;
           h3 {
-            margin-right: 24px;
+            //margin-right: 24px;
             a {
 
             }
@@ -1348,7 +1354,6 @@ main {
       .esg-top {
         .btn-box {
           h3 {
-            max-width: calc(25% - 24px);
             margin-right: 24px;
             &:nth-child(2n) {
               margin-right: 24px;

@@ -2175,7 +2175,7 @@ caption {
   font-size: 3.8888888889vw;
   color: #08A2DC;
 }
-.contact-ir .ir-phone li .number {
+.contact-ir .ir-phone li .number a {
   font-weight: 700;
   font-size: 5.5555555556vw;
   color: #00498C;
@@ -3541,7 +3541,7 @@ main h3 {
 }
 main .top-visual {
   position: relative;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 main .top-visual .video-box {
   position: absolute;
@@ -3637,7 +3637,7 @@ main .news-room .news-top {
   background-size: cover;
 }
 main .news-room .news-top h2 {
-  padding-bottom: 13.8888888889vw;
+  font-family: "arboria", sans-serif;
 }
 main .news-room .news-top .btn-box {
   position: absolute;
@@ -3648,11 +3648,12 @@ main .news-room .news-top .btn-box {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  max-width: 408px;
+  margin: 0 auto;
   padding: 0 6.6666666667vw;
 }
 main .news-room .news-top .btn-box h3 {
   width: 100%;
-  margin-right: 4.1666666667vw;
   box-sizing: border-box;
 }
 main .news-room .news-top .btn-box h3:last-child {
@@ -3732,7 +3733,7 @@ main .esg .esg-top {
   background-size: cover;
 }
 main .esg .esg-top h2 {
-  padding-bottom: 13.8888888889vw;
+  font-family: "arboria", sans-serif;
 }
 main .esg .esg-top .btn-box {
   position: absolute;
@@ -3742,8 +3743,10 @@ main .esg .esg-top .btn-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100vw;
+  max-width: 408px;
+  margin: 0 auto;
   padding: 0 6.6666666667vw;
 }
 main .esg .esg-top .btn-box h3 {
@@ -3958,7 +3961,7 @@ main .esg .esg-list ul li a div .img img {
     padding: 0 60px;
   }
   main .esg .esg-top .btn-box h3 {
-    width: calc(50% - 20px);
+    width: 50%;
     margin-right: 20px;
     line-height: 27px;
   }
@@ -4031,9 +4034,6 @@ main .esg .esg-list ul li a div .img img {
     left: 50%;
     margin-left: -204px;
   }
-  main .news-room .news-top .btn-box h3 {
-    margin-right: 24px;
-  }
   main .news-room .ak-news-list {
     padding: 0 100px 100px;
   }
@@ -4052,7 +4052,6 @@ main .esg .esg-list ul li a div .img img {
     height: 1080px;
   }
   main .esg .esg-top .btn-box h3 {
-    max-width: calc(25% - 24px);
     margin-right: 24px;
   }
   main .esg .esg-top .btn-box h3:nth-child(2n) {
