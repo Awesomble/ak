@@ -2526,6 +2526,11 @@
         background: url("../images/ico_history_close.png") no-repeat 50% 50%;
         background-size: cover;
       }
+      &.active{
+        &::before{
+          background: url("../images/ico_history_open.png") no-repeat 50% 50%;
+        }
+      }
       &::after{
         top:get-vw(4px);
         left:get-vw(12.5px);
