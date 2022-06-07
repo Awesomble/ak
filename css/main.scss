@@ -468,9 +468,17 @@ header {
                     a{
                       position: relative;
                     }
-                    &.active, &:hover {
+                    &.active {
                       a {
                         color: #8CE0FF!important;
+                        text-decoration: none;
+                        opacity: 1;
+                      }
+                    }
+                    &:hover {
+                      a {
+                        color: #8CE0FF!important;
+                        text-decoration: none;
                         opacity: 1;
                         &::before{
                           content: '';
@@ -486,7 +494,7 @@ header {
                     }
                     &:first-child.active, &:first-child:hover {
                       a {
-                        color: #fff!important;
+                        color: #fff;
                         &::before{
                           background:#FFFFFF;
                         }
@@ -762,7 +770,7 @@ header {
                       &.active {
                         a {
                           color: #08A2DC;
-                          text-decoration: underline;
+                          text-decoration: none;
                         }
                       }
                     }

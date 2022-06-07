@@ -111,6 +111,7 @@
         ul {
           li {
             &.active {
+              display: none;
               a {
                 color: #8CE0FF;
               }
@@ -257,6 +258,7 @@
             height: 74px;
             &.active {
               position: relative;
+              display: block;
               a {
                 font-weight: 700;
                 &::before {
@@ -2012,9 +2014,11 @@
           font-size:16px;
         }
         .number{
-          display:block;
-          margin-top:48px;
-          font-size:33px;
+          a {
+            display:block;
+            margin-top:48px;
+            font-size:33px;
+          }
         }
         & + li{
           margin-left:5px;

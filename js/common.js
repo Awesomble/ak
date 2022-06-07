@@ -67,7 +67,14 @@ let AKCOMMON = (function() {
                 _this.removeClass('on');
             } else {
                 _this.addClass('on');
+                _this.focus();
             }
+        });
+        $('.bbs_sort .bbs_button').on('focusout', function () {
+            const _this = $(this);
+            setTimeout(function () {
+                _this.removeClass('on');
+            }, 100);
         });
         // Top tab custom
         $('.top-tab ul li:first').on('click', function () {
@@ -76,7 +83,15 @@ let AKCOMMON = (function() {
                 _this.removeClass('on');
             } else {
                 _this.addClass('on');
+                _this.focus()
             }
+        });
+        $('.top-tab ul li').on('focusout', function () {
+            const _this = $(this).offsetParent('.top-tab');
+            setTimeout(function () {
+                _this.removeClass('on');
+            }, 100);
+
         });
         // Drag notice
         if ($('.tbl-scrollable .drag-noti').length) {
