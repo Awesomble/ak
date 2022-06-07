@@ -2746,6 +2746,16 @@
             }
           }
         }
+        &.active{
+          .year::after{
+            content:none;
+          }
+          ul{
+            overflow: visible;
+            height:auto;
+            margin:0;
+          }
+        }
       }
     }
   }
