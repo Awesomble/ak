@@ -2910,7 +2910,7 @@ caption {
   }
   .history-cont .history-wrap .year-wrap .year {
     position: absolute;
-    top: -8px;
+    top: -13px;
     left: 0;
     font-size: 36px;
   }
@@ -2956,12 +2956,8 @@ caption {
     margin-top: 6px;
   }
   .history-cont .history-wrap .year-wrap.active .year::after {
-    content: none;
-  }
-  .history-cont .history-wrap .year-wrap.active ul {
-    overflow: visible;
-    height: auto;
-    margin: 0;
+    font-size: 15px;
+    margin-left: 88px;
   }
 }
 /* Layout Style*/
