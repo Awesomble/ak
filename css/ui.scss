@@ -2409,6 +2409,16 @@
 
 /* 연혁 */
 .history-cont{
+  &.fix {
+    padding-top: get-vw(60px);
+    .history-tab{
+      position: fixed;
+      top: get-vw(64px);
+      width: 100%;
+      z-index: 9;
+      background-color: #fff;
+    }
+  }
   .history-tab{
     position: relative;
     &::after{
@@ -2640,6 +2650,16 @@
     padding:80px 0 100px;
     width:1200px;
     margin:0 auto;
+    &.fix {
+      padding-top: 0;
+      .history-tab{
+        position: relative;
+        top: 0;
+        width: auto;
+        z-index: 1;
+        background-color: transparent;
+      }
+    }
     .history-tab{
       position: relative;
       &::after{
@@ -2656,8 +2676,8 @@
         padding:0;
         background:transparent;
         &.fix {
-          position:fixed;
-          top:92px;
+          position: fixed;
+          top: 92px;
         }
         li{
           & + li{

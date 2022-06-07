@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 @import url("https://p.typekit.net/p.css?s=1&k=oyq3azw&ht=tk&f=34862.34863.34866.34867&a=16670750&app=typekit&e=css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,7 +22,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 4.2666666667vw;
-  font-family: "Spoqa Han Sans Neo", "돋움", Dotum, Arial, sans-serif;
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", "돋움", Dotum, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   vertical-align: baseline;
@@ -163,42 +164,6 @@ caption {
   font-weight: 700;
   src: local("Spoqa Han Sans Neo Bold"), url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf") format("truetype");
 }
-/*
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  font-weight: 500;
-  src: local('Spoqa Han Sans Neo Medium'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  font-weight: 400;
-  src: local('Spoqa Han Sans Neo Regular'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  font-weight: 300;
-  src: local('Spoqa Han Sans Neo Light'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  font-weight: 100;
-  src: local('Spoqa Han Sans Neo Thin'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.ttf') format('truetype');
-}*/
 /* 한글폰트 */
 @font-face {
   font-family: "Spoqa Han Sans Neo";
@@ -310,6 +275,9 @@ caption {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.topArea .visual.esg-news {
+  background-image: url("../images/img_esgNews_m.png");
 }
 .topArea .visual.ak-news {
   background-image: url("../images/img_akNews_m.png");
@@ -434,6 +402,9 @@ caption {
   .topArea .visual {
     margin-top: 32px;
     height: 480px;
+  }
+  .topArea .visual.esg-news {
+    background-image: url("../images/img_esgNews.png");
   }
   .topArea .visual.ak-news {
     background-image: url("../images/img_akNews.png");
@@ -2626,6 +2597,16 @@ caption {
   }
 }
 /* 연혁 */
+.history-cont.fix {
+  padding-top: 16.6666666667vw;
+}
+.history-cont.fix .history-tab {
+  position: fixed;
+  top: 17.7777777778vw;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+}
 .history-cont .history-tab {
   position: relative;
 }
@@ -2845,6 +2826,16 @@ caption {
     padding: 80px 0 100px;
     width: 1200px;
     margin: 0 auto;
+  }
+  .history-cont.fix {
+    padding-top: 0;
+  }
+  .history-cont.fix .history-tab {
+    position: relative;
+    top: 0;
+    width: auto;
+    z-index: 1;
+    background-color: transparent;
   }
   .history-cont .history-tab {
     position: relative;
