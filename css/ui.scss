@@ -75,6 +75,7 @@
     &.value{background-image:url("../images/img_value_m.png");}
     &.ir{background-image:url("../images/img_ir_m.png");}
     &.ir-governance{background-image:url("../images/img_ir_governance_m.png");}
+    &.investment{background-image:url("../images/img_investment_m.png");}
     &.intro-history{
       background-image:url("../images/img_introduce_history_m.png");
       .desc{
@@ -90,8 +91,9 @@
       }
     }
     &.intro{
-      background-position:68% 50%;
+      background-image:url("../images/img_introduce_m.png");
     }
+    &.intro-company{background-image:url("../images/img_introduce_company_m.png");}
     .top-tab {
       position: absolute;
       top: get-vw(192px);
@@ -194,6 +196,7 @@
       &.value{background-image:url("../images/img_value.png");}
       &.ir{background-image:url("../images/img_ir.png");}
       &.ir-governance{background-image:url("../images/img_ir_governance.png");}
+      &.investment{background-image:url("../images/img_investment.png");}
       &.intro-history{
         background-image:url("../images/img_introduce_history.png");
         .desc{
@@ -210,8 +213,9 @@
         }
       }
       &.intro{
-        background-position:50% 50%;
+        background-image:url("../images/img_introduce.png");
       }
+      &.intro-company{background-image:url("../images/img_introduce_company.png");}
       &.has-tab{
         margin-bottom:38px;
         &::after{
