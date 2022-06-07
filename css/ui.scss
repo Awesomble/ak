@@ -72,7 +72,9 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
-    &.value{background-image:url("../images/img_value_m.png")}
+    &.value{background-image:url("../images/img_value_m.png");}
+    &.ir{background-image:url("../images/img_ir_m.png");}
+    &.ir-governance{background-image:url("../images/img_ir_governance_m.png");}
     &.intro-history{
       background-image:url("../images/img_introduce_history_m.png");
       .desc{
@@ -189,7 +191,9 @@
     .visual{
       margin-top: 32px;
       height: 480px;
-      &.value{background-image:url(../images/img_value.png)}
+      &.value{background-image:url("../images/img_value.png");}
+      &.ir{background-image:url("../images/img_ir.png");}
+      &.ir-governance{background-image:url("../images/img_ir_governance.png");}
       &.intro-history{
         background-image:url("../images/img_introduce_history.png");
         .desc{
