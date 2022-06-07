@@ -2620,6 +2620,10 @@
         height:auto;
         padding:0;
         background:transparent;
+        &.fix {
+          position:fixed;
+          top:92px;
+        }
         li{
           & + li{
             margin-top:20px;
