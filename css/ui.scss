@@ -72,6 +72,8 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
+    &.ak-news{background-image:url("../images/img_akNews_m.png");}
+    &.management{background-image:url("../images/img_esg_management_m.png");}
     &.value{background-image:url("../images/img_value_m.png");}
     &.ir{background-image:url("../images/img_ir_m.png");}
     &.ir-governance{background-image:url("../images/img_ir_governance_m.png");}
@@ -194,6 +196,8 @@
     .visual{
       margin-top: 32px;
       height: 480px;
+      &.ak-news{background-image:url("../images/img_akNews.png");}
+      &.management{background-image:url("../images/img_esg_management.png");}
       &.value{background-image:url("../images/img_value.png");}
       &.ir{background-image:url("../images/img_ir.png");}
       &.ir-governance{background-image:url("../images/img_ir_governance.png");}
