@@ -18,7 +18,7 @@ let AKCOMMON = (function() {
         $(window).on('resize', function () {
             _public.WIDTH = $(window).width();
             _public.HEIGHT = $(window).height();
-            console.log(_public.WIDTH, _public.HEIGHT)
+            if ($('.year-wrap.active').length) $('.year-wrap.active').removeClass('active');
         }).trigger('resize');
 
         // Navigation
@@ -82,13 +82,6 @@ let AKCOMMON = (function() {
             })
         }
         // History
-        $('.selected-tab').on('click', function (e) {
-            if ($('.history-tab').is('.active')) {
-                $('.history-tab').removeClass('active');
-            } else {
-                $('.history-tab').addClass('active');
-            }
-        });
         if ($('.history-cont').length) {
             $('.select-tab li, .selected-tab li').on('click', function (e) {
                 if (_public.WIDTH > 960 || $('.history-tab').is('.active')) {
@@ -97,6 +90,21 @@ let AKCOMMON = (function() {
                     _this.addClass('active');
                     _public.scrollTo(_this.attr('data-btn-year'));
                     if ($('.history-tab').is('.active')) $('.history-tab').removeClass('active');
+                }
+            });
+            $('.selected-tab').on('click', function (e) {
+                if ($('.history-tab').is('.active')) {
+                    $('.history-tab').removeClass('active');
+                } else {
+                    $('.history-tab').addClass('active');
+                }
+            });
+            $('.year-wrap').on('click', function (e) {
+                const _this = $(this);
+                if (_this.is('.active')) {
+                    _this.removeClass('active');
+                } else {
+                    _this.addClass('active');
                 }
             });
         }
