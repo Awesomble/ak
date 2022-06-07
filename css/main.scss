@@ -222,11 +222,11 @@ header {
     &.top {
       .head {
         .quick-menu {
-          display: none;
+          display: block;
           ul {
             li {
               a {
-                color: #fff;
+                //color: #fff;
               }
             }
           }
@@ -236,7 +236,14 @@ header {
     &.main-top {
       .head {
         .quick-menu {
-          display: none;
+          display: block;
+          ul {
+            li {
+              a {
+                color: #fff;
+              }
+            }
+          }
         }
       }
     }
@@ -249,7 +256,7 @@ header {
         }
       }
       .quick-menu {
-        display: block;
+        display: none;
         width: calc(100% - 200px - 80px);
         max-width: 600px;
         ul {

@@ -3139,19 +3139,19 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
     height: 92px;
   }
   header.top .head .quick-menu {
-    display: none;
-  }
-  header.top .head .quick-menu ul li a {
-    color: #fff;
+    display: block;
   }
   header.main-top .head .quick-menu {
-    display: none;
+    display: block;
+  }
+  header.main-top .head .quick-menu ul li a {
+    color: #fff;
   }
   header .head h1 a img {
     height: 32px;
   }
   header .head .quick-menu {
-    display: block;
+    display: none;
     width: calc(100% - 200px - 80px);
     max-width: 600px;
   }
