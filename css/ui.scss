@@ -2594,6 +2594,23 @@
           }
         }
       }
+      &.active{
+        .year::after{
+          content:'자세히보기';
+          display:inline-block;
+          margin-left:get-vw(10px);
+          font-size:get-vw(13px);
+          font-weight:500;
+          color:inherit;
+          vertical-align: middle;
+        }
+        ul{
+          overflow: hidden;
+          height:0;
+          margin:0;
+          transition: height 0.3s;
+        }
+      }
     }
   }
 }
