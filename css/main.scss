@@ -317,6 +317,35 @@ header {
       flex-direction: column;
       line-height: 93px;
       box-sizing: border-box;
+      &.main-top {
+        background-color: #fff;
+        .head {
+          h1 {
+            a {
+              img:nth-child(1) {
+                display: none;
+              }
+              img:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+          .btn-show-menu {
+            &:before, &:after {
+              background-color: #454545;
+            }
+          }
+          .quick-menu {
+            ul {
+              li {
+                a {
+                  color: #454545;
+                }
+              }
+            }
+          }
+        }
+      }
       .quick-menu {
         ul {
           li {

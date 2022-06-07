@@ -3205,6 +3205,21 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
     line-height: 93px;
     box-sizing: border-box;
   }
+  header.show-menu.main-top {
+    background-color: #fff;
+  }
+  header.show-menu.main-top .head h1 a img:nth-child(1) {
+    display: none;
+  }
+  header.show-menu.main-top .head h1 a img:nth-child(2) {
+    display: block;
+  }
+  header.show-menu.main-top .head .btn-show-menu:before, header.show-menu.main-top .head .btn-show-menu:after {
+    background-color: #454545;
+  }
+  header.show-menu.main-top .head .quick-menu ul li a {
+    color: #454545;
+  }
   header.show-menu .quick-menu ul li.active a:after {
     top: 64px;
   }
