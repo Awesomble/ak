@@ -139,6 +139,34 @@ header {
           background: url(/images/ico_nav_menu_arrow_blue.png) no-repeat right get-vw(35px);
           background-size: auto get-vw(16px);
           border-bottom: 1px solid #E8E8E8;
+          /* Todo 2nd remove */
+          &:nth-child(2) {
+            > ul {
+              > li {
+                > ul {
+                  &:nth-child(3) {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(3) {
+            > ul {
+              > li {
+                > ul {
+                  &:nth-child(1) {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+          /* //Todo 2nd remove */
           h3 {
             a {
               display: flex;
@@ -169,7 +197,7 @@ header {
                 margin-bottom: get-vw(20px);
                 padding-bottom: get-vw(20px);
                 border-bottom: 1px solid #E8E8E8;
-                &:not([style*="display: none"]):last-child {
+                &:last-child {
                   margin-bottom: 0;
                   padding-bottom: 0;
                   border-bottom: 0;
