@@ -94,6 +94,7 @@
       background-image:url("../images/img_introduce_m.png");
     }
     &.intro-company{background-image:url("../images/img_introduce_company_m.png");}
+    &.financial{background-image:url("../images/img_financial_m.png");}
     .top-tab {
       position: absolute;
       top: get-vw(192px);
@@ -216,6 +217,7 @@
         background-image:url("../images/img_introduce.png");
       }
       &.intro-company{background-image:url("../images/img_introduce_company.png");}
+      &.financial{background-image:url("../images/img_financial.png");}
       &.has-tab{
         margin-bottom:38px;
         &::after{
