@@ -21,23 +21,6 @@ header {
   background-color: #fff;
   transition: background-color 0.3s;
   z-index: 9;
-  &.main {
-    background-color: transparent;
-    .head {
-      h1 {
-        a {
-          img {
-            &:nth-child(1) {
-              display: block;
-            }
-            &:nth-child(2) {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
   .head {
     display: flex;
     align-items: center;
@@ -238,6 +221,23 @@ header {
     height: 92px;
     padding: 0 60px;
     background-color: transparent;
+    &.main {
+      background-color: transparent;
+      .head {
+        h1 {
+          a {
+            img {
+              &:nth-child(1) {
+                display: block;
+              }
+              &:nth-child(2) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
     &.top {
       .head {
         .quick-menu {
@@ -306,6 +306,9 @@ header {
               font-size: 17px;
               font-weight: 700;
               color: #454545;
+              &:hover {
+                color: #00498C;
+              }
             }
             &:last-child {
               margin-right: 0;
@@ -399,6 +402,7 @@ header {
         display: flex;
         width: 100vw;
         height: 265px;
+        margin-top: -1px;
         padding: 36px 0;
         box-sizing: content-box;
         background-color: #00498C;

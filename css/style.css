@@ -2983,15 +2983,6 @@ header {
   transition: background-color 0.3s;
   z-index: 9;
 }
-header.main {
-  background-color: transparent;
-}
-header.main .head h1 a img:nth-child(1) {
-  display: block;
-}
-header.main .head h1 a img:nth-child(2) {
-  display: none;
-}
 header .head {
   display: flex;
   align-items: center;
@@ -3149,6 +3140,15 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
     padding: 0 60px;
     background-color: transparent;
   }
+  header.main {
+    background-color: transparent;
+  }
+  header.main .head h1 a img:nth-child(1) {
+    display: block;
+  }
+  header.main .head h1 a img:nth-child(2) {
+    display: none;
+  }
   header.top .head .quick-menu {
     display: block;
   }
@@ -3190,6 +3190,9 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
     font-size: 17px;
     font-weight: 700;
     color: #454545;
+  }
+  header .head .quick-menu ul li a:hover {
+    color: #00498C;
   }
   header .head .quick-menu ul li:last-child {
     margin-right: 0;
@@ -3254,6 +3257,7 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
     display: flex;
     width: 100vw;
     height: 265px;
+    margin-top: -1px;
     padding: 36px 0;
     box-sizing: content-box;
     background-color: #00498C;
