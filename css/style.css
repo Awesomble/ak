@@ -54,6 +54,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html, body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 body {
   line-height: 1.4;
 }
@@ -428,7 +433,7 @@ caption {
     left: 50%;
     width: 405px;
     height: 40px;
-    transform: translateX(80px);
+    transform: translateX(195px);
     padding: 9px 15px 7px;
     font-size: 14px;
     text-align: center;
@@ -1663,8 +1668,9 @@ caption {
     position: absolute;
     top: auto;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
     width: 1920px;
     height: 448px;
     background: url("/images/bg_vision_pc.png") no-repeat 50% 50%;
@@ -1793,6 +1799,12 @@ caption {
   width: 100%;
   height: auto;
 }
+.intro-ci .ci-wrap .symbol-size img.mo {
+  display: block;
+}
+.intro-ci .ci-wrap .symbol-size img.pc {
+  display: none;
+}
 .intro-ci .ci-wrap .comment {
   margin-top: 1.3888888889vw;
   font-size: 3.6111111111vw;
@@ -1859,6 +1871,12 @@ caption {
   }
   .intro-ci .ci-wrap .symbol-size {
     margin-top: 5px;
+  }
+  .intro-ci .ci-wrap .symbol-size .pc {
+    display: block;
+  }
+  .intro-ci .ci-wrap .symbol-size .mo {
+    display: none;
   }
   .intro-ci .ci-wrap .comment {
     margin-top: 5px;

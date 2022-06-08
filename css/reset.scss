@@ -50,6 +50,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+html, body {
+  overflow: hidden;
+  overflow-y: auto;
+}
 body {
   line-height: 1.4;
 }
