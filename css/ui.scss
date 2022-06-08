@@ -329,7 +329,7 @@
     width:100%;
     padding:80px 48px 110px;
     &.pd-rl-20{
-      padding:80px 0 110px;
+      padding:80px 48px 110px;
     }
   }
 }
@@ -1452,6 +1452,7 @@
         margin-top:0;
       }
       .inner{
+        height: 162px;
         padding:28px 20px 40px;
       }
       .tit{
@@ -1518,8 +1519,8 @@
     .ak-value-list{
       width:1200px;
       margin:25px auto 0;
-      &.reflection{
-
+      .inner{
+        height:138px;
       }
     }
     .tk-arboria{
@@ -1537,7 +1538,14 @@
     }
   }
 }
-
+@media all and (min-width: 961px) and (max-width:1320px){
+  .esg-reflection {
+    .ak-value-list{
+      width:100%;
+      padding: 0 30px;
+    }
+  }
+}
 .value-talent{
   .visual-wrap{
     width:100%;
@@ -1764,6 +1772,16 @@
     }
   }
 }
+@media all and (min-width: 961px) and (max-width:1320px){
+  .intro-ci{
+    .download-wrap {
+      .btn-download{
+        width:auto;
+        padding-right:60px;
+      }
+    }
+  }
+}
 .ceo-message{
   text-align: center;
   .cont_tit{
@@ -1986,6 +2004,19 @@
   .ceo-message{
     width:100%;
     padding:0 48px;
+    .cont_tit, .desc{
+      padding-right:350px;
+      word-break: keep-all;
+      em{
+        word-break: inherit;
+      }
+    }
+  }
+  .message-list{
+    padding:100px 45px;
+    ul{
+      width:auto;
+    }
   }
 }
 .contact-ir{
