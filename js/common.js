@@ -129,6 +129,8 @@ let AKCOMMON = (function() {
         }
     }
     _private.headerTopEffect = function () {
+        var nowScrollTop = $(this).scrollTop();
+        let lastScrollTop = 0, delta = 5;
         window.addEventListener('scroll', function () {
             scrollVal = document.documentElement.scrollTop || document.body.scrollTop;
             // header
@@ -138,6 +140,19 @@ let AKCOMMON = (function() {
             } else {
                 if (_public.topEffect) $('header').addClass('main-top');
                 else $('header').addClass('top');
+            }
+            // scroll up down check
+            if(Math.abs(lastScrollTop - scrollVal) >= delta){
+                if (scrollVal > lastScrollTop){
+                    // SCROLLING DOWN
+                    if (_public.topEffect) $('header').removeClass('main-up');
+                    else $('header').removeClass('up');
+                } else {
+                    // SCROLLING UP
+                    if (_public.topEffect) $('header').addClass('main-up');
+                    else $('header').addClass('up');
+                }
+                lastScrollTop = scrollVal;
             }
             // Todo : 2nd develop
             // if (_public.WIDTH < 961) {

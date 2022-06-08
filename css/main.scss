@@ -63,7 +63,7 @@ header {
     display: none;
   }
   // Scroll top type
-  &.main-top {
+  &.main-top, &.main-up {
     background-color: transparent;
     .head {
       h1 {
@@ -266,7 +266,7 @@ header {
         }
       }
     }
-    &.top {
+    &.top, &.up {
       .head {
         .quick-menu {
           display: block;
@@ -280,7 +280,7 @@ header {
         }
       }
     }
-    &.main-top {
+    &.main-top, &.main-up {
       .head {
         .quick-menu {
           display: block;
@@ -365,7 +365,7 @@ header {
       flex-direction: column;
       line-height: 93px;
       box-sizing: border-box;
-      &.main-top {
+      &.main-top, &.main-up {
         background-color: #fff;
         .head {
           h1 {
