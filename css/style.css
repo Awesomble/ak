@@ -1246,6 +1246,7 @@ caption {
   }
   .tbl-finance-wrap .tbl-finance th, .tbl-finance-wrap .tbl-finance td {
     padding: 20px;
+    font-size: 16px;
   }
 }
 /* 애경가치 */
@@ -2048,7 +2049,7 @@ caption {
   .ceo-message {
     position: relative;
     width: 1200px;
-    margin: 80px auto 0;
+    margin: 117px auto 0;
     text-align: left;
   }
   .ceo-message .cont_tit {
