@@ -201,9 +201,7 @@ caption {
   font-family: "arboria", sans-serif;
 }
 
-/* variables */
-/* Layout Style*/
-/* UI Style(Button, Form, Dialogs */
+/* variables */ /* Layout Style*/ /* UI Style(Button, Form, Dialogs */
 .blind {
   overflow: hidden;
   position: absolute;
@@ -380,12 +378,10 @@ caption {
   .mo {
     display: none;
   }
-
   .content, .topArea {
     max-width: 2560px;
     margin: 0 auto;
   }
-
   .topArea {
     padding-top: 36px;
   }
@@ -517,7 +513,6 @@ caption {
     background-color: #00498C;
     color: #fff;
   }
-
   .cont {
     margin: 0 auto;
   }
@@ -718,7 +713,6 @@ caption {
     width: 220px;
     margin-left: 6px;
   }
-
   .bbs_sort .bbs_button {
     height: 44px;
     font-size: 16px;
@@ -737,12 +731,10 @@ caption {
   .bbs_sort .bbs_sortList li + li {
     margin-top: 10px;
   }
-
   .btn-search {
     width: 24px;
     height: 24px;
   }
-
   .search-input {
     padding-right: 24px;
   }
@@ -948,7 +940,6 @@ caption {
     padding: 60px 0 60px;
     font-size: 18px;
   }
-
   .bbs-more li {
     display: flex;
     justify-content: left;
@@ -974,11 +965,9 @@ caption {
     height: 16px;
     right: 30px;
   }
-
   .btn-area {
     margin-top: 50px;
   }
-
   .btn-p {
     width: 312px;
     height: 60px;
@@ -1089,7 +1078,6 @@ caption {
     bottom: 32px;
     left: 36px;
   }
-
   .btn-download {
     height: 24px;
     font-size: 14px;
@@ -1210,7 +1198,6 @@ caption {
     width: 16px;
     height: 16px;
   }
-
   .tbl-title-area {
     margin-bottom: 12px;
   }
@@ -1221,7 +1208,6 @@ caption {
     top: 24px;
     font-size: 14px;
   }
-
   .tbl-finance-wrap + .tbl-title-area {
     margin-top: 100px;
   }
@@ -1370,7 +1356,6 @@ caption {
     width: 100%;
     height: auto;
   }
-
   .core-value {
     padding-bottom: 100px;
   }
@@ -1614,11 +1599,9 @@ caption {
   .quotes img {
     width: 17px;
   }
-
   .sub-desc {
     font-size: 24px;
   }
-
   .ak-value-list {
     display: flex;
     margin: 25px -15px;
@@ -1667,7 +1650,6 @@ caption {
   .ak-value-list.goal li + li::before {
     content: none;
   }
-
   .esg-reflection {
     position: relative;
     overflow: hidden;
@@ -2083,7 +2065,6 @@ caption {
     width: 92px;
     border-top: 1px solid #0D0D0D;
   }
-
   .message-list {
     padding: 100px 0;
     margin-top: 114px;
@@ -2137,7 +2118,6 @@ caption {
     color: #454545;
     word-break: keep-all;
   }
-
   .catchphrase {
     padding: 100px 0;
   }
@@ -2480,7 +2460,6 @@ caption {
   .tbl-title-area + .tbl-scrollable {
     padding-top: 6px;
   }
-
   .tbl-scrollable {
     overflow-x: auto;
     width: 100%;
@@ -2510,7 +2489,6 @@ caption {
   .tbl-scrollable .drag-noti {
     display: none;
   }
-
   .notice-list {
     margin-top: 20px;
     font-size: 14px;
@@ -2519,7 +2497,6 @@ caption {
     padding-left: 34px;
     text-indent: -34px;
   }
-
   .bod-composition {
     padding: 100px 0 80px;
     background: #EFF6FC;
@@ -3114,7 +3091,7 @@ header.expand nav > ul > li > ul {
   top: -16.6666666667vw;
   left: 41.6666666667vw;
   display: block;
-  width: calc(100% - 41.6666666667vw);
+  width: calc(100% - 45.5555555556vw);
   height: 0;
   overflow: hidden;
   transition: height 0.6s ease-out;
@@ -4135,7 +4112,6 @@ main .esg .esg-list ul li a div .img img {
     width: auto;
     height: 100%;
   }
-
   #background_video {
     width: auto;
     height: 100%;
