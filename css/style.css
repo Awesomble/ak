@@ -872,6 +872,11 @@ caption {
   color: #454545;
   white-space: pre-line;
 }
+.bbs_detail .bbs-view-content img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 
 .bbs-more {
   border-top: 1px solid #0D0D0D;
@@ -880,6 +885,9 @@ caption {
 .bbs-more li {
   position: relative;
   padding: 4.4444444444vw 11.1111111111vw 4.4444444444vw 0;
+}
+.bbs-more li.disabled {
+  display: none;
 }
 .bbs-more li + li {
   border-top: 1px solid #E8E8E8;
@@ -932,6 +940,9 @@ caption {
   .bbs_detail {
     margin-top: 40px;
   }
+  .bbs_detail .top {
+    margin-top: 15px;
+  }
   .bbs_detail .top .info {
     display: flex;
   }
@@ -944,6 +955,10 @@ caption {
   .bbs_detail .bbs-view-content {
     padding: 60px 0 60px;
     font-size: 18px;
+  }
+  .bbs_detail .bbs-view-content img {
+    width: auto;
+    height: auto;
   }
   .bbs-more li {
     display: flex;
