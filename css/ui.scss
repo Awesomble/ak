@@ -2445,6 +2445,7 @@
         height:294px;
         padding:32px 0 36px 30px;
         text-align: left;
+        vertical-align: top;
         & + li {
           margin:4px;
         }
@@ -2496,6 +2497,21 @@
             border:none;
             background:#00498C;
             color:#FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 961px) and (max-width:1320px){
+  .bod-composition {
+    .bod-list{
+      width:100%;
+      li{
+        width:23%;
+        .name{
+          span{
+            word-break: keep-all;
           }
         }
       }
