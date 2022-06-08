@@ -210,6 +210,7 @@ let AKCOMMON = (function() {
             window.scrollTo(0, fixScVal)
         });
     }
+
     return _public;
 })();
 
