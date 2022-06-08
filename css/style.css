@@ -1114,7 +1114,7 @@ caption {
 .tab {
   display: flex;
   justify-content: center;
-  margin: 0 -4.4444444444vw;
+  margin: 3.3333333333vw -4.4444444444vw 6.1111111111vw;
 }
 .tab li {
   margin: 0 2.2222222222vw;
@@ -1180,6 +1180,7 @@ caption {
 .tbl-finance-wrap .tbl-finance th, .tbl-finance-wrap .tbl-finance td {
   padding: 4.1666666667vw 4.4444444444vw;
   border-bottom: 1px solid #E8E8E8;
+  font-size: 3.8888888889vw;
   color: #0D0D0D;
 }
 .tbl-finance-wrap .tbl-finance th.txtc-skyblue, .tbl-finance-wrap .tbl-finance td.txtc-skyblue {
