@@ -4461,7 +4461,6 @@ footer .link:after {
     color: #00498C;
   }
   .popup .pop-con > div > ul > li > ul > li {
-    margin-top: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -4478,6 +4477,9 @@ footer .link:after {
     font-size: 16px;
     line-height: 26px;
     color: #777;
+  }
+  .popup .pop-con > div > ul > li > ul > li > p:last-child {
+    margin-bottom: 10px;
   }
   .popup .pop-con > div > ul > li > ul > li > ul > li {
     margin-left: 45px;
