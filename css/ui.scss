@@ -639,10 +639,6 @@
     display:flex;
     justify-content: space-between;
     margin-top:get-vw(8px);
-    img{
-      width:100%;
-      height:auto;
-    }
     span, em{
       display:inline-block;
       font-size:get-vw(14px);
@@ -662,6 +658,11 @@
     font-weight: 400;
     color: #454545;
     white-space: pre-line;
+    img{
+      width:100%;
+      height:auto;
+      text-align: center;
+    }
   }
 }
 .bbs-more{
