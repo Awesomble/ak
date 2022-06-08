@@ -2203,6 +2203,17 @@
     }
   }
 }
+@media all and (min-width: 961px) and (max-width:1320px){
+  .esg-level-wrap{
+    justify-content: space-between;
+    .esg-mark-wrap{
+      padding-right:2%;
+      & + .esg-mark-wrap{
+        padding-left:2%;
+      }
+    }
+  }
+}
 .tbl-scrollable{
   position: relative;
   overflow-x:scroll;
@@ -2772,7 +2783,7 @@
         background:transparent;
         &.fix {
           position: fixed;
-          top: 92px;
+          top: 80px;
         }
         li{
           & + li{
@@ -2886,6 +2897,15 @@
           }
         }
       }
+    }
+  }
+}
+@media all and (min-width: 961px) and (max-width:1320px){
+  .history-cont{
+    width:100%;
+    padding:80px 45px 100px;
+    .history-wrap{
+      width:calc(100% - 240px);
     }
   }
 }
