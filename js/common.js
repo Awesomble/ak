@@ -142,18 +142,18 @@ let AKCOMMON = (function() {
                 else $('header').addClass('top');
             }
             // scroll up down check
-            if(Math.abs(lastScrollTop - scrollVal) >= delta){
-                if (scrollVal > lastScrollTop){
-                    // SCROLLING DOWN
-                    if (_public.topEffect) $('header').removeClass('main-up');
-                    else $('header').removeClass('up');
-                } else {
-                    // SCROLLING UP
-                    if (_public.topEffect) $('header').addClass('main-up');
-                    else $('header').addClass('up');
-                }
-                lastScrollTop = scrollVal;
-            }
+            // if(Math.abs(lastScrollTop - scrollVal) >= delta){
+            //     if (scrollVal > lastScrollTop){
+            //         // SCROLLING DOWN
+            //         if (_public.topEffect) $('header').removeClass('main-up');
+            //         else $('header').removeClass('up');
+            //     } else {
+            //         // SCROLLING UP
+            //         if (_public.topEffect) $('header').addClass('main-up');
+            //         else $('header').addClass('up');
+            //     }
+            //     lastScrollTop = scrollVal;
+            // }
             // Todo : 2nd develop
             // if (_public.WIDTH < 961) {
             //     console.log($('header').height(), scrollVal)
