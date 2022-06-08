@@ -22,6 +22,11 @@
     padding-top: get-vw(100px);
   }
 }
+.iframe-wrap{
+  width:100%;
+  height:auto;
+  overflow-x: scroll;
+}
 @media all and (min-width: 960px) {
   .topArea {
     &.sub {
@@ -39,6 +44,11 @@
   }
   &.pd-rl-20{
     padding:get-vw(45px) get-vw(20px) get-vw(44px);
+  }
+  .iframe-wrap{
+    width:100%;
+    height:auto;
+    overflow-x: auto;
   }
 }
 
