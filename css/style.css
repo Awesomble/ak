@@ -3219,6 +3219,7 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   header .head .quick-menu ul li.active a {
     position: relative;
     display: flex;
+    color: #00498C;
   }
   header .head .quick-menu ul li.active a:after {
     content: "";
