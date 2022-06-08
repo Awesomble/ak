@@ -38,7 +38,7 @@
     font-weight:700;
   }
   &.pd-rl-20{
-    padding:get-vw(30px) get-vw(20px) get-vw(44px);
+    padding:get-vw(45px) get-vw(20px) get-vw(44px);
   }
 }
 
@@ -157,7 +157,7 @@
             height: get-vw(48px);
             padding: 0 get-vw(24px);
             line-height: get-vw(48px);
-            font-size: get-vw(17px);
+            font-size: get-vw(16px);
             font-weight: 500;
             color: #fff;
             background-color: #003a70;
@@ -1027,7 +1027,6 @@
 /* 애경가치 */
 .founded-story{
   position:relative;
-  padding-top:get-vw(15px);
   text-align:center;
   .desc{
     .caption{
