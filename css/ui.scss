@@ -907,7 +907,7 @@
 .tab{
   display:flex;
   justify-content: center;
-  margin:0 get-vw(-16px);
+  margin:get-vw(12px) get-vw(-16px) get-vw(22px);
   li{
     margin:0 get-vw(8px);
     a{
@@ -972,6 +972,7 @@
     th, td{
       padding:get-vw(15px) get-vw(16px);
       border-bottom:1px solid #E8E8E8;
+      font-size:get-vw(14px);
       color:#0D0D0D;
       &.txtc-skyblue {
         color:#08A2DC;
