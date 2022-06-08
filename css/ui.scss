@@ -212,7 +212,7 @@
           left:50%;
           width:405px;
           height:40px;
-          transform: translateX(80px);
+          transform: translateX(195px);
           padding:9px 15px 7px;
           font-size:14px;
           text-align:center;
@@ -1608,6 +1608,12 @@
       img{
         width:100%;
         height:auto;
+        &.mo{
+          display: block;
+        }
+        &.pc{
+          display: none;
+        }
       }
     }
     .comment{
@@ -1675,6 +1681,12 @@
       }
       .symbol-size{
         margin-top:5px;
+        .pc{
+            display:block;
+          }
+       .mo{
+          display:none;
+        }
       }
       .comment{
         margin-top:5px;
