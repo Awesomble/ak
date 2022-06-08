@@ -3562,6 +3562,7 @@ main .top-visual .video-box.mo {
 main .top-visual .video-box video {
   z-index: -1;
   width: 100vw;
+  height: 100vh;
 }
 main .top-visual .typo-box {
   position: absolute;
