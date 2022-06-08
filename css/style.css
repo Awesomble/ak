@@ -231,6 +231,12 @@ caption {
   padding-top: 27.7777777778vw;
 }
 
+.iframe-wrap {
+  width: 100%;
+  height: auto;
+  overflow-x: scroll;
+}
+
 @media all and (min-width: 960px) {
   .topArea.sub {
     padding-top: 153px;
@@ -247,6 +253,11 @@ caption {
 }
 .cont.pd-rl-20 {
   padding: 12.5vw 5.5555555556vw 12.2222222222vw;
+}
+.cont .iframe-wrap {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
 }
 
 /* 상단 제목 및 비주얼 */
@@ -1071,6 +1082,7 @@ caption {
     padding: 15px;
   }
   .download-list li:hover a {
+    height: 278px;
     border: 2px solid #08A2DC;
   }
   .download-list li:hover a .btn-download {
@@ -3207,6 +3219,7 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   header .head .quick-menu ul li.active a {
     position: relative;
     display: flex;
+    color: #00498C;
   }
   header .head .quick-menu ul li.active a:after {
     content: "";
