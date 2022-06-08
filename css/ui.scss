@@ -666,6 +666,9 @@
   li{
     position:relative;
     padding:get-vw(16px) get-vw(40px) get-vw(16px) 0;
+    &.disabled{
+      display: none;
+    }
     + li {
       border-top:1px solid #E8E8E8;
     }
