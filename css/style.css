@@ -232,7 +232,7 @@ caption {
   }
 }
 .cont {
-  padding: 8.3333333333vw 6.6666666667vw 12.2222222222vw;
+  padding: 12.5vw 6.6666666667vw 12.2222222222vw;
 }
 .cont .cont_tit {
   display: block;
@@ -241,7 +241,7 @@ caption {
   font-weight: 700;
 }
 .cont.pd-rl-20 {
-  padding: 8.3333333333vw 5.5555555556vw 12.2222222222vw;
+  padding: 12.5vw 5.5555555556vw 12.2222222222vw;
 }
 
 /* 상단 제목 및 비주얼 */
@@ -363,7 +363,7 @@ caption {
   height: 13.3333333333vw;
   padding: 0 6.6666666667vw;
   line-height: 13.3333333333vw;
-  font-size: 4.7222222222vw;
+  font-size: 4.4444444444vw;
   font-weight: 500;
   color: #fff;
   background-color: #003a70;
@@ -1218,7 +1218,6 @@ caption {
 /* 애경가치 */
 .founded-story {
   position: relative;
-  padding-top: 4.1666666667vw;
   text-align: center;
 }
 .founded-story .desc .caption {
@@ -3562,7 +3561,6 @@ main .top-visual .video-box.mo {
 main .top-visual .video-box video {
   z-index: -1;
   width: 100vw;
-  height: 100vh;
 }
 main .top-visual .typo-box {
   position: absolute;

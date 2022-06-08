@@ -215,5 +215,5 @@ let AKCOMMON = (function() {
 
 //init
 $(function () {
-    // AKCOMMON.init();
+    AKCOMMON.init();
 });
