@@ -327,7 +327,10 @@
 @media all and (min-width: 961px) and (max-width:1320px) {
   .cont{
     width:100%;
-    padding:60px 48px 110px;
+    padding:80px 48px 110px;
+    &.pd-rl-20{
+      padding:80px 0 110px;
+    }
   }
 }
 
@@ -1977,6 +1980,12 @@
       width:598px;
       height:auto;
     }
+  }
+}
+@media all and (min-width: 961px) and (max-width:1320px){
+  .ceo-message{
+    width:100%;
+    padding:0 48px;
   }
 }
 .contact-ir{
