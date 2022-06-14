@@ -1865,11 +1865,11 @@
 }
 .catchphrase{
   width:100%;
-  padding:get-vw(55px) 0;
+  padding:get-vw(50px) 0 get-vw(44px);
   text-align: center;
   background: #00498C;
   img{
-    width:get-vw(182px);
+    width:get-vw(178px);
     height:auto;
   }
 }
@@ -1993,9 +1993,9 @@
     }
   }
   .catchphrase{
-    padding:100px 0;
+    padding:80px 0 70px;
     img{
-      width:598px;
+      width:491.38px;
       height:auto;
     }
   }
