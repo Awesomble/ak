@@ -456,6 +456,12 @@
       font-size:get-vw(14px);
       color:#777777;
     }
+    &.no-data{
+      padding:get-vw(100px) 0;
+      font-size:get-vw(16px);
+      color:#0D0D0D;
+      text-align: center;
+    }
   }
 }
 .bbsTbl{
@@ -486,6 +492,15 @@
         font-weight:500;
         color:#00498C;
       }
+    }
+  }
+  tr.no-data{
+    td{
+      height:auto;
+      padding:150px 0;
+      font-size:18px;
+      color:#0D0D0D;
+      text-align: center;
     }
   }
 }
