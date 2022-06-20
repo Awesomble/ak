@@ -862,6 +862,10 @@
       }
       a{
         font-size:18px;
+        &:hover{
+          font-weight: 500;
+          color: #00498C;
+        }
       }
       &::after{
         width:16px;
