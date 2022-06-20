@@ -15,7 +15,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  height: get-vw(64px);
+  height: get-vw(56px);
   padding: 0 24px 0 20px;
   box-sizing: border-box;
   background-color: #fff;
@@ -250,7 +250,7 @@ header {
     padding: 0 60px;
     //background-color: transparent;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
-    transition: all 0.6s ease;
+    //transition: all 0.6s ease;
     &.main {
       //background-color: transparent;
       .head {
@@ -307,7 +307,7 @@ header {
         }
       }
       .quick-menu {
-        display: none;
+        display: block;
         width: calc(100% - 200px - 80px);
         max-width: 600px;
         ul {
@@ -506,6 +506,7 @@ header {
                       }
                     }
                     &:first-child {
+                      margin-bottom: 15px;
                       a {
                         font-size: 17px;
                         font-weight: 700;
@@ -514,7 +515,7 @@ header {
                     }
                     a {
                       font-size: 16px;
-                      font-weight: 500;
+                      font-weight: 400;
                       color: #fff;
                       opacity: 0.7;
                     }
@@ -661,7 +662,7 @@ header {
         overflow-y: auto;
         a {
           font-size: 16px;
-          font-weight: 500;
+          font-weight: 400;
         }
         > ul {
           display: flex;
@@ -754,6 +755,7 @@ header {
                       }
                     }
                     &:first-child {
+                      margin-bottom: 15px;
                       a {
                         font-size: 17px;
                         font-weight: 700;

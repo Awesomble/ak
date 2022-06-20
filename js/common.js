@@ -164,7 +164,7 @@ let AKCOMMON = (function() {
             if (_public.historyEffect) {
                 _public.historyEffectSpot = [];
                 $('.history-wrap .year-wrap.spot').each(function (idx, itm) {
-                    _public.historyEffectSpot.push($(itm).offset().top - 100);
+                    _public.historyEffectSpot.push($(itm).offset().top - 120);
                 });
                 for (let i = 0; i < _public.historyEffectSpot.length; i++) {
                     if (scrollVal > _public.historyEffectSpot[i]) {
@@ -175,7 +175,7 @@ let AKCOMMON = (function() {
                     }
                 }
                 // Tab navi fix
-                if (scrollVal > $('.content').offset().top) {
+                if (scrollVal > $('.content').offset().top - 92) {
                     $('.select-tab').addClass('fix');
                 } else {
                     $('.select-tab').removeClass('fix');
@@ -184,7 +184,7 @@ let AKCOMMON = (function() {
                 if (_public.WIDTH < 961) {
                     if (scrollVal + $('header').height() > $('.content').offset().top) {
                         $('.history-cont').addClass('fix');
-                        console.log($('.history-tab').offset().top)
+                        // console.log($('.history-tab').offset().top)
                         // if (parseInt($('.history-tab').css('top').replace('px', '')) > 0) {
                         //     console.log((scrollVal + parseInt($('.history-tab').css('top'))) - scrollVal + 'px')
                         //     $('.history-tab').css('top', (scrollVal + $('.history-tab').offset().top) - scrollVal + 'px');
@@ -206,7 +206,7 @@ let AKCOMMON = (function() {
                 if (_public.WIDTH < 961) {
                     window.scrollTo(0, $(o).offset().top - $('header').height() - $('.history-tab').height());
                 } else {
-                    window.scrollTo(0, $(o).offset().top - 92);
+                    window.scrollTo(0, $(o).offset().top - 102);
                 }
             });
         }

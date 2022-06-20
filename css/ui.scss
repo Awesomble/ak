@@ -2615,7 +2615,7 @@
     padding-top: get-vw(60px);
     .history-tab{
       position: fixed;
-      top: get-vw(64px);
+      top: get-vw(56px);
       width: 100%;
       z-index: 8;
       background-color: #fff;
@@ -2881,7 +2881,7 @@
         background:transparent;
         &.fix {
           position: fixed;
-          top: 80px;
+          top: 178px;
         }
         li{
           & + li{
