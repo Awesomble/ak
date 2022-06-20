@@ -367,7 +367,8 @@ header {
     // Menu expand type
     &.show-menu {
       flex-direction: column;
-      line-height: 93px;
+      height: 92px;
+      line-height: 91px;
       box-sizing: border-box;
       &.main-top, &.main-up {
         background-color: #fff;

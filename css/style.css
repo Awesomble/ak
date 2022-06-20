@@ -3405,7 +3405,8 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   }
   header.show-menu {
     flex-direction: column;
-    line-height: 93px;
+    height: 92px;
+    line-height: 91px;
     box-sizing: border-box;
   }
   header.show-menu.main-top, header.show-menu.main-up {
