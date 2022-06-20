@@ -820,7 +820,7 @@
       }
     }
     .bbs-view-content{
-      padding:60px 0 60px;
+      padding:60px 0 0;
       font-size:18px;
       img{
         width:auto;
@@ -843,6 +843,7 @@
     }
   }
   .bbs-more{
+    margin-top:60px;
     li{
       display:flex;
       justify-content: left;
