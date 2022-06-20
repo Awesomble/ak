@@ -701,8 +701,7 @@
   margin-top:get-vw(24px);
   border-top:1px solid #0D0D0D;
   .top{
-    display:flex;
-    justify-content: space-between;
+    position: relative;
     margin-top:get-vw(8px);
     span, em{
       display:inline-block;
@@ -716,9 +715,19 @@
       margin-left:5px;
       font-weight:500;
     }
+    .cate, .info{
+      position: absolute;
+      top:0;
+    }
+    .cate{
+      left:0;
+    }
+    .info{
+      right:0;
+    }
   }
   .bbs-view-content{
-    padding:get-vw(35px) 0 get-vw(40px);
+    padding:get-vw(35px) 0 0;
     line-height: 1.5;
     font-weight: 400;
     color: #454545;
@@ -729,8 +738,17 @@
       text-align: center;
     }
   }
+  .download-area{
+    margin-top:get-vw(24px);
+    padding:get-vw(16px) get-vw(20px);
+    background: #EFF6FC;
+    .btn-download{
+      font-size:get-vw(14px);
+    }
+  }
 }
 .bbs-more{
+  margin-top:get-vw(40px);
   border-top:1px solid #0D0D0D;
   border-bottom:1px solid #0D0D0D;
   li{
@@ -807,6 +825,20 @@
       img{
         width:auto;
         height:auto;
+      }
+    }
+    .download-area{
+      margin-top:60px;
+      padding:30px 40px;
+      .btn-download{
+        font-size:16px;
+        &:hover{
+          color:#08A2DC;
+        }
+      }
+      .label{
+        color:#777777;
+        margin-right:10px;
       }
     }
   }
@@ -905,7 +937,7 @@
     margin-right:get-vw(8px);
     background:url('/images/ico_download.png') no-repeat 50% 50%;
     background-size:cover;
-    vertical-align: bottom;
+    vertical-align: text-bottom;
   }
 }
 @media all and (min-width: 961px){
