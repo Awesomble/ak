@@ -437,6 +437,7 @@
 }
 .bbsList{
   li{
+    position: relative;
     padding:16px 0;
     border-bottom:1px solid #E8E8E8;
     font-size:14px;
@@ -461,6 +462,32 @@
       font-size:get-vw(16px);
       color:#0D0D0D;
       text-align: center;
+    }
+  }
+  &.has-download{
+    li{
+      padding-right:get-vw(40px);
+      .btn-download{
+        display:inline-block;
+        position: absolute;
+        right:0;
+        top:50%;
+        transform: translateY(-50%);
+        width:get-vw(30px);
+        height:get-vw(30px);
+        &::before{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translateY(-50%) translateX(-50%);
+          width:get-vw(18px);
+          height:get-vw(18px);
+          margin:0;
+        }
+      }
+      &.no-data{
+        padding-right:0;
+      }
     }
   }
 }
@@ -491,6 +518,16 @@
       &:hover{
         font-weight:500;
         color:#00498C;
+      }
+      &.btn-download{
+        display:inline-block;
+        font-size:16px;
+        &::before{
+          vertical-align: text-bottom;
+        }
+        &:hover{
+          color:#08A2DC;
+        }
       }
     }
   }
