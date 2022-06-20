@@ -2135,22 +2135,21 @@
       color:#777777;
     }
     .esg-mark{
-      width:get-vw(92px);
+      width:get-vw(78px);
       span{
         display:block;
         margin-top:get-vw(4px);
         font-weight:700;
-        font-size:get-vw(15px);
+        font-size:get-vw(14px);
+
       }
       img{
         width:100%;
         height:auto;
+        padding:0 get-vw(5px);
       }
       &.total{
-        width:get-vw(140px);
-        margin:get-vw(28px) auto 0;
         span{
-          margin-top:get-vw(6px);
           color:#002856;
         }
       }
@@ -2182,12 +2181,12 @@
     display:flex;
     .esg-mark-wrap{
       width:50%;
-      padding-right:85px;
+      padding-right:65px;
       & + .esg-mark-wrap{
         margin-top:0;
         padding-top:0;
         padding-right:0;
-        padding-left:85px;
+        padding-left:65px;
         border-top:none;
         border-left:1px solid #E8E8E8;
       }
@@ -2196,18 +2195,14 @@
         font-size:14px;
       }
       .esg-mark{
-        width:133px;
+        width:114px;
         span{
           display:block;
           margin-top:7px;
           font-size:17px;
         }
-        &.total{
-          width:163px;
-          margin-top:40px;
-          span{
-            margin-top:9px;
-          }
+        img{
+          padding:0;
         }
       }
       .esg-mark-list{
@@ -2225,6 +2220,12 @@
       padding-right:2%;
       & + .esg-mark-wrap{
         padding-left:2%;
+      }
+      .esg-mark{
+        width:78px;
+        span{
+          font-size:14px;
+        }
       }
     }
   }
