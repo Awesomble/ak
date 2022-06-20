@@ -35,7 +35,6 @@ let AKCOMMON = (function() {
             } else {
                 H.addClass('expand');
                 _public.bodyFixed()
-                
                 let h = 0;
                 if ($('nav').length) {
                     $('nav > ul > li').each(function (idx, t) {
