@@ -19,6 +19,7 @@
     <meta name="og:description" content="앞서가는 사고, 앞서가는 기술, 앞서가는 경영"/>
     <meta property="og:image" content="/og_thumb.png" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>AK 홀딩스</title>
 </head>
@@ -162,119 +163,257 @@
     </nav>
 </header>
 <main class="main">
-    <section class="top-visual">
-        <div class="video-box">
-            <video playsinline muted autoplay loop poster="/videos/Mo_AK_Main.mp4" class="mo">
-                <source src="/videos/Mo_AK_Main.mp4" type="video/mp4">
-                <strong>Your browser does not support the video tag.</strong>
-            </video>
-            <video playsinline muted autoplay loop poster="/videos/Web_AK_Main_000.jpg" class="pc">
-                <source src="/videos/Web_AK_Main.mp4" type="video/mp4">
-                <strong>Your browser does not support the video tag.</strong>
-            </video>
-        </div>
-        <div class="typo-box">
-            <div>
-                앞서가는 <strong>사고</strong>,<br class="mo">
-                앞서가는 <strong>기술</strong>,<br class="mo">
-                앞서가는 <strong>경영</strong>으로
-                <p>
-                    <strong>풍요롭고 행복한 </strong><br class="mo">
-                    <strong>삶을 창조합니다</strong>
-                </p>
+    <div id="fullpage" class="fullpage-wrapper">
+        <section class="section fp-section top-visual" id="section0">
+            <div class="video-box">
+                <video playsinline muted autoplay loop poster="/videos/Mo_AK_Main.mp4" class="mo">
+                    <source src="/videos/Mo_AK_Main.mp4" type="video/mp4">
+                    <strong>Your browser does not support the video tag.</strong>
+                </video>
+                <video playsinline muted autoplay loop poster="/videos/Web_AK_Main_000.jpg" class="pc">
+                    <source src="/videos/Web_AK_Main.mp4" type="video/mp4">
+                    <strong>Your browser does not support the video tag.</strong>
+                </video>
             </div>
-        </div>
-        <button class="btn-scroll-down tk-arboria" onClick="scrollDown()">SCROLL DOWN</button>
-    </section>
-    <section class="news-room">
-        <div class="news-top">
-            <h2>#NEWSROOM</h2>
-            <div class="btn-box">
-                <h3><a href="/fo/akNews.do">애경뉴스</a></h3>
-                <h3 class="tow-nd"><a href="#">웹진</a></h3>
+            <div class="typo-box">
+                <div>
+                    앞서가는 <strong>사고</strong>,<br class="mo">
+                    앞서가는 <strong>기술</strong>,<br class="mo">
+                    앞서가는 <strong>경영</strong>으로
+                    <p>
+                        <strong>풍요롭고 행복한 </strong><br class="mo">
+                        <strong>삶을 창조합니다</strong>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="ak-news-list">
-            <h3>애경의 주요한 소식과<br>
-                계열사 별 주요 행사와 기쁜 일을<br class="mo">
-                함께합니다</h3>
-            <ul>
-                <!-- 개발 연동 영역 -->
-                <!-- style background 역역 이미지 교체 필요-->
-                <li style="background: url(./images/bg_main_newslist01.png) no-repeat center center;">
-                    <a href="https://211.43.193.249/fo/akNewsView.do?uid=541&page=1&range=1">
-                        <div>
-                            <h4>애경케미칼</h4>
-                            <p class="con">'줍깅, 함께해요' 건강과<br class="pc"> 환경을<br class="mo">
-                                함께 생각하는 애경케미칼!</p>
-                            <p class="date">2022.04.01</p>
-                        </div>
-                    </a>
-                </li>
+            <div class="btn-scroll-down"><button class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</button></div>
 
-                <li style="background: url(./images/bg_main_newslist02.png) no-repeat center center;">
-                    <a href="https://211.43.193.249/fo/akNewsView.do?uid=540&page=1&range=1">
-                        <div>
-                            <h4>애경산업</h4>
-                            <p class="con">케라시스 퍼퓸 샴푸 출시 10주년 기념<br>
-                                ‘케라시스 퍼퓸’ 출시</p>
-                            <p class="date">2022.05.26</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- //개발 연동 영역 -->
-            </ul>
-        </div>
-    </section>
-    <section class="esg">
-        <div class="esg-top">
-            <h2>#ESG</h2>
-            <div class="btn-box">
-                <h3><a href="/esg_management_goal.html">ESG 경영</a></h3>
-                <h3><a href="/fo/esgNews.do">ESG 소식</a></h3>
-                <h3 class="tow-nd"><a href="#">윤리경영</a></h3>
-                <h3 class="tow-nd"><a href="#">애경복지재단</a></h3>
+        </section>
+        <section class="section fp-section news-room" id="section1">
+            <div class="news-top">
+                <h2 class="tk-arboria">NEWSROOM</h2>
+                <p>지속 가능한 경영을 통해 풍요롭고 행복한 내일을 만들겠습니다</p>
             </div>
-        </div>
-        <div class="esg-list">
-            <ul>
-                <li>
-                    <a href="/esg_management_goal.html">
-                        <div>
-                            <h4>ESG 경영 목표</h4>
-                            <p class="con">지속가능한 사회를 구축하는데<br>
-                                앞장서겠습니다</p>
-                            <p class="img">
-                                <img src="/images/bg_main_esg_list01.png" alt="" class="mo">
-                            </p>
+            <div class="news-list">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
                         </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="/fo/esgNews.do">
-                        <div>
-                            <h4>ESG 소식</h4>
-                            <p class="con">각 계열사만의 특성을 발휘하여,<br>
-                                사회적 가치를 꾸준히 실현하고<br class="mo">
-                                있습니다</p>
-                            <p class="img"></p>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
                         </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="info">
-        <h1><a href="#"><img src="/images/logo_w.png" alt="AK 홀딩스 로고"></a></h1>
-        <p>04051 서울특별시 마포구 양화로 188, 14층<br class="mo">(동교동, 애경타워)</p>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>
+                                <a href="#">
+                                    <img src="./images/@news_thumb.png" alt="">
+                                    <p class="tit">제주항공</p>
+                                    <p class="con">AK&홍대, 글로벌 캐릭터 활용한 ‘시나모롤<br>
+                                        스위트카페’ 국내 최초 오픈</p>
+                                    <p class="date">2022.06.08</p>
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="paging-box">
+                        <div class="bar-bg"><span class="bar" id="swiperBar"></span></div>
+                        <div class="btn-box">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                    </div>
+                    <!-- If we need navigation buttons -->
+                </div>
+            </div>
+        </section>
+        <section class="section fp-section esg" id="section2">
+            <div class="left-box">
+                <div class="caption tk-arboria">
+                    <h2>ESG</h2>
+                    <p>Love & Respect
+                        <strong>for Earth</strong>
+                    </p>
+                </div>
+
+            </div>
+            <div class="right-box">
+                <div class="news">
+                    <h3>ESG 소식</h3>
+                    <div>지속 가능한 경영을 위한
+                        애경그룹의 노력을 소개합니다.</div>
+                    <a href="#">ESG 소식 바로가기</a>
+                </div>
+                <div class="activity">
+                    <h3>주요 ESG 활동</h3>
+                    사랑과 존경의 정신을 바탕으로
+                    공생의 가치를 실현하고 있습니다
+                    <a href="#">주요 ESG 활동 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height" id="section3">
+            <div class="info">
+                <h1><a href="#"><img src="/images/logo_w.png" alt="AK 홀딩스 로고"></a></h1>
+                <p>04051 서울특별시 마포구 양화로 188, 14층<br class="mo">(동교동, 애경타워)</p>
+            </div>
+            <p class="copyright">Copyright 2022 By AK Holdings, Inc. ALL Rights Reserved.</p>
+        </footer>
     </div>
-    <p class="copyright">Copyright 2022 By AK Holdings, Inc. ALL Rights Reserved.</p>
-</footer>
+</main>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
+<script src="/js/fullpage.min.js"></script>
 <script src="/js/common.js"></script>
 <script>
 
@@ -283,6 +422,52 @@
         setTimeout(function () {
             AKCOMMON.topEffect = true;
         }, 10);
+
+        const myFullpage = new fullpage('#fullpage', {
+            licenseKey: 'FC634C81-CDA24EDD-9C3418A5-8FA08AC3',
+            verticalCentered: true,
+            anchors: ['topVisual', 'newsRoom', 'esg', 'footer'],
+            afterLoad: function(origin, destination, direction, trigger){
+                let params = {
+                    origin: origin,
+                    destination:destination,
+                    direction: direction,
+                    trigger: trigger
+                };
+                console.log(params.destination.anchor);
+                if (params.destination && params.destination.anchor == 'topVisual') $('header').addClass('main-top');
+                else $('header').removeClass('main-top');
+            }
+        });
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 36,
+            // width: 376,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChange: function () {
+
+                    console.log(swiper.activeIndex * 100 / $('.swiper-slide').length);
+                    $('#swiperBar').css('width', swiper.activeIndex * 100 / ($('.swiper-slide').length - Math.floor(window.innerWidth / 376)) + '%');
+                }
+            }
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+
 
     });
     //scrollDown
