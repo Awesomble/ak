@@ -878,7 +878,7 @@ main {
       justify-content: center;
       width: 100vw;
       height: get-vw(52px);
-      button {
+      a {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -941,7 +941,7 @@ main {
         justify-content: center;
         width: 100vw;
         height: 64px;
-        button {
+        a {
           display: flex;
           flex-direction: column;
           align-items: center;

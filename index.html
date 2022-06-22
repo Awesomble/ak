@@ -164,7 +164,7 @@
 </header>
 <main class="main">
     <div id="fullpage" class="fullpage-wrapper">
-        <section class="section fp-section top-visual" id="section0">
+        <section class="section fp-section top-visual" data-anchor="topVisual" id="section0">
             <div class="video-box">
                 <video playsinline muted autoplay loop poster="/videos/Mo_AK_Main.mp4" class="mo">
                     <source src="/videos/Mo_AK_Main.mp4" type="video/mp4">
@@ -186,10 +186,10 @@
                     </p>
                 </div>
             </div>
-            <div class="btn-scroll-down"><button class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</button></div>
+            <div class="btn-scroll-down"><a href="javascript:;" onclick="myFullpage.moveTo('newsRoom', 1)" class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</a></div>
 
         </section>
-        <section class="section fp-section news-room" id="section1">
+        <section class="section fp-section news-room" data-anchor="newsRoom" id="section1">
             <div class="news-top">
                 <h2 class="tk-arboria">NEWSROOM</h2>
                 <p>지속 가능한 경영을 통해 풍요롭고 행복한 내일을 만들겠습니다</p>
@@ -375,7 +375,7 @@
                 </div>
             </div>
         </section>
-        <section class="section fp-section esg" id="section2">
+        <section class="section fp-section esg" data-anchor="esg" id="section2">
             <div class="left-box">
                 <div class="caption tk-arboria">
                     <h2>ESG</h2>
@@ -400,7 +400,7 @@
                 </div>
             </div>
         </section>
-        <footer class="section fp-auto-height" id="section3">
+        <footer class="section fp-auto-height" data-anchor="footer"id="section3">
             <div class="info">
                 <h1><a href="#"><img src="/images/logo_w.png" alt="AK 홀딩스 로고"></a></h1>
                 <p>04051 서울특별시 마포구 양화로 188, 14층<br class="mo">(동교동, 애경타워)</p>
@@ -416,14 +416,14 @@
 <script src="/js/fullpage.min.js"></script>
 <script src="/js/common.js"></script>
 <script>
-
+    let myFullpage = null;
     //init
     $(function () {
         setTimeout(function () {
             AKCOMMON.topEffect = true;
         }, 10);
 
-        const myFullpage = new fullpage('#fullpage', {
+        myFullpage = new fullpage('#fullpage', {
             licenseKey: 'FC634C81-CDA24EDD-9C3418A5-8FA08AC3',
             verticalCentered: true,
             anchors: ['topVisual', 'newsRoom', 'esg', 'footer'],

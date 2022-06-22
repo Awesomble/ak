@@ -3808,7 +3808,7 @@ main .top-visual .btn-scroll-down {
   width: 100vw;
   height: 14.4444444444vw;
 }
-main .top-visual .btn-scroll-down button {
+main .top-visual .btn-scroll-down a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3816,7 +3816,7 @@ main .top-visual .btn-scroll-down button {
   font-size: 3.6111111111vw;
   color: #fff;
 }
-main .top-visual .btn-scroll-down button img {
+main .top-visual .btn-scroll-down a img {
   width: 5.5555555556vw;
   height: auto;
   margin-bottom: 6px;
@@ -3859,7 +3859,7 @@ main .top-visual .btn-scroll-down button img {
     width: 100vw;
     height: 64px;
   }
-  main .top-visual .btn-scroll-down button {
+  main .top-visual .btn-scroll-down a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3867,7 +3867,7 @@ main .top-visual .btn-scroll-down button img {
     font-size: 15px;
     color: #fff;
   }
-  main .top-visual .btn-scroll-down button img {
+  main .top-visual .btn-scroll-down a img {
     width: 26px;
     height: auto;
     margin-bottom: 6px;
