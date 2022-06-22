@@ -1248,7 +1248,7 @@ main {
         background-size: auto 100%;
       }
       .caption{
-        margin:85px 0 0 92px;
+        margin:177px 0 0 92px;
         h2{
           font-size:112px;
           line-height: 90px;
@@ -1266,7 +1266,7 @@ main {
         display:block;
         .news, .activity{
           width: 460px;
-          height: 50vh;
+          height: calc(50vh - 46px);
           padding:0 70px 60px;
           h3{
             position: relative;
@@ -1331,6 +1331,7 @@ main {
           }
         }
         .news {
+          margin-top: 92px;
           background-color: #fff;
         }
         .activity {

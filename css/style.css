@@ -4151,7 +4151,7 @@ main .esg .cont-box .activity::after {
     background-size: auto 100%;
   }
   main .esg .caption {
-    margin: 85px 0 0 92px;
+    margin: 177px 0 0 92px;
   }
   main .esg .caption h2 {
     font-size: 112px;
@@ -4170,7 +4170,7 @@ main .esg .cont-box .activity::after {
   }
   main .esg .right-box .news, main .esg .right-box .activity {
     width: 460px;
-    height: 50vh;
+    height: calc(50vh - 46px);
     padding: 0 70px 60px;
   }
   main .esg .right-box .news h3, main .esg .right-box .activity h3 {
@@ -4235,6 +4235,7 @@ main .esg .cont-box .activity::after {
     background-size: cover;
   }
   main .esg .right-box .news {
+    margin-top: 92px;
     background-color: #fff;
   }
   main .esg .right-box .activity {
