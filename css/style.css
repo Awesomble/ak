@@ -4169,30 +4169,27 @@ main .esg .cont-box .activity::after {
     display: block;
   }
   main .esg .right-box .news, main .esg .right-box .activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 460px;
     height: calc(50vh - 46px);
-    padding: 0 70px 60px;
   }
-  main .esg .right-box .news h3, main .esg .right-box .activity h3 {
-    position: relative;
-    padding-top: 253px;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 27px;
-    color: #00498C;
-    text-align: center;
-  }
-  main .esg .right-box .news h3::before, main .esg .right-box .activity h3::before {
+  main .esg .right-box .news::before, main .esg .right-box .activity::before {
     content: "";
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 180px;
-    height: 148px;
+    width: 100%;
+    height: 30%;
     background: url("/images/bg_main_esg_news.png") no-repeat 50% 50%;
-    background-size: contain;
+    background-size: auto 100%;
+  }
+  main .esg .right-box .news h3, main .esg .right-box .activity h3 {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #00498C;
+    line-height: 27px;
   }
   main .esg .right-box .news p, main .esg .right-box .activity p {
     margin-top: 12px;
@@ -4204,7 +4201,7 @@ main .esg .cont-box .activity::after {
   }
   main .esg .right-box .news .btn_link, main .esg .right-box .activity .btn_link {
     display: block;
-    width: 100%;
+    width: 320px;
     height: 50px;
     margin-top: 20px;
     background-color: #00498C;
@@ -4241,12 +4238,12 @@ main .esg .cont-box .activity::after {
   main .esg .right-box .activity {
     background-color: #00498C;
   }
-  main .esg .right-box .activity h3 {
-    color: #8CE0FF;
-  }
-  main .esg .right-box .activity h3::before {
+  main .esg .right-box .activity::before {
     background: url("/images/bg_main_esg_act.png") no-repeat 50% 50%;
     background-size: contain;
+  }
+  main .esg .right-box .activity h3 {
+    color: #8CE0FF;
   }
   main .esg .right-box .activity p {
     color: #FFFFFF;
@@ -4270,6 +4267,19 @@ main .esg .cont-box .activity::after {
   }
   main .esg .cont-box {
     display: none;
+  }
+}
+@media all and (max-height: 900px) {
+  .esg .right-box .news::before, .esg .right-box .activity::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25%;
+    background: url("/images/bg_main_esg_news.png") no-repeat 50% 50%;
+    background-size: auto 100%;
+  }
+  .esg .right-box .news h3, .esg .right-box .activity h3 {
+    margin-top: 17px !important;
   }
 }
 @media screen and (max-aspect-ratio: 1219/685) {
