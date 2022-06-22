@@ -3744,7 +3744,7 @@ main h3 {
 }
 main .top-visual {
   position: relative;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
 }
 main .top-visual .video-box {
   position: absolute;
@@ -3845,12 +3845,7 @@ main .news-list {
   padding: 0 0 25vw 6.6666666667vw;
   background: rgba(243, 244, 246, 0.55);
 }
-main .news-list .swiper {
-  position: relative;
-  overflow: visible;
-}
 main .news-list .swiper-slide {
-  margin-right: 5.5555555556vw;
   width: 78.3333333333vw;
 }
 main .news-list .swiper-slide img {
@@ -4063,7 +4058,7 @@ main .esg .cont-box .activity::after {
   }
   main .news-room .news-top {
     background: none;
-    padding: 155px 0 70px;
+    padding: 0;
   }
   main .news-room .news-top h2 {
     font-weight: 700;
@@ -4073,6 +4068,7 @@ main .esg .cont-box .activity::after {
     color: #00498C;
   }
   main .news-room .news-top p {
+    margin-top: 12px;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
@@ -4081,14 +4077,20 @@ main .esg .cont-box .activity::after {
   }
   main .news-room .news-list {
     width: 100vw;
-    overflow: hidden;
-    background: none;
+    margin-top: 70px;
+    padding: 0;
+    box-sizing: border-box;
   }
   main .news-room .news-list .swiper {
+    width: 100%;
     padding-left: 96px;
+    overflow: hidden;
+    background: none;
+    box-sizing: border-box;
   }
   main .news-room .news-list .swiper .swiper-wrapper .swiper-slide {
     width: 376px;
+    overflow: hidden;
   }
   main .news-room .news-list .swiper .swiper-wrapper .swiper-slide h3 a {
     display: flex;

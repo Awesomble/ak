@@ -814,7 +814,7 @@ main {
   }
   .top-visual {
     position: relative;
-    height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
     .video-box {
       position: absolute;
       display: flex;
@@ -919,11 +919,11 @@ main {
     padding:0 0 get-vw(90px) get-vw(24px);
     background:rgba(243, 244, 246, 0.55);
     .swiper{
-      position: relative;
-      overflow: visible;
+      //position: relative;
+      //overflow: visible;
     }
     .swiper-slide{
-      margin-right:get-vw(20px);
+      //margin-right:get-vw(20px);
       width:get-vw(282px);
       img{
         width:100%;
@@ -1148,7 +1148,8 @@ main {
       background-size: auto 100%;
       .news-top {
         background: none;
-        padding:155px 0 70px;
+        //padding:155px 0 70px;
+        padding: 0;
         h2 {
           font-weight: 700;
           font-size: 70px;
@@ -1157,6 +1158,7 @@ main {
           color: #00498C;
         }
         p {
+          margin-top: 12px;
           font-weight: 400;
           font-size: 24px;
           line-height: 36px;
@@ -1166,13 +1168,19 @@ main {
       }
       .news-list {
         width: 100vw;
-        overflow: hidden;
-        background:none;
+        margin-top: 70px;
+        padding: 0;
+        box-sizing: border-box;
         .swiper {
-          padding-left: 96px;
+          width: 100%;
+          padding-left: 96px;;
+          overflow: hidden;
+          background:none;
+          box-sizing: border-box;
           .swiper-wrapper {
             .swiper-slide {
               width: 376px;
+              overflow: hidden;
               &:first-child {
               }
               h3 {
