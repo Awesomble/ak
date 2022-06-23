@@ -431,10 +431,13 @@ header {
       }
       nav {
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
-        height: 265px;
+        height: 251px;
+        min-height: 251px;
         margin-top: -1px;
-        padding: 36px 0;
+        //padding: 36px 0;
         box-sizing: content-box;
         background-color: #00498C;
         > ul {
@@ -458,19 +461,27 @@ header {
                 justify-content: space-evenly;
                 height: 100%;
                 > em {
-                  display: block;
-                  width: 1px;
-                  height: 100%;
-                  background-color: #EFF6FC;
-                  opacity: 0.15;
+                  //display: block;
+                  //width: 1px;
+                  //height: 100%;
+                  //background-color: #EFF6FC;
+                  //opacity: 0.15;
                 }
                 > ul {
-                  width: 160px;
+                  width: 241px;
+                  height: 251px;
+                  min-height: 251px;
+                  padding-top: 36px;
+                  padding-left: 41px;
+                  border-left: 1px solid rgba(239, 246, 252, 0.15);
+                  &:last-child {
+                    border-right: 1px solid rgba(239, 246, 252, 0.15);
+                  }
                   > li {
                     height: 26px;
                     line-height: 26px;
                     margin-top: 6px;
-                    text-align: center;
+                    //text-align: center;
                     a{
                       position: relative;
                     }
@@ -814,7 +825,8 @@ main {
   }
   .top-visual {
     position: relative;
-    height: 100vh;
+    //height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     .video-box {
       position: absolute;
       display: flex;

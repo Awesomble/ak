@@ -125,144 +125,24 @@
 <!--visual 영역-->
 <div class="topArea sub">
     <div class="titArea">
-        <h2 class="tit">애경뉴스</h2>
-        <p class="desc">애경그룹의 최신 소식을 전해드립니다</p>
+        <h2 class="tit"><span class="tk-arboria">ESG</span> 소식</h2>
+        <p class="desc">지속 가능한 경영을 위한<br class="mo"> 애경그룹의 노력을 소개합니다</p>
     </div>
-    <div class="visual ak-news"> <!-- 6/7업데이트 - 비주얼이미지 인라인 제거 및 class 추가-->
+    <div class="visual esg-news has-tab"><!-- 6/7업데이트 - 비주얼이미지 인라인 제거 및 class 추가--><!-- 6/2업데이트 - .has-tab 추가 -->
+        <div class="top-tab">
+            <ul>
+                <!-- active: 활성화시 li에 .active 추가 -->
+                <li class="mo"><a href="javascript:;">주요 ESG 활동</a></li>
+                <li><a href="/esg_news.html">ESG 소식</a></li>
+                <li class="active"><a href="javascript:;">주요 ESG 활동</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <!--//visual 영역-->
 <!--본문영역-->
 <div class="content">
     <div class="cont">
-        <div class="bbsWrap">
-            <div class="bbs_util">
-                <div class="sortWrap">
-                    <div class="bbs_sort">
-                        <!-- ajax로 처리하실거면 말씀해주세요. -->
-                        <!-- active :  옵션명 button에 추가 -->
-                        <button class="bbs_button" type="button">계열사 전체</button><!-- 활성화되면 on추가 -->
-                        <ul class="bbs_sortList">
-                            <!-- active :  li에 '.active'추가 -->
-                            <li class="active"><a href="#">계열사 전체</a></li>
-                            <li><a href="#">계열사1</a></li>
-                            <li><a href="#">계열사2</a></li>
-                            <li><a href="#">계열사3</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="searchWrap">
-                    <div class="bbs_sort">
-                        <!-- ajax로 처리하실거면 말씀해주세요. -->
-                        <!-- active :  옵션명 button에 추가 -->
-                        <button class="bbs_button" type="button">전체</button>
-                        <ul class="bbs_sortList">
-                            <!-- active :  li에 '.active'추가 -->
-                            <li><a href="#">전체</a></li>
-                            <li><a href="#">제목</a></li>
-                            <li><a href="#">내용</a></li>
-                        </ul>
-                    </div>
-                    <div class="search-input">
-                        <input type="text" name="search_order" value="" placeholder="검색어">
-                        <button class="btn-search"><span class="blind">검색</span></button>
-                    </div>
-                </div>
-            </div>
-
-            <!--게시판PC버전--><!-- 06/15 업데이트 조회수 삭제 -->
-            <table class="bbsTbl pc">
-                <colgroup>
-                    <col width="12%">
-                    <col width="*">
-                    <col width="12%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>작성일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>999</td>
-                        <td><a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a></td>
-                        <td>2022.04.29</td>
-                    </tr>
-                    <tr>
-                        <td>999</td>
-                        <td><a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a></td>
-                        <td>2022.04.29</td>
-                    </tr>
-                    <tr>
-                        <td>999</td>
-                        <td><a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a></td>
-                        <td>2022.04.29</td>
-                    </tr>
-                    <tr>
-                        <td>999</td>
-                        <td><a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a></td>
-                        <td>2022.04.29</td>
-                    </tr>
-                    <tr>
-                        <td>999</td>
-                        <td><a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a></td>
-                        <td>2022.04.29</td>
-                    </tr>
-                    <tr>
-                        <td>999</td>
-                        <td><a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a></td>
-                        <td>2022.04.29</td>
-                    </tr>
-
-                    <!-- 06/14업데이트 no-data 추가 -->
-                    <tr class="no-data">
-                        <td colspan="3">검색 결과가 없습니다</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--//게시판PC버전-->
-
-            <!--게시파MO버전-->
-            <div class="bbsList mo">
-                <ul>
-                    <li>
-                        <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
-                        <span class="date">2022.04.29</span>
-                    </li>
-                    <li>
-                        <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
-                        <span class="date">2022.04.29</span>
-                    </li>
-                    <li>
-                        <a href="#">[<span class="cate">애경케미칼</span>] 준법의식 함양을 위한 계약관리프로세스 교육 진행</a>
-                        <span class="date">2022.04.29</span>
-                    </li>
-
-                    <!-- 06/14업데이트 no-data 추가 -->
-                    <li class="no-data">
-                        검색 결과가 없습니다
-                    </li>
-                </ul>
-            </div>
-            <!--//게시파MO버전-->
-        </div>
-        <div class="paging">
-            <div class="left">
-                <a href="javascript:;" class="first arrow disabled"><span class="blind">처음으로</span></a>
-                <a href="javascript:;" class="prev arrow disabled"><span class="blind">이전으로</span></a>
-            </div>
-            <div class="center">
-                <a href="javascript:;" class="cur active">1</a>
-                <a href="javascript:;" class="cur">2</a>
-                <a href="javascript:;" class="cur">3</a>
-            </div>
-            <div class="right">
-                <a href="javascript:;" class="next arrow"><span class="blind">다음으로</span></a>
-                <a href="javascript:;" class="last arrow"><span class="blind">마지막으로</span></a>
-            </div>
-        </div>
     </div>
 </div>
 <!--//본문영역-->

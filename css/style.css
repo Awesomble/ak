@@ -3617,10 +3617,12 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
   }
   header.show-menu nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height: 265px;
+    height: 251px;
+    min-height: 251px;
     margin-top: -1px;
-    padding: 36px 0;
     box-sizing: content-box;
     background-color: #00498C;
   }
@@ -3648,21 +3650,21 @@ header.expand nav > ul > li.active > ul > li > ul > li.active a {
     justify-content: space-evenly;
     height: 100%;
   }
-  header.show-menu nav > ul > li > ul > li > em {
-    display: block;
-    width: 1px;
-    height: 100%;
-    background-color: #EFF6FC;
-    opacity: 0.15;
-  }
   header.show-menu nav > ul > li > ul > li > ul {
-    width: 160px;
+    width: 241px;
+    height: 251px;
+    min-height: 251px;
+    padding-top: 36px;
+    padding-left: 41px;
+    border-left: 1px solid rgba(239, 246, 252, 0.15);
+  }
+  header.show-menu nav > ul > li > ul > li > ul:last-child {
+    border-right: 1px solid rgba(239, 246, 252, 0.15);
   }
   header.show-menu nav > ul > li > ul > li > ul > li {
     height: 26px;
     line-height: 26px;
     margin-top: 6px;
-    text-align: center;
   }
   header.show-menu nav > ul > li > ul > li > ul > li a {
     position: relative;
@@ -3912,7 +3914,7 @@ main h3 {
 }
 main .top-visual {
   position: relative;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 main .top-visual .video-box {
   position: absolute;
