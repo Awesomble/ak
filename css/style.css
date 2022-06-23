@@ -1813,72 +1813,128 @@ caption {
     padding: 0 30px;
   }
 }
-.value-talent .visual-wrap {
+.value-talent .cont_tit {
+  padding: 12.5vw 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #0D0D0D;
+  text-align: center;
+}
+.value-talent .talent-cont {
+  padding: 13.8888888889vw 6.6666666667vw;
+  background: #EFF6FC;
+}
+.value-talent .talent-cont .img-wrap {
   width: 100%;
-  height: 47.2222222222vw;
-  padding-top: 15.2777777778vw;
-  padding-left: 6.6666666667vw;
-  background: url("/images/bg_talent.png") no-repeat 50% 50%;
-  background-size: cover;
 }
-.value-talent .visual-wrap span {
-  display: block;
-  width: 36.9444444444vw;
-  height: 18.3333333333vw;
-}
-.value-talent .visual-wrap span img {
+.value-talent .talent-cont .img-wrap img {
   width: 100%;
   height: auto;
 }
-.value-talent .desc-wrap {
+.value-talent .talent-cont .talent-list {
+  margin-top: 8.3333333333vw;
+}
+.value-talent .talent-cont .talent-list li {
   text-align: center;
 }
-.value-talent .desc-wrap .quotes {
-  margin: 11.1111111111vw 0 5.5555555556vw;
+.value-talent .talent-cont .talent-list li + li {
+  margin-top: 11.1111111111vw;
+  padding-top: 11.1111111111vw;
+  border-top: 1px solid #454545;
 }
-.value-talent .desc-wrap .tit {
-  font-size: 5.2777777778vw;
-  color: #00498C;
+.value-talent .talent-cont .talent-list li .tit {
+  margin-bottom: 2.2222222222vw;
+  font-weight: 500;
+  font-size: 6.1111111111vw;
+  line-height: 8.8888888889vw;
+  letter-spacing: -0.03em;
 }
-.value-talent .desc-wrap p {
-  margin-top: 4.1666666667vw;
+.value-talent .talent-cont .talent-list li .sub-tit {
+  font-weight: 500;
   font-size: 4.4444444444vw;
+  line-height: 7.2222222222vw;
+}
+.value-talent .talent-cont .talent-list li .desc {
+  font-weight: 400;
+  font-size: 4.4444444444vw;
+  line-height: 7.2222222222vw;
   color: #454545;
+}
+.value-talent .talent-cont .talent-list li.respect .tit, .value-talent .talent-cont .talent-list li.respect .sub-tit {
+  color: #08A2DC;
+}
+.value-talent .talent-cont .talent-list li.sacrifice .tit, .value-talent .talent-cont .talent-list li.sacrifice .sub-tit {
+  color: #00AAB5;
+}
+.value-talent .talent-cont .talent-list li.professional .tit, .value-talent .talent-cont .talent-list li.professional .sub-tit {
+  color: #00498C;
 }
 
 @media all and (min-width: 961px) {
-  .value-talent {
-    position: relative;
-  }
-  .value-talent .visual-wrap {
-    height: 580px;
-    padding-top: 80px;
-    padding-left: 80px;
-  }
-  .value-talent .visual-wrap span {
-    width: 334px;
-    height: 166px;
-  }
-  .value-talent .desc-wrap {
-    position: absolute;
-    bottom: 70px;
-    left: 80px;
-    text-align: left;
-  }
-  .value-talent .desc-wrap .quotes {
-    margin: 0 0 12px;
-    filter: brightness(50);
-    text-align: left;
-  }
-  .value-talent .desc-wrap .tit {
+  .value-talent .cont_tit {
+    padding: 80px 0;
     font-size: 24px;
-    color: #FFFFFF;
+    line-height: 36px;
   }
-  .value-talent .desc-wrap p {
-    margin-top: 16px;
+  .value-talent .talent-cont {
+    padding: 80px 0;
+    background: #EFF6FC;
+  }
+  .value-talent .talent-cont .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .value-talent .talent-cont .img-wrap {
+    width: 600px;
+  }
+  .value-talent .talent-cont .img-wrap img {
+    width: 100%;
+    height: auto;
+  }
+  .value-talent .talent-cont .talent-list {
+    width: 541px;
+    margin-top: 0;
+  }
+  .value-talent .talent-cont .talent-list li {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #454545;
+    text-align: left;
+  }
+  .value-talent .talent-cont .talent-list li + li {
+    margin-top: 60px;
+    padding-top: 0;
+    border-top: 0;
+  }
+  .value-talent .talent-cont .talent-list li .tit {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+  }
+  .value-talent .talent-cont .talent-list li .sub-tit {
+    display: none;
+  }
+  .value-talent .talent-cont .talent-list li .desc {
     font-size: 18px;
-    color: #FFFFFF;
-    opacity: 0.55;
+    line-height: 28px;
+    word-break: keep-all;
+  }
+}
+@media all and (min-width: 961px) and (max-width: 1320px) {
+  .value-talent .talent-cont {
+    padding: 80px 48px;
+  }
+  .value-talent .talent-cont .img-wrap {
+    width: 48%;
+  }
+  .value-talent .talent-cont .talent-list {
+    width: 48%;
   }
 }
 .intro-ci {
@@ -2533,6 +2589,70 @@ caption {
   word-break: keep-all;
 }
 
+.bod-wrap .desc {
+  margin: 0 -0.2777777778vw;
+  font-size: 4.4444444444vw;
+  line-height: 7.2222222222vw;
+  text-align: center;
+  color: #454545;
+}
+.bod-wrap .bod-diagram .img-wrap {
+  width: 100%;
+  padding: 6.6666666667vw 0 11.1111111111vw;
+}
+.bod-wrap .bod-diagram .img-wrap img {
+  width: 100%;
+  height: auto;
+}
+.bod-wrap .bod-diagram .bod-desc-list li {
+  padding: 6.6666666667vw;
+  background: rgba(243, 244, 246, 0.5);
+  border: 1px solid #E8E8E8;
+}
+.bod-wrap .bod-diagram .bod-desc-list li + li {
+  border-top: 0;
+}
+.bod-wrap .bod-diagram .bod-desc-list li:first-child .tit {
+  color: #00498C;
+}
+.bod-wrap .bod-diagram .bod-desc-list li:first-child .tit::after {
+  background: #00498C;
+}
+.bod-wrap .bod-diagram .bod-desc-list li .tit {
+  font-weight: 700;
+  font-size: 4.4444444444vw;
+  line-height: 7.2222222222vw;
+  color: #08A2DC;
+}
+.bod-wrap .bod-diagram .bod-desc-list li .tit::after {
+  content: "";
+  display: inline-block;
+  width: 1.3888888889vw;
+  height: 1.3888888889vw;
+  margin-left: 0.5555555556vw;
+  background: #08A2DC;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+.bod-wrap .bod-diagram .bod-desc-list li .desc {
+  margin-top: 1.1111111111vw;
+  font-weight: 400;
+  font-size: 3.8888888889vw;
+  line-height: 6.1111111111vw;
+  text-align: left;
+  color: #777777;
+}
+.bod-wrap .bod-diagram .bod-desc-list li .noti {
+  margin-top: 1.1111111111vw;
+  padding-left: 3.8888888889vw;
+  font-weight: 400;
+  font-size: 3.6111111111vw;
+  line-height: 6.1111111111vw;
+  letter-spacing: -0.02em;
+  color: #777777;
+  text-indent: -3.8888888889vw;
+}
+
 .bod-composition {
   padding: 13.8888888889vw 6.6666666667vw;
   background: #EFF6FC;
@@ -2654,6 +2774,63 @@ caption {
     padding-left: 34px;
     text-indent: -34px;
   }
+  .bod-wrap .desc {
+    margin: 16px 0 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .bod-wrap .bod-diagram {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    border: 1px solid #E8E8E8;
+  }
+  .bod-wrap .bod-diagram .img-wrap {
+    width: 66.6666%;
+    padding: 88px;
+  }
+  .bod-wrap .bod-diagram .img-wrap img {
+    width: 100%;
+    height: auto;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list {
+    width: 33.3333%;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li {
+    padding: 35px 30px 35px 45px;
+    background: rgba(243, 244, 246, 0.5);
+    border: 0;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li + li {
+    border-top: 1px solid #E8E8E8;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li:first-child .tit {
+    color: #00498C;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li:first-child .tit::after {
+    background: #00498C;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li .tit {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li .tit::after {
+    width: 6px;
+    height: 6px;
+    margin-left: 2px;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li .desc {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li .noti {
+    margin-top: 4px;
+    padding-left: 14px;
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: -14px;
+  }
   .bod-composition {
     padding: 100px 0 80px;
     background: #EFF6FC;
@@ -2734,6 +2911,24 @@ caption {
   }
 }
 @media all and (min-width: 961px) and (max-width: 1320px) {
+  .bod-wrap .bod-diagram .img-wrap {
+    width: 66.6666%;
+    padding: 5%;
+  }
+  .bod-wrap .bod-diagram .img-wrap img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li {
+    padding: 10% 5% 10% 10%;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li .desc {
+    word-break: keep-all;
+  }
+  .bod-wrap .bod-diagram .bod-desc-list li .desc br {
+    display: none;
+  }
   .bod-composition .bod-list {
     width: 100%;
   }
