@@ -1171,6 +1171,7 @@ main {
         margin-top: 70px;
         padding: 0;
         box-sizing: border-box;
+        background: none;
         .swiper {
           width: 100%;
           padding-left: 96px;;
@@ -1296,7 +1297,9 @@ main {
             letter-spacing: -0.02em;
           }
           .btn_link{
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width:320px;
             height:50px;
             margin-top:20px;

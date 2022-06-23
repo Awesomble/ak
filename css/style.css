@@ -1372,58 +1372,39 @@ caption {
 
 .core-value {
   position: relative;
-  padding-bottom: 13.8888888889vw;
 }
-.core-value .visual {
-  height: 111.1111111111vw;
-  background-image: url(/images/img_core_value_m.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.core-value .visual .tit {
+.core-value .tit {
   display: block;
-  padding-top: 13.8888888889vw;
+  padding-top: 12.5vw;
   text-align: center;
   font-weight: 700;
   font-size: 6.6666666667vw;
-  color: #00498C;
+  line-height: 9.4444444444vw;
+  letter-spacing: -0.02em;
+  color: #0D0D0D;
 }
 .core-value .core-value-list {
   position: relative;
-  margin: 0 6.6666666667vw;
-  margin-top: -47.7777777778vw;
+  margin: 5.5555555556vw 6.6666666667vw 6.6666666667vw;
 }
 .core-value .core-value-list li {
   position: relative;
-  padding: 5.5555555556vw 5vw 6.6666666667vw calc(5vw + 18.0555555556vw);
-  background: rgba(0, 69, 135, 0.92);
-  backdrop-filter: blur(20px);
-  color: #FFFFFF;
+  padding: 8.3333333333vw 6.1111111111vw 7.7777777778vw;
+  border: 1px solid #E8E8E8;
+  text-align: center;
 }
-.core-value .core-value-list li + li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 5vw;
-  width: calc(100% - 10vw);
-  height: 1px;
-  background: #EFF6FC;
-  opacity: 0.2;
+.core-value .core-value-list li + li {
+  margin-top: 3.3333333333vw;
 }
 .core-value .core-value-list li::after {
   content: "";
   display: block;
   position: absolute;
-  top: 5.5555555556vw;
-  left: 6.6666666667vw;
-  width: 13.8888888889vw;
-  height: 13.8888888889vw;
-}
-.core-value .core-value-list li.clean {
-  height: 47.7777777778vw;
-  padding-top: 7.2222222222vw;
+  top: 8.3333333333vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16.6666666667vw;
+  height: 16.6666666667vw;
 }
 .core-value .core-value-list li.clean::after {
   background: url("/images/ico_value_clean.png") no-repeat 50% 50%;
@@ -1442,13 +1423,26 @@ caption {
   background-size: cover;
 }
 .core-value .core-value-list li .tit {
+  padding-top: 21.1111111111vw;
   font-weight: 500;
   font-size: 5.2777777778vw;
+  line-height: 8.3333333333vw;
+  color: #00498C;
 }
 .core-value .core-value-list li .desc {
-  margin-top: 1.3888888889vw;
+  margin-top: 1.1111111111vw;
+  font-weight: 400;
   font-size: 3.8888888889vw;
-  line-height: 1.57;
+  line-height: 6.1111111111vw;
+  color: #454545;
+  opacity: 0.8;
+}
+.core-value .visual {
+  height: 66.6666666667vw;
+  background-image: url(/images/img_core_value_m.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media all and (min-width: 961px) {
@@ -1483,51 +1477,34 @@ caption {
     width: 100%;
     height: auto;
   }
-  .core-value {
-    padding-bottom: 100px;
-  }
-  .core-value .visual {
-    height: 600px;
-    background-image: url(/images/img_core_value.png);
-  }
-  .core-value .visual .tit {
+  .core-value .tit {
     display: block;
     padding-top: 80px;
     font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.03em;
   }
   .core-value .core-value-list {
     display: flex;
     position: relative;
+    justify-content: space-between;
     max-width: 1200px;
-    height: 310px;
-    margin: -155px auto 0;
+    margin: 40px auto 100px;
   }
   .core-value .core-value-list li {
     position: relative;
     width: 25%;
-    padding: 118px 0 42px;
+    padding: 60px 28px 46px;
     text-align: center;
   }
-  .core-value .core-value-list li + li::before {
-    top: auto;
-    bottom: 42px;
-    left: 0;
-    width: 1px;
-    height: 104px;
+  .core-value .core-value-list li + li {
+    margin-top: 0;
+    margin-left: 12px;
   }
   .core-value .core-value-list li::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 40px;
-    left: 50%;
+    top: 60px;
     width: 72px;
     height: 72px;
-    transform: translateX(-50%);
-  }
-  .core-value .core-value-list li.clean {
-    height: auto;
-    padding-top: 118px;
   }
   .core-value .core-value-list li.clean::after {
     background: url("/images/ico_value_clean.png") no-repeat 50% 50%;
@@ -1546,21 +1523,26 @@ caption {
     background-size: cover;
   }
   .core-value .core-value-list li .tit {
+    padding-top: 124px;
     font-weight: 500;
     font-size: 24px;
+    line-height: 34px;
   }
   .core-value .core-value-list li .desc {
-    margin-top: 1.3888888889vw;
+    margin-top: 12px;
     font-size: 16px;
+    line-height: 26px;
+    word-break: keep-all;
+  }
+  .core-value .visual {
+    height: 600px;
+    background-image: url(/images/img_core_value.png);
   }
 }
 @media all and (min-width: 961px) and (max-width: 1320px) {
   .core-value .core-value-list {
     width: 100%;
     padding: 0 48px;
-  }
-  .core-value .core-value-list li {
-    padding: 118px 20px 42px;
   }
   .core-value .core-value-list li .desc {
     word-break: keep-all;
@@ -4080,6 +4062,7 @@ main .esg .cont-box .activity::after {
     margin-top: 70px;
     padding: 0;
     box-sizing: border-box;
+    background: none;
   }
   main .news-room .news-list .swiper {
     width: 100%;
@@ -4200,7 +4183,9 @@ main .esg .cont-box .activity::after {
     letter-spacing: -0.02em;
   }
   main .esg .right-box .news .btn_link, main .esg .right-box .activity .btn_link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 320px;
     height: 50px;
     margin-top: 20px;
