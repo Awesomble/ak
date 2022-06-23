@@ -1692,15 +1692,8 @@
 }
 .intro-ci{
   position: relative;
-  text-align:center;
-  .tit-wrap{
-    .desc{
-      margin-top:get-vw(20px);
-      color:#454545;
-    }
-  }
   .ci-wrap{
-    margin-top:get-vw(28px);
+    margin-top:get-vw(20px);
     .symbol{
       display:block;
       width:100%;
@@ -1710,31 +1703,25 @@
       text-align: center;
       img{
         width:auto;
-        height:100%;
+        height:calc(100% + get-vw(2px));
       }
     }
-    .symbol-size{
-      display:block;
-      width:100%;
-      height:auto;
-      margin-top:get-vw(5px);
-      img{
-        width:100%;
-        height:auto;
-        &.mo{
-          display: block;
-        }
-        &.pc{
-          display: none;
-        }
-      }
-    }
-    .comment{
-      margin-top:get-vw(5px);
-      font-size:get-vw(13px);
-      color:#777777;
-      text-align: left;
-    }
+  }
+  .sub-tit, .desc{
+    font-size: get-vw(16px);
+    line-height: get-vw(26px);
+    text-align: left;
+  }
+  .sub-tit{
+    margin-top:get-vw(24px);
+    color: #08A2DC;
+    font-weight:700;
+  }
+  .desc{
+    margin-right: get-vw(-10px);
+    margin-top:get-vw(16px);
+    color:#454545;
+    font-weight:400;
   }
   .download-wrap{
     margin-top: get-vw(28px);
@@ -1771,40 +1758,37 @@
 }
 @media all and (min-width: 961px) {
   .intro-ci{
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    text-align:left;
-    .tit-wrap{
-      margin-left:65px;
-      .cont_tit{
-        text-align:left;
-      }
-      .desc{
-        margin-top:20px;
-        font-size:18px;
-      }
+    position: relative;
+    padding-left:616px;
+    .cont_tit{
+      text-align: left;
     }
     .ci-wrap{
-      width:551px;
+      position:absolute;
       margin-top:0;
+      top:0;
+      left:0;
       .symbol{
-        height:360px;
-        padding:63px 0 57px;
-      }
-      .symbol-size{
-        margin-top:5px;
-        .pc{
-            display:block;
-          }
-       .mo{
-          display:none;
+        width:551px;
+        height:400px;
+        padding:83px 0 77px;
+        img{
+          width:auto;
+          height:100%;
         }
       }
-      .comment{
-        margin-top:5px;
-        font-size:14px;
-      }
+    }
+    .sub-tit, .desc{
+      font-size: 18px;
+      line-height: 28px;
+      word-break: keep-all;
+    }
+    .sub-tit{
+      margin-top:30px;
+    }
+    .desc{
+      margin-right:0;
+      margin-top:16px;
     }
     .download-wrap{
       display:flex;
@@ -1849,10 +1833,11 @@
 }
 @media all and (min-width: 961px) and (max-width:1320px){
   .intro-ci{
-    .download-wrap {
-      .btn-download{
-        width:auto;
-        padding-right:60px;
+    padding-left:50%;
+    .ci-wrap{
+      width:45%;
+      .symbol{
+        width:100%;
       }
     }
   }
