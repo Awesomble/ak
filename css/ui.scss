@@ -2646,21 +2646,17 @@
         li{
           padding:35px 30px 35px 45px;
           background: rgba(243, 244, 246, 0.5);
-          border: 1px solid #E8E8E8;
-          border-left:0;
+          border:0;
           & + li{
+            border-top: 1px solid #E8E8E8;
           }
           &:first-child{
-            border-top:0;
             .tit{
               color: #00498C;
               &::after{
                 background: #00498C;
               }
             }
-          }
-          &:last-child{
-            border-bottom:0;
           }
           .tit{
             font-size: 18px;
