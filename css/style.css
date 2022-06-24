@@ -4010,10 +4010,15 @@ main .top-visual .btn-scroll-down {
   left: 0;
   right: 0;
   bottom: 8.3333333333vw;
-  display: flex;
   justify-content: center;
   width: 100vw;
   height: 14.4444444444vw;
+}
+main .top-visual .btn-scroll-down.pc {
+  display: none;
+}
+main .top-visual .btn-scroll-down.mo {
+  display: flex;
 }
 main .top-visual .btn-scroll-down a {
   display: flex;
@@ -4240,6 +4245,12 @@ main .esg .cont-box .activity::after {
     justify-content: center;
     width: 100vw;
     height: 64px;
+  }
+  main .top-visual .btn-scroll-down.pc {
+    display: flex;
+  }
+  main .top-visual .btn-scroll-down.mo {
+    display: none;
   }
   main .top-visual .btn-scroll-down a {
     display: flex;

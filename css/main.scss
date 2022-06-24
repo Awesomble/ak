@@ -886,10 +886,15 @@ main {
       left: 0;
       right: 0;
       bottom: get-vw(30px);
-      display: flex;
       justify-content: center;
       width: 100vw;
       height: get-vw(52px);
+      &.pc {
+        display: none;
+      }
+      &.mo {
+        display: flex;
+      }
       a {
         display: flex;
         flex-direction: column;
@@ -1135,6 +1140,12 @@ main {
         justify-content: center;
         width: 100vw;
         height: 64px;
+        &.pc {
+          display: flex;
+        }
+        &.mo {
+          display: none;
+        }
         a {
           display: flex;
           flex-direction: column;
