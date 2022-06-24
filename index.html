@@ -147,7 +147,7 @@
                     </p>
                 </div>
             </div>
-            <div class="btn-scroll-down pc"><a href="javascript:;" onclick="$.fn.fullpage.moveTo('newsRoom', 1)" class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</a></div>
+            <div class="btn-scroll-down pc"><a href="javascript:;" onclick="myFullpageIst.moveTo('newsRoom', 1)" class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</a></div>
             <div class="btn-scroll-down mo"><a href="javascript:;" onclick="scrollDown()" class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</a></div>
         </section>
         <section class="section fp-auto-height-responsive news-room" data-anchor="newsRoom" id="section1">
@@ -336,6 +336,7 @@
     let _WIDTH = 0;
     let _HEIGHT = 0;
     let myFullpage = false;
+    let myFullpageIst = null;
     let swiper = null;
     $(function () {
         setTimeout(function () {
@@ -387,7 +388,7 @@
     const fullpageFn = function() {
         if (myFullpage) return false
         myFullpage = true
-        new fullpage('#fullpage', {
+        myFullpageIst = new fullpage('#fullpage', {
             licenseKey: 'FC634C81-CDA24EDD-9C3418A5-8FA08AC3',
             verticalCentered: true,
             anchors: ['topVisual', 'newsRoom', 'esg', 'footer'],
