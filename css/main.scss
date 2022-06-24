@@ -981,6 +981,7 @@ main {
         height: 2px;
         margin-top:-1px;
         background-color: #E8E8E8;
+        overflow: hidden;
         .bar {
           position: absolute;
           left: 0;
@@ -1202,8 +1203,9 @@ main {
         box-sizing: border-box;
         background: none;
         .swiper {
-          width: 100%;
-          padding-left: 96px;;
+          width: calc(100% - 96px - 96px);
+          margin-left: 96px;;
+          margin-right: 96px;;
           overflow: hidden;
           background:none;
           box-sizing: border-box;
@@ -1243,9 +1245,10 @@ main {
           }
           .paging-box {
             margin-top: 55px;
+            width: 100%;
             .bar-bg {
               position: relative;
-              width: calc(100vw - 96px - 82px);
+              width: calc(100% - 82px);
               height: 2px;
               background-color: #E8E8E8;
               .bar {

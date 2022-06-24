@@ -70,7 +70,7 @@
                 <ul>
                     <li>
                         <ul>
-                            <li><a href="/esg_management_goal.html">ESG 경영</a></li>
+                            <li><a href="/esg_management_level.html">ESG 경영</a></li>
                             <li><a href="/esg_management_level.html">ESG 등급</a></li>
                         </ul>
                         <ul>
@@ -357,12 +357,15 @@
             },
             on: {
                 slideChange: function () {
+                    console.log(swiper.activeIndex)
                     if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
-                    else $('#swiperBar').css('width', (swiper.activeIndex * 100 / (_WIDTH > 960 ? 10 : 9)) + '%');
+                    else $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
                 }
             }
         });
-        swiper.snapGrid[swiper.snapGrid.length - 1] = swiper.slidesGrid[swiper.slidesGrid.length - 1];
+        setTimeout(function () {
+            // swiper.snapGrid[swiper.snapGrid.length - 1] = swiper.slidesGrid[swiper.slidesGrid.length - 1];
+        }, 100)
     });
     $(window).on('resize', function () {
         _WIDTH = $(window).width();

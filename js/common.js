@@ -165,7 +165,7 @@ let AKCOMMON = (function() {
             if (_public.historyEffect) {
                 _public.historyEffectSpot = [];
                 $('.history-wrap .year-wrap.spot').each(function (idx, itm) {
-                    _public.historyEffectSpot.push($(itm).offset().top - 120);
+                    _public.historyEffectSpot.push($(itm).offset().top - 130);
                 });
                 for (let i = 0; i < _public.historyEffectSpot.length; i++) {
                     if (scrollVal > _public.historyEffectSpot[i]) {

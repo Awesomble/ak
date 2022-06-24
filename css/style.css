@@ -3499,6 +3499,9 @@ caption {
 .esg-act-wrap .cont-wrap section .img-wrap.col2 img {
   width: 50%;
 }
+.esg-act-wrap .cont-wrap section.soc01 .cont01 + .desc {
+  margin-top: 6.6666666667vw;
+}
 
 @media all and (min-width: 961px) {
   .esg-act-wrap .top-area {
@@ -3642,6 +3645,20 @@ caption {
   }
   .esg-act-wrap .cont-wrap section.env06 .inner .cont03 .desc {
     padding-right: 6.66%;
+  }
+  .esg-act-wrap .cont-wrap section.soc01 .inner .cont01 {
+    position: relative;
+    padding-right: 52%;
+  }
+  .esg-act-wrap .cont-wrap section.soc01 .inner .cont01 .img-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46.6666%;
+    margin: 0;
+  }
+  .esg-act-wrap .cont-wrap section.soc01 .inner .cont01 + .desc {
+    margin-top: 35px;
   }
 }
 @media all and (min-width: 961px) and (max-width: 1320px) {
@@ -4398,6 +4415,7 @@ main .news-list .paging-box .bar-bg {
   height: 2px;
   margin-top: -1px;
   background-color: #E8E8E8;
+  overflow: hidden;
 }
 main .news-list .paging-box .bar-bg .bar {
   position: absolute;
@@ -4605,8 +4623,9 @@ main .esg .cont-box .activity::after {
     background: none;
   }
   main .news-room .news-list .swiper {
-    width: 100%;
-    padding-left: 96px;
+    width: calc(100% - 96px - 96px);
+    margin-left: 96px;
+    margin-right: 96px;
     overflow: hidden;
     background: none;
     box-sizing: border-box;
@@ -4641,10 +4660,11 @@ main .esg .cont-box .activity::after {
   }
   main .news-room .news-list .swiper .paging-box {
     margin-top: 55px;
+    width: 100%;
   }
   main .news-room .news-list .swiper .paging-box .bar-bg {
     position: relative;
-    width: calc(100vw - 96px - 82px);
+    width: calc(100% - 82px);
     height: 2px;
     background-color: #E8E8E8;
   }
