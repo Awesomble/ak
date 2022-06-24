@@ -368,11 +368,11 @@
         _WIDTH = $(window).width();
         _HEIGHT = $(window).height();
         if (_WIDTH > 960) {
-            if (!myFullpage) fullpageFn()
+            // if (!myFullpage) fullpageFn()
             if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
         } else {
             if (myFullpage) {
-                $.fn.fullpage.destroy('all');
+                // $.fn.fullpage.destroy('all');
                 myFullpage = false
                 if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
             }

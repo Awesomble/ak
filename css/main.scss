@@ -891,6 +891,7 @@ main {
       width: 100vw;
       height: get-vw(52px);
       &.pc {
+        //display: none;
         display: none;
       }
       &.mo {
@@ -1146,10 +1147,10 @@ main {
         width: 100vw;
         height: 64px;
         &.pc {
-          display: flex;
+          display: none;
         }
         &.mo {
-          display: none;
+          display: flex;
         }
         a {
           display: flex;

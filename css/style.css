@@ -4551,10 +4551,10 @@ main .esg .cont-box .activity::after {
     height: 64px;
   }
   main .top-visual .btn-scroll-down.pc {
-    display: flex;
+    display: none;
   }
   main .top-visual .btn-scroll-down.mo {
-    display: none;
+    display: flex;
   }
   main .top-visual .btn-scroll-down a {
     display: flex;
