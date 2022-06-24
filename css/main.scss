@@ -1484,12 +1484,28 @@ footer {
 
 @media all and (min-width:961px) {
   footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 60px 30px;
     font-size: 16px;
     font-weight: 400;
+    .btn-scroll-top {
+      position: fixed;
+      width: 48px;
+      height: 48px;
+      right: -60px;
+      bottom: 107px;
+      background: #00498C url(../images/ico_scrolltop.png) no-repeat center center;
+      background-size: 48px 48px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 50px;
+      transition: right 0.3s ease;
+      &.active {
+        right: 60px;
+      }
+    }
     a {
       font-size: 16px;
       font-weight: 500;
