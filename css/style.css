@@ -947,6 +947,9 @@ caption {
   color: #454545;
   white-space: pre-line;
 }
+.bbs_detail .bbs-view-content strong {
+  font-size: inherit;
+}
 .bbs_detail .bbs-view-content img {
   width: 100%;
   height: auto;
