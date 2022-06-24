@@ -362,6 +362,7 @@
                 }
             }
         });
+        swiper.snapGrid[swiper.snapGrid.length - 1] = swiper.slidesGrid[swiper.slidesGrid.length - 1];
     });
     $(window).on('resize', function () {
         _WIDTH = $(window).width();
