@@ -3352,6 +3352,305 @@ caption {
     width: calc(100% - 240px);
   }
 }
+.esg-act-wrap .top-area {
+  padding: 12.5vw 6.6666666667vw 11.1111111111vw;
+}
+.esg-act-wrap .top-area .desc {
+  font-weight: 300;
+  font-size: 5.2777777778vw;
+  line-height: 8.0555555556vw;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #0D0D0D;
+}
+.esg-act-wrap .top-area .esg-act-tab {
+  display: flex;
+  margin-top: 11.1111111111vw;
+  border: 1px solid #E8E8E8;
+}
+.esg-act-wrap .top-area .esg-act-tab li {
+  padding: 5.5555555556vw 0 2.7777777778vw;
+  width: 33.3333%;
+  text-align: center;
+}
+.esg-act-wrap .top-area .esg-act-tab li + li {
+  border-left: 1px solid #E8E8E8;
+}
+.esg-act-wrap .top-area .esg-act-tab li a {
+  display: block;
+  font-size: 0;
+}
+.esg-act-wrap .top-area .esg-act-tab li a em {
+  font-size: 0;
+}
+.esg-act-wrap .top-area .esg-act-tab li a span {
+  display: block;
+  font-weight: 500;
+  font-size: 3.3333333333vw;
+  line-height: 4.4444444444vw;
+  letter-spacing: -0.02em;
+  color: #0D0D0D;
+}
+.esg-act-wrap .top-area .esg-act-tab li a::before {
+  content: "";
+  display: inline-block;
+  margin-bottom: 3.0555555556vw;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.esg-act-wrap .top-area .esg-act-tab li.env a::before {
+  width: 6.6666666667vw;
+  height: 8.3333333333vw;
+  background-image: url("/images/ico_tab_env.png");
+}
+.esg-act-wrap .top-area .esg-act-tab li.soc a::before {
+  width: 6.6666666667vw;
+  height: 8.6111111111vw;
+  background-image: url("/images/ico_tab_soc.png");
+}
+.esg-act-wrap .top-area .esg-act-tab li.gov a::before {
+  width: 8.0555555556vw;
+  height: 8.6111111111vw;
+  background-image: url("/images/ico_tab_gov.png");
+}
+.esg-act-wrap .top-area .esg-act-tab li.active {
+  background: #08A2DC;
+  box-shadow: 0px 4px 14px rgba(0, 72, 140, 0.12);
+}
+.esg-act-wrap .top-area .esg-act-tab li.active a span {
+  color: #FFFFFF;
+}
+.esg-act-wrap .top-area .esg-act-tab li.active.env a::before {
+  background-image: url("/images/ico_tab_env_on.png");
+}
+.esg-act-wrap .top-area .esg-act-tab li.active.soc a::before {
+  background-image: url("/images/ico_tab_soc_on.png");
+}
+.esg-act-wrap .top-area .esg-act-tab li.active.gov a::before {
+  background-image: url("/images/ico_tab_gov_on.png");
+}
+.esg-act-wrap .cont-wrap section {
+  padding: 0 6.6666666667vw 13.8888888889vw;
+}
+.esg-act-wrap .cont-wrap section + section {
+  padding: 13.8888888889vw 6.6666666667vw;
+}
+.esg-act-wrap .cont-wrap section:nth-child(even) {
+  background: #F3F4F6;
+}
+.esg-act-wrap .cont-wrap section .hr {
+  margin-top: 11.1111111111vw;
+  padding-top: 11.1111111111vw;
+  border-top: 1px solid #E8E8E8;
+}
+.esg-act-wrap .cont-wrap section .cate span {
+  font-family: "arboria", sans-serif;
+  font-weight: 700;
+  font-size: 3.6111111111vw;
+  line-height: 4.4444444444vw;
+  color: #08A2DC;
+}
+.esg-act-wrap .cont-wrap section .cate span:first-child:after {
+  content: "";
+  display: inline-block;
+  margin: 0 1.9444444444vw;
+  width: 30px;
+  height: 1px;
+  background: #08A2DC;
+  vertical-align: middle;
+}
+.esg-act-wrap .cont-wrap section .tit {
+  margin-top: 1.9444444444vw;
+  font-weight: 500;
+  font-size: 6.1111111111vw;
+  line-height: 8.8888888889vw;
+  letter-spacing: -0.03em;
+  color: #0D0D0D;
+  word-break: keep-all;
+}
+.esg-act-wrap .cont-wrap section .tit + .desc {
+  margin-top: 5.5555555556vw;
+}
+.esg-act-wrap .cont-wrap section .tit + .img-wrap {
+  margin-top: 6.6666666667vw;
+}
+.esg-act-wrap .cont-wrap section .desc {
+  font-weight: 400;
+  font-size: 4.4444444444vw;
+  line-height: 7.2222222222vw;
+  color: #777777;
+  word-break: keep-all;
+}
+.esg-act-wrap .cont-wrap section .desc + .img-wrap {
+  margin-top: 6.6666666667vw;
+}
+.esg-act-wrap .cont-wrap section .img-wrap {
+  width: 100%;
+  font-size: 0;
+}
+.esg-act-wrap .cont-wrap section .img-wrap img {
+  width: 100%;
+  height: auto;
+}
+.esg-act-wrap .cont-wrap section .img-wrap + .desc {
+  margin-top: 6.6666666667vw;
+}
+.esg-act-wrap .cont-wrap section .img-wrap.col2 img {
+  width: 50%;
+}
+
+@media all and (min-width: 961px) {
+  .esg-act-wrap .top-area {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  .esg-act-wrap .top-area .desc {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab {
+    margin-top: 78px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li {
+    padding: 30px 40px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li a em span + span:before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 11px 4px;
+    background-color: #0D0D0D;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li a span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li a::before {
+    margin-bottom: 0;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li.env a::before {
+    width: 32px;
+    height: 40px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li.soc a::before {
+    width: 32px;
+    height: 42px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li.gov a::before {
+    width: 37px;
+    height: 40px;
+  }
+  .esg-act-wrap .top-area .esg-act-tab li.active a em span + span:before {
+    background-color: #FFFFFF;
+  }
+  .esg-act-wrap .cont-wrap section {
+    padding: 0 48px 100px;
+  }
+  .esg-act-wrap .cont-wrap section + section {
+    padding: 100px 48px;
+  }
+  .esg-act-wrap .cont-wrap section .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .esg-act-wrap .cont-wrap section .hr {
+    margin-top: 80px;
+    padding-top: 80px;
+  }
+  .esg-act-wrap .cont-wrap section .cate span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .esg-act-wrap .cont-wrap section .cate span:first-child:after {
+    margin: 0 8px;
+  }
+  .esg-act-wrap .cont-wrap section .tit {
+    margin-top: 14px;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+  }
+  .esg-act-wrap .cont-wrap section .tit + .desc {
+    margin-top: 35px;
+  }
+  .esg-act-wrap .cont-wrap section .tit + .img-wrap {
+    margin-top: 40px;
+  }
+  .esg-act-wrap .cont-wrap section .desc {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .esg-act-wrap .cont-wrap section .desc + .img-wrap {
+    margin-top: 40px;
+  }
+  .esg-act-wrap .cont-wrap section .img-wrap + .desc {
+    margin-top: 40px;
+  }
+  .esg-act-wrap .cont-wrap section.env01 .inner .cont01 {
+    position: relative;
+    padding-right: 52%;
+  }
+  .esg-act-wrap .cont-wrap section.env01 .inner .cont01 .img-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46.6666%;
+    margin: 0;
+  }
+  .esg-act-wrap .cont-wrap section.env03 .inner .img-wrap img {
+    width: 50%;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont01 {
+    position: relative;
+    padding-right: 50%;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont01 .img-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46.6666%;
+    margin: 0;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont02, .esg-act-wrap .cont-wrap section.env06 .inner .cont03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont02 .desc, .esg-act-wrap .cont-wrap section.env06 .inner .cont03 .desc {
+    margin-top: 0;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont02 .img-wrap, .esg-act-wrap .cont-wrap section.env06 .inner .cont03 .img-wrap {
+    width: 46.6666%;
+    flex-shrink: 0;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont02 .desc {
+    padding-left: 6.66%;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont03 {
+    flex-direction: row-reverse;
+  }
+  .esg-act-wrap .cont-wrap section.env06 .inner .cont03 .desc {
+    padding-right: 6.66%;
+  }
+}
+@media all and (min-width: 961px) and (max-width: 1320px) {
+  .esg-act-wrap .top-area {
+    padding: 80px 48px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 /* Layout Style*/
 body.fixed {
   position: fixed;
