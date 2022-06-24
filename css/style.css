@@ -4251,6 +4251,7 @@ main h3 {
 main .top-visual {
   position: relative;
   height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
 }
 main .top-visual .video-box {
   position: absolute;
@@ -4331,6 +4332,9 @@ main .top-visual .btn-scroll-down a img {
   width: 5.5555555556vw;
   height: auto;
   margin-bottom: 6px;
+}
+main .news-room {
+  overflow: hidden;
 }
 main .news-room .news-top {
   padding: 22.2222222222vw 0 11.1111111111vw 6.6666666667vw;
@@ -4436,6 +4440,7 @@ main .esg {
   padding: 30.5555555556vw 6.6666666667vw 6.6666666667vw;
   background: url("/images/bg_main_esg_mo.png") no-repeat 50% 50%;
   background-size: cover;
+  overflow: hidden;
 }
 main .esg .caption h2 {
   font-weight: 700;

@@ -339,11 +339,12 @@
     let _WIDTH = 0;
     let _HEIGHT = 0;
     let myFullpage = false;
+    let swiper = null;
     $(function () {
         setTimeout(function () {
             AKCOMMON.topEffect = true;
         }, 10);
-        const swiper = new Swiper('.swiper', {
+        swiper = new Swiper('.swiper', {
             slidesPerView: 'auto',
             spaceBetween: 20,
             // Navigation arrows
@@ -358,23 +359,24 @@
             },
             on: {
                 slideChange: function () {
-                    console.log(swiper.activeIndex);
-                    console.log(swiper.activeIndex , 10);
-                    console.log(swiper.activeIndex * 100 / 10);
-                    $('#swiperBar').css('width', swiper.activeIndex * 100 / ($('.swiper-slide').length - Math.floor(window.innerWidth / 376)) + '%');
+                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
+                    else $('#swiperBar').css('width', (swiper.activeIndex * 100 / (_WIDTH > 960 ? 10 : 9)) + '%');
                 }
             }
         });
+        swiper.snapGrid[swiper.snapGrid.length - 1] = swiper.slidesGrid[swiper.slidesGrid.length - 1];
     });
     $(window).on('resize', function () {
         _WIDTH = $(window).width();
         _HEIGHT = $(window).height();
         if (_WIDTH > 960) {
             if (!myFullpage) fullpageFn()
+            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
         } else {
             if (myFullpage) {
                 myFullpage = false
                 $.fn.fullpage.destroy('all');
+                if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
             }
         }
     });
@@ -400,7 +402,6 @@
                     direction: direction,
                     trigger: trigger
                 };
-                console.log(params.destination.anchor);
                 if (params.destination && params.destination.anchor == 'topVisual') $('header').addClass('main-top');
                 else $('header').removeClass('main-top');
             }
