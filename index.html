@@ -372,8 +372,8 @@
             if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
         } else {
             if (myFullpage) {
-                myFullpage = false
                 $.fn.fullpage.destroy('all');
+                myFullpage = false
                 if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
             }
         }
