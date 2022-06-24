@@ -732,6 +732,9 @@
     font-weight: 400;
     color: #454545;
     white-space: pre-line;
+    strong{
+      font-size:inherit;
+    }
     img{
       width:100%;
       height:auto;
