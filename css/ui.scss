@@ -2149,87 +2149,123 @@
   }
 }
 .contact-ir{
-  text-align:left;
-  .inner{
-    width:get-vw(312px);
-    height:get-vw(170vw);
-    padding:get-vw(66px) get-vw(20px) 0;
-    background:url("/images/img_ir_contact.png") no-repeat 50% 50%;
-    background-size: cover;
-    .quotes{
-      margin:0;
-      margin-bottom:get-vw(10px);
-      text-align: left;
-    }
-    .desc{
-      font-size:get-vw(15px);
-    }
+  .desc{
+    font-weight: 300;
+    font-size: get-vw(19px);
+    line-height: get-vw(29px);
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #0D0D0D;
   }
-  .ir-phone{
-    li{
-      display:flex;
-      justify-content: space-between;
-      align-items: center;
-      height:get-vw(62px);
-      border-bottom:1px solid #E8E8E8;
+  .mail-address{
+    position: relative;
+    margin-top:get-vw(20px);
+    padding-top:get-vw(27px);
+    &::before, &::after{
+      content: '';
+      display: block;
+      position: absolute;
+    }
+    &::before{
+      top:0;
+      left:50%;
+      transform: translateX(-50%);
+      width: get-vw(55px);
+      height: get-vw(55px);
+      background: url("/images/ico_mail.png") no-repeat 50% 50%;
+      background-size: cover;
+    }
+    &::after{
+      bottom:get-vw(-13.66px);
+      left:get-vw(39.62px);
+      width: get-vw(252px);
+      height: get-vw(252px);
+      background: url("/images/img_letter_mo.png") no-repeat 50% 50%;
+      background-size: cover;
+    }
+    .inner{
+      padding:get-vw(48px) get-vw(25px) get-vw(199px);
+      background: rgba(243, 244, 246, 0.4);
+      border: 1px solid #E8E8E8;
+      text-align: center;
       .tit{
-        font-weight:700;
-        font-size:get-vw(14px);
-        color:#08A2DC;
+        font-weight: 700;
+        font-size: get-vw(14px);
+        line-height: get-vw(22px);
+        color: #08A2DC;
       }
-      .number{
-        a {
-          font-weight:700;
-          font-size:get-vw(20px);
-          color:#00498C;
-        }
+      .address{
+        margin-top:get-vw(4px);
+        font-weight: 700;
+        font-size: get-vw(18px);
+        line-height: get-vw(30px);
+        color: #454545;
+      }
+      .desc{
+        margin-top:get-vw(24px);
+        padding-top:get-vw(24px);
+        border-top:1px solid rgba(232, 232, 232, 0.8);
+        font-weight: 400;
+        font-size: get-vw(14px);
+        line-height: get-vw(22px);
+        color: #777777;
       }
     }
   }
 }
 @media all and (min-width: 961px) {
   .contact-ir{
-    position: relative;
-    .inner{
-      width:100%;
-      height:500px;
-      padding:135px 80px 0;
-      .quotes{
-        margin:0;
-        margin-bottom:12px;
-        text-align: left;
+    .desc{
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.02em;
+    }
+    .mail-address{
+      margin-top:30px;
+      padding-top:32px;
+      &::before{
+        width: 65px;
+        height: 65px;
       }
-      .desc{
-        font-weight:300;
-        font-size:24px;
+      &::after{
+        top:-75.38px;
+        bottom:auto;
+        left:auto;
+        right:-34.66px;
+        width: 433.23px;
+        height: 433.23px;
+        background: url("/images/img_letter_pc.png") no-repeat 50% 50%;
+        background-size: cover;
+      }
+      .inner{
+        padding:63px 200px 31px;
+        .tit{
+          font-size: 16px;
+          line-height: 26px;
+        }
+        .address{
+          margin-top:5px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        .desc{
+          margin-top:55px;
+          padding-top:30px;
+          font-size: 16px;
+          line-height: 26px;
+        }
       }
     }
-    .ir-phone{
-      display:flex;
-      position: absolute;
-      bottom:70px;
-      left:80px;
-      li{
-        display:block;
-        width:280px;
-        height:170px;
-        padding:28px 0 0 36px;
-        border-bottom:none;
-        background: #FFFFFF;
-        .tit{
-          display:block;
-          font-size:16px;
-        }
-        .number{
-          a {
-            display:block;
-            margin-top:48px;
-            font-size:33px;
-          }
-        }
-        & + li{
-          margin-left:5px;
-        }
+  }
+}
+@media all and (min-width: 961px) and (max-width:1320px){
+  .contact-ir{
+    .mail-address{
+      &::after{
+        top:50%;
+        transform: translateY(-50%);
+        width:30%;
+        height:100%;
       }
     }
   }
