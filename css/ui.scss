@@ -3421,6 +3421,11 @@
           }
         }
       }
+      &.soc01{
+        .cont01 + .desc{
+          margin-top:get-vw(24px);
+        }
+      }
     }
   }
 }
@@ -3612,6 +3617,24 @@
               flex-direction: row-reverse;
               .desc{
                 padding-right:6.66%;
+              }
+            }
+          }
+        }
+        &.soc01{
+          .inner{
+            .cont01{
+              position: relative;
+              padding-right: 52%;
+              .img-wrap{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 46.6666%;
+                margin: 0;
+              }
+              & + .desc{
+                margin-top:35px;
               }
             }
           }
