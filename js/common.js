@@ -12,9 +12,6 @@ let AKCOMMON = (function() {
         _private.eventHandler();
         _private.headerTopEffect();
 
-        // reset css
-        const vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
         // $('header').addClass('top');
     }
     _private.eventHandler = function () {
@@ -23,6 +20,10 @@ let AKCOMMON = (function() {
             _public.WIDTH = $(window).width();
             _public.HEIGHT = $(window).height();
             if ($('.year-wrap.active').length) $('.year-wrap.active').removeClass('active');
+
+            // reset css
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
         }).trigger('resize');
 
         // Navigation
