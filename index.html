@@ -355,20 +355,20 @@
             on: {
                 slideChange: function () {
                     console.log(swiper.activeIndex)
-                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (11 - Math.floor(window.innerWidth / 376)) + '%');
+                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 376)) + '%');
                     else $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
                 }
             }
         });
-        setTimeout(function () {
-            // swiper.snapGrid[swiper.snapGrid.length - 1] = swiper.slidesGrid[swiper.slidesGrid.length - 1];
-        }, 100)
+        // setTimeout(function () {
+            // swiper.snapGrid[swiper.snapGrid.length - 1] = swiper.slidesGrid[swiper.slidesGrid.length - 1] - (_WIDTH - 376);
+        // }, 100)
     });
     $(window).on('resize', function () {
         _WIDTH = $(window).width();
         _HEIGHT = $(window).height();
         if (_WIDTH > 960) {
-            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (11 - Math.floor(window.innerWidth / 376)) + '%');
+            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 376)) + '%');
         } else {
             if (myFullpage) {
                 if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
