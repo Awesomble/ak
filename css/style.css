@@ -21,7 +21,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 4.2666666667vw;
+  font-size: 100%;
   font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", "돋움", Dotum, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -31,23 +31,6 @@ time, mark, audio, video {
   word-break: break-word;
 }
 
-@media all and (min-width: 961px) {
-  html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, input, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    font-size: 16px;
-  }
-}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -230,6 +213,9 @@ caption {
   position: relative;
   font-size: 4.4444444444vw;
 }
+.content *, .topArea * {
+  font-size: 4.4444444444vw;
+}
 
 .topArea.sub {
   padding-top: 27.7777777778vw;
@@ -401,6 +387,9 @@ caption {
   .content, .topArea {
     max-width: 2560px;
     margin: 0 auto;
+  }
+  .content *, .topArea * {
+    font-size: 16px;
   }
   .topArea {
     padding-top: 36px;
@@ -942,10 +931,6 @@ caption {
 }
 .bbs_detail .bbs-view-content {
   padding: 9.7222222222vw 0 0;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #454545;
-  white-space: pre-line;
 }
 .bbs_detail .bbs-view-content strong {
   font-size: inherit;
@@ -1041,7 +1026,6 @@ caption {
   }
   .bbs_detail .bbs-view-content {
     padding: 60px 0 0;
-    font-size: 18px;
   }
   .bbs_detail .bbs-view-content img {
     width: auto;

@@ -16,6 +16,9 @@
 .content, .topArea{
   position:relative;
   font-size: get-vw(16px);
+  & *{
+    font-size: get-vw(16px);
+  }
 }
 .topArea {
   &.sub {
@@ -190,6 +193,9 @@
   .content, .topArea{
     max-width:2560px;
     margin:0 auto;
+    & *{
+      font-size:16px;
+    }
   }
   .topArea{
     padding-top:36px;
@@ -728,10 +734,6 @@
   }
   .bbs-view-content{
     padding:get-vw(35px) 0 0;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #454545;
-    white-space: pre-line;
     strong{
       font-size:inherit;
     }
@@ -824,7 +826,6 @@
     }
     .bbs-view-content{
       padding:60px 0 0;
-      font-size:18px;
       img{
         width:auto;
         height:auto;
