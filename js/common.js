@@ -232,6 +232,37 @@ let AKCOMMON = (function() {
             window.scrollTo(0, fixScVal)
         });
     }
+    _public.getUrlVars = function() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+    _public.updateQueryStringParam = function (key, value) {
+        var baseUrl = [location.protocol, '//', location.host, location.pathname].join(''),
+            urlQueryString = document.location.search,
+            newParam = key + '=' + value,
+            params = '?' + newParam;
+        if (urlQueryString) {
+            var updateRegex = new RegExp('([\?&])' + key + '[^&]*');
+            var removeRegex = new RegExp('([\?&])' + key + '=[^&;]+[&;]?');
+            if( typeof value == 'undefined' || value == null || value == '' ) { // Remove param if value is empty
+                params = urlQueryString.replace(removeRegex, "$1");
+                params = params.replace( /[&;]$/, "" );
+            } else if (urlQueryString.match(updateRegex) !== null) { // If param exists already, update it
+                params = urlQueryString.replace(updateRegex, "$1" + newParam);
+            } else { // Otherwise, add it to end of query string
+                params = urlQueryString + '&' + newParam;
+            }
+        }
+        params = params == '?' ? '' : params;
+        window.history.replaceState({}, "", baseUrl + params);
+    };
 
     return _public;
 })();

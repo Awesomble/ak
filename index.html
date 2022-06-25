@@ -34,7 +34,7 @@
         <div class="quick-menu">
             <ul>
                 <li><a href="/introduce_ceo.html">애경 소개</a></li>
-                <li><a href="/esg_management_goal.html">ESG</a></li>
+                <li><a href="/esg_management_level.html">ESG</a></li>
                 <li><a href="/fo/akNews.do">뉴스룸</a></li>
                 <li><a href="/ir_governance.html">IR</a></li>
             </ul>
@@ -329,14 +329,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-<script src="/js/fullpage.min.js"></script>
 <script src="/js/common.js"></script>
 <script>
     //init
     let _WIDTH = 0;
     let _HEIGHT = 0;
-    let myFullpage = false;
-    let myFullpageIst = null;
     let swiper = null;
     $(function () {
         setTimeout(function () {
@@ -358,7 +355,7 @@
             on: {
                 slideChange: function () {
                     console.log(swiper.activeIndex)
-                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
+                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (11 - Math.floor(window.innerWidth / 376)) + '%');
                     else $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
                 }
             }
@@ -371,12 +368,9 @@
         _WIDTH = $(window).width();
         _HEIGHT = $(window).height();
         if (_WIDTH > 960) {
-            // if (!myFullpage) fullpageFn()
-            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor(window.innerWidth / 376)) + '%');
+            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (11 - Math.floor(window.innerWidth / 376)) + '%');
         } else {
             if (myFullpage) {
-                // $.fn.fullpage.destroy('all');
-                myFullpage = false
                 if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
             }
         }
@@ -386,27 +380,6 @@
         $('html, body').animate({
             scrollTop: $('.news-room').offset().top + 'px'
         }, 300);
-    }
-    //fullpage
-    const fullpageFn = function() {
-        if (myFullpage) return false
-        myFullpage = true
-        myFullpageIst = new fullpage('#fullpage', {
-            licenseKey: 'FC634C81-CDA24EDD-9C3418A5-8FA08AC3',
-            verticalCentered: true,
-            anchors: ['topVisual', 'newsRoom', 'esg', 'footer'],
-            responsiveWidth: 900,
-            afterLoad: function(origin, destination, direction, trigger){
-                let params = {
-                    origin: origin,
-                    destination:destination,
-                    direction: direction,
-                    trigger: trigger
-                };
-                if (params.destination && params.destination.anchor == 'topVisual') $('header').addClass('main-top');
-                else $('header').removeClass('main-top');
-            }
-        });
     }
 </script>
 </body>

@@ -199,10 +199,10 @@ caption {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1px;
-  height: 1px;
-  font-size: 0;
-  line-height: 0;
+  width: 1px !important;
+  height: 1px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
 }
 
 .fw-300 {
@@ -302,7 +302,7 @@ caption {
   background-image: url("/images/img_investment_m.png");
 }
 .topArea .visual.intro-history {
-  background-image: url("/images/img_introduce_history_m.png");
+  background-image: url("/images/img_introduce_history_m.jpg");
 }
 .topArea .visual.intro-history .desc {
   position: absolute;
@@ -430,7 +430,7 @@ caption {
     background-image: url("/images/img_investment.png");
   }
   .topArea .visual.intro-history {
-    background-image: url("/images/img_introduce_history.png");
+    background-image: url("/images/img_introduce_history.jpg");
   }
   .topArea .visual.intro-history .desc {
     bottom: 0;
@@ -940,6 +940,9 @@ caption {
   height: auto;
   text-align: center;
 }
+.bbs_detail .bbs-view-content iframe {
+  width: 100% !important;
+}
 .bbs_detail .download-area {
   margin-top: 6.6666666667vw;
   padding: 4.4444444444vw 5.5555555556vw;
@@ -1030,6 +1033,9 @@ caption {
   .bbs_detail .bbs-view-content img {
     width: auto;
     height: auto;
+  }
+  .bbs_detail .bbs-view-content iframe {
+    width: auto !important;
   }
   .bbs_detail .download-area {
     margin-top: 60px;
@@ -4358,7 +4364,7 @@ main .news-room .news-top p {
 }
 main .news-list {
   position: relative;
-  padding: 0 0 25vw 6.6666666667vw;
+  padding: 0 6.6666666667vw 25vw 6.6666666667vw;
   background: rgba(243, 244, 246, 0.55);
 }
 main .news-list .swiper-slide {

@@ -5,10 +5,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1px;
-  height: 1px;
-  font-size: 0;
-  line-height: 0;
+  width: 1px!important;
+  height: 1px!important;;
+  font-size: 0!important;;
+  line-height: 0!important;;
 }
 .fw-300{
   font-weight:300;
@@ -93,7 +93,7 @@
     &.ir-governance{background-image:url("/images/img_ir_governance_m.png");}
     &.investment{background-image:url("/images/img_investment_m.png");}
     &.intro-history{
-      background-image:url("/images/img_introduce_history_m.png");
+      background-image:url("/images/img_introduce_history_m.jpg");
       .desc{
         position: absolute;
         bottom: 0;
@@ -222,7 +222,7 @@
       &.ir-governance{background-image:url("/images/img_ir_governance.png");}
       &.investment{background-image:url("/images/img_investment.png");}
       &.intro-history{
-        background-image:url("/images/img_introduce_history.png");
+        background-image:url("/images/img_introduce_history.jpg");
         .desc{
           bottom: 0;
           left:50%;
@@ -742,6 +742,9 @@
       height:auto;
       text-align: center;
     }
+    iframe{
+      width: 100%!important;
+    }
   }
   .download-area{
     margin-top:get-vw(24px);
@@ -829,6 +832,9 @@
       img{
         width:auto;
         height:auto;
+      }
+      iframe{
+        width: auto!important;
       }
     }
     .download-area{

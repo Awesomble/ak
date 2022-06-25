@@ -936,7 +936,7 @@ main {
   }
   .news-list{
     position: relative;
-    padding:0 0 get-vw(90px) get-vw(24px);
+    padding:0 get-vw(24px) get-vw(90px) get-vw(24px);
     background:rgba(243, 244, 246, 0.55);
     .swiper{
       //position: relative;
