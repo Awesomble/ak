@@ -147,7 +147,6 @@
                     </p>
                 </div>
             </div>
-            <div class="btn-scroll-down pc"><a href="javascript:;" onclick="myFullpageIst.moveTo('newsRoom', 1)" class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</a></div>
             <div class="btn-scroll-down mo"><a href="javascript:;" onclick="scrollDown()" class="tk-arboria" onClick="scrollDown()"><img src="./images/scrollMotion.gif" alt="클릭시 다음페이지로 이동">SCROLL</a></div>
         </section>
         <section class="section fp-auto-height-responsive news-room" data-anchor="newsRoom" id="section1">
@@ -355,7 +354,8 @@
             on: {
                 slideChange: function () {
                     console.log(swiper.activeIndex)
-                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 412)) + '%');
+                    // $('#swiperBar').css('width', swiper.activeIndex * 100 / (Math.floor((_WIDTH - 95 - 95) % 412) ? 9 : 10) + '%');
+                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / ((Math.floor((_WIDTH - 96 - 96) % 412) > 36 ? 10 : 9) - Math.floor((_WIDTH - 95 - 95) / 412)) + '%');
                     else $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
                 }
             }
@@ -368,11 +368,10 @@
         _WIDTH = $(window).width();
         _HEIGHT = $(window).height();
         if (_WIDTH > 960) {
-            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 412)) + '%');
+            console.log(Math.floor((_WIDTH - 95 - 95) % 412)  > 36 ? 9 : 10)
+            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / ((Math.floor((_WIDTH - 96 - 96) % 412) > 36 ? 10 : 9) - Math.floor((_WIDTH - 95 - 95) / 412)) + '%');
         } else {
-            if (myFullpage) {
-                if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
-            }
+            if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
         }
     });
     //scrollDown
