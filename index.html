@@ -355,7 +355,7 @@
             on: {
                 slideChange: function () {
                     console.log(swiper.activeIndex)
-                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 376)) + '%');
+                    if (_WIDTH > 960) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 412)) + '%');
                     else $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
                 }
             }
@@ -368,7 +368,7 @@
         _WIDTH = $(window).width();
         _HEIGHT = $(window).height();
         if (_WIDTH > 960) {
-            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 376)) + '%');
+            if (swiper) $('#swiperBar').css('width', swiper.activeIndex * 100 / (10 - Math.floor((_WIDTH - 95 - 95) / 412)) + '%');
         } else {
             if (myFullpage) {
                 if (swiper) $('#swiperBar').css('width', (swiper.activeIndex * 100 / 9) + '%');
